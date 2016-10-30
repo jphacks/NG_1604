@@ -16,6 +16,7 @@
 		5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AB1DC66FBF006479DA /* AppConfig.swift */; };
 		5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AD1DC66FCD006479DA /* AppColor.swift */; };
 		5A4972B01DC66FE8006479DA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AF1DC66FE8006479DA /* AppError.swift */; };
+		5A4972B41DC670CC006479DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972B31DC670CC006479DA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5A4972AB1DC66FBF006479DA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		5A4972AD1DC66FCD006479DA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		5A4972AF1DC66FE8006479DA /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		5A4972B31DC670CC006479DA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5A4972961DC66918006479DA /* Info.plist */,
+				5A4972B31DC670CC006479DA /* Localizable.strings */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -255,7 +258,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 5A49727E1DC66918006479DA;
@@ -274,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */,
+				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
 				5A4972921DC66918006479DA /* Assets.xcassets in Resources */,
 				5A4972901DC66918006479DA /* Main.storyboard in Resources */,
 			);
