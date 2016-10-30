@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5ED553B5AE88D92E36E11B /* Pods_OASIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A49728D1DC66918006479DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728C1DC66918006479DA /* ViewController.swift */; };
 		5A4972901DC66918006479DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A49728E1DC66918006479DA /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13FBAB8F7FBB424EB346BF5B /* Pods-OASIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.release.xcconfig"; sourceTree = "<group>"; };
+		2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OASIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A49728C1DC66918006479DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A4972941DC66918006479DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A4972961DC66918006479DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5ED553B5AE88D92E36E11B /* Pods_OASIS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32BE5D744859E3BCDF1BA104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A49727E1DC66918006479DA = {
 			isa = PBXGroup;
 			children = (
 				5A4972891DC66918006479DA /* OASIS */,
 				5A4972881DC66918006479DA /* Products */,
+				DD7BCD65714E01ECC8A4062E /* Pods */,
+				32BE5D744859E3BCDF1BA104 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = OASIS;
 			sourceTree = "<group>";
 		};
+		DD7BCD65714E01ECC8A4062E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */,
+				13FBAB8F7FBB424EB346BF5B /* Pods-OASIS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A4972991DC66918006479DA /* Build configuration list for PBXNativeTarget "OASIS" */;
 			buildPhases = (
+				B91264BACD2ACAADC5CEA076 /* [CP] Check Pods Manifest.lock */,
 				5A4972831DC66918006479DA /* Sources */,
 				5A4972841DC66918006479DA /* Frameworks */,
 				5A4972851DC66918006479DA /* Resources */,
+				C775962BC8EBD723D911797B /* [CP] Embed Pods Frameworks */,
+				5F056C044AFB83668D043D94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F056C044AFB83668D043D94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OASIS/Pods-OASIS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91264BACD2ACAADC5CEA076 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C775962BC8EBD723D911797B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OASIS/Pods-OASIS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A4972831DC66918006479DA /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		5A49729A1DC66918006479DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UAU496JZAK;
@@ -270,6 +346,7 @@
 		};
 		5A49729B1DC66918006479DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FBAB8F7FBB424EB346BF5B /* Pods-OASIS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UAU496JZAK;
@@ -300,6 +377,7 @@
 				5A49729B1DC66918006479DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
