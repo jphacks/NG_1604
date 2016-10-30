@@ -99,6 +99,7 @@
 				5A4972831DC66918006479DA /* Sources */,
 				5A4972841DC66918006479DA /* Frameworks */,
 				5A4972851DC66918006479DA /* Resources */,
+				5A49729C1DC66C3B006479DA /* Run SwiftLint */,
 				C775962BC8EBD723D911797B /* [CP] Embed Pods Frameworks */,
 				5F056C044AFB83668D043D94 /* [CP] Copy Pods Resources */,
 			);
@@ -160,6 +161,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5A49729C1DC66C3B006479DA /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist\"\nfi";
+		};
 		5F056C044AFB83668D043D94 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
