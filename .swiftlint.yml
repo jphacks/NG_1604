@@ -1,0 +1,45 @@
+bled_rules:
+  - todo
+  - type_name
+  - nesting
+  - function_parameter_count
+
+included:
+  - OASIS
+
+excluded:
+  - Carthage
+  - Pods
+
+line_length: 200
+
+variable_name:
+  min_length:
+    error: 2
+  excluded:
+    - id
+    - me
+    - en
+    - ja
+    - ud
+    - ID
+    - vc
+    - ad
+    - Ad
+
+type_name:
+  excluded:
+    - Ja
+    - En
+    - Me
+    - Ad
+
+type_body_length:
+  - 200 # warning
+  - 400 # error
+
+function_body_length:
+  - 50 # warning
+  - 70 # error
+
+reporter: "xcode"
