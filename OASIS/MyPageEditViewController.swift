@@ -13,7 +13,7 @@ class MyPageEditViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "MyPageEdit"
+    static let storyboardName = "MyPageEdit"
 
     // MARK: - Lifecycle
 

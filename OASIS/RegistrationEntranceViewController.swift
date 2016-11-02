@@ -11,36 +11,30 @@ import Firebase
 import FacebookCore
 import FacebookLogin
 
-class RegistrationEntranceViewController: UIViewController, Storyboardable {
-
-    // MARK: - Outlet
+class RegistrationEntranceViewController: UIViewController, Storyboardable, ErrorHandlable {
 
     // MARK: - Property
-    private let storyboardName = "RegistrationEntrance"
-
-    // MARK: - Lifecycle
+    static let storyboardName = "RegistrationEntrance"
 
     // MARK: - Action
     @IBAction private func loginBtnDidTap(_ sender: UIButton) {
-        let loginManager = LoginManager()
-        loginManager.logIn([.publicProfile], viewController: self) { loginResult in
-            switch loginResult {
+        let manager = LoginManager()
+        manager.logIn([.publicProfile], viewController: self) { result in
+            switch result {
             case .success(_, _, let token):
-                print("successfb")
-                print(token.authenticationToken)
-//                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
-//                FIRAuth.auth()?.signIn(with: credential) { user, error in
-//
-//                }
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+                FIRAuth.auth()?.signIn(with: credential) { user, error in
+                    if let error = error {
+                        self.handle(error: error)
+                        return
+                    }
+                    self.navigationController?.pushViewController(RegistrationUserViewController.makeFromStoryboard(), animated: true)
+                }
             case .failed(let error):
-                print("errorfb")
+                self.handle(error: error)
             case .cancelled:
                 break
             }
         }
     }
-
-    // MARK: - Public
-
-    // MARK: - Private
 }

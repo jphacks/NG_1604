@@ -13,7 +13,7 @@ class MyPageEntranceViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "MyPageEntrance"
+    static let storyboardName = "MyPageEntrance"
 
     // MARK: - Lifecycle
 

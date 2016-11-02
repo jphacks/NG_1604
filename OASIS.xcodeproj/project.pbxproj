@@ -32,13 +32,15 @@
 		5AF25CFA1DC9B42100CA07F8 /* MyPageEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */; };
 		5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */; };
 		5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */; };
-		5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */; };
 		5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */; };
 		5AF25D121DC9D0C800CA07F8 /* MatchingRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D111DC9D0C800CA07F8 /* MatchingRecommendation.storyboard */; };
 		5AF25D141DC9D0D200CA07F8 /* MatchingResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */; };
 		5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */; };
 		5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */; };
 		5AF25D1E1DC9EDE400CA07F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D1D1DC9EDE400CA07F8 /* GoogleService-Info.plist */; };
+		5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */; };
+		5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D231DCA2C0300CA07F8 /* String+.swift */; };
+		5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D251DCA314C00CA07F8 /* NSObject+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +72,6 @@
 		5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEdit.storyboard; sourceTree = "<group>"; };
 		5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
-		5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5AF25D111DC9D0C800CA07F8 /* MatchingRecommendation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingRecommendation.storyboard; sourceTree = "<group>"; };
 		5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingResult.storyboard; sourceTree = "<group>"; };
@@ -78,6 +79,9 @@
 		5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingResultViewController.swift; sourceTree = "<group>"; };
 		5AF25D1D1DC9EDE400CA07F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AF25D1F1DCA15CF00CA07F8 /* OASIS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OASIS.entitlements; sourceTree = "<group>"; };
+		5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlable.swift; sourceTree = "<group>"; };
+		5AF25D231DCA2C0300CA07F8 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		5AF25D251DCA314C00CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,20 +126,6 @@
 		5A4972891DC66918006479DA /* OASIS */ = {
 			isa = PBXGroup;
 			children = (
-				5A49729D1DC66ED4006479DA /* Common */,
-				5A49729E1DC66ED8006479DA /* Infra */,
-				5A49729F1DC66EDD006479DA /* Domain */,
-				5A4972A01DC66EE1006479DA /* Presentation */,
-				5A4972A11DC66EE6006479DA /* Storyboards */,
-				5A4972A21DC66EEC006479DA /* Resources */,
-				5A4972A31DC66EF1006479DA /* Others */,
-			);
-			path = OASIS;
-			sourceTree = "<group>";
-		};
-		5A49729D1DC66ED4006479DA /* Common */ = {
-			isa = PBXGroup;
-			children = (
 				5A49728A1DC66918006479DA /* AppDelegate.swift */,
 				5A4972AB1DC66FBF006479DA /* AppConfig.swift */,
 				5A4972AD1DC66FCD006479DA /* AppColor.swift */,
@@ -143,36 +133,23 @@
 				5A4972A81DC66F7B006479DA /* Extensions */,
 				5A4972A91DC66F82006479DA /* Utilities */,
 				5A4972AA1DC66F89006479DA /* Helpers */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		5A49729E1DC66ED8006479DA /* Infra */ = {
-			isa = PBXGroup;
-			children = (
-				5A4972A71DC66F75006479DA /* Firebase */,
-				5AF25D201DCA27CF00CA07F8 /* Facebook */,
-			);
-			name = Infra;
-			sourceTree = "<group>";
-		};
-		5A49729F1DC66EDD006479DA /* Domain */ = {
-			isa = PBXGroup;
-			children = (
 				5A4972A41DC66F49006479DA /* Entities */,
 				5A4972A51DC66F50006479DA /* ValueObjects */,
-				5A4972A61DC66F5A006479DA /* UseCases */,
+				5A4972A01DC66EE1006479DA /* Views */,
+				5A4972A11DC66EE6006479DA /* Storyboards */,
+				5A4972A21DC66EEC006479DA /* Resources */,
+				5A4972A31DC66EF1006479DA /* Others */,
 			);
-			name = Domain;
+			path = OASIS;
 			sourceTree = "<group>";
 		};
-		5A4972A01DC66EE1006479DA /* Presentation */ = {
+		5A4972A01DC66EE1006479DA /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5AF25CC51DC9AE0000CA07F8 /* Registration */,
 				5AF25D0B1DC9BC1700CA07F8 /* Main */,
 			);
-			name = Presentation;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		5A4972A11DC66EE6006479DA /* Storyboards */ = {
@@ -218,24 +195,11 @@
 			name = ValueObjects;
 			sourceTree = "<group>";
 		};
-		5A4972A61DC66F5A006479DA /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UseCases;
-			sourceTree = "<group>";
-		};
-		5A4972A71DC66F75006479DA /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Firebase;
-			sourceTree = "<group>";
-		};
 		5A4972A81DC66F7B006479DA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */,
+				5AF25D251DCA314C00CA07F8 /* NSObject+.swift */,
+				5AF25D231DCA2C0300CA07F8 /* String+.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */,
+				5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -432,13 +397,6 @@
 			name = Result;
 			sourceTree = "<group>";
 		};
-		5AF25D201DCA27CF00CA07F8 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Facebook;
-			sourceTree = "<group>";
-		};
 		DD7BCD65714E01ECC8A4062E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,10 +568,12 @@
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
+				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,
+				5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
+				5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */,
 				5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */,
-				5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */,
 				5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */,
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */,

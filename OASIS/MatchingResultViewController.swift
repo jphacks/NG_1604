@@ -13,7 +13,7 @@ class MatchingResultViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "MatchingResult"
+    static let storyboardName = "MatchingResult"
 
     // MARK: - Lifecycle
 

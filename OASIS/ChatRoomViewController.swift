@@ -13,7 +13,7 @@ class ChatRoomViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "ChatRoom"
+    static let storyboardName = "ChatRoom"
 
     // MARK: - Lifecycle
 

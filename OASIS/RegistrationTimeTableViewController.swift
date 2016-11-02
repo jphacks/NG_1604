@@ -13,7 +13,7 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "RegistrationTimeTable"
+    static let storyboardName = "RegistrationTimeTable"
 
     // MARK: - Lifecycle
 

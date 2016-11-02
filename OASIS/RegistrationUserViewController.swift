@@ -13,7 +13,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "RegistrationUser"
+    static let storyboardName = "RegistrationUser"
 
     // MARK: - Lifecycle
 
