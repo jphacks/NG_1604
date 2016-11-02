@@ -17,7 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FIRApp.configure()
+
+        FIRAuth.auth()?.addStateDidChangeListener { _, user in
+            if let _ = user {
+//                SceneRouter.shared.route(scene: .main)
+                SceneRouter.shared.route(scene: .registration)
+            } else {
+                SceneRouter.shared.route(scene: .registration)
+            }
+        }
         SceneRouter.shared.window = window
+
         return true
     }
 
