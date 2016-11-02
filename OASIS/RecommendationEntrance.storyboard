@@ -27,7 +27,7 @@
         <!--マッチング-->
         <scene sceneID="LuV-oc-QSK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oYl-4v-11v" customClass="RecommendationNavigationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oYl-4v-11v" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="マッチング" id="f1I-wk-Q3X"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

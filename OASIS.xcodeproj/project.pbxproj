@@ -35,10 +35,6 @@
 		5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */; };
 		5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */; };
 		5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */; };
-		5AF25D021DC9BB0800CA07F8 /* RegistrationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D011DC9BB0800CA07F8 /* RegistrationNavigationController.swift */; };
-		5AF25D041DC9BB1C00CA07F8 /* ChatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D031DC9BB1C00CA07F8 /* ChatNavigationController.swift */; };
-		5AF25D061DC9BB3F00CA07F8 /* RecommendationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */; };
-		5AF25D081DC9BB4C00CA07F8 /* MatchingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */; };
 		5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -74,10 +70,6 @@
 		5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEdit.storyboard; sourceTree = "<group>"; };
 		5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
-		5AF25D011DC9BB0800CA07F8 /* RegistrationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNavigationController.swift; sourceTree = "<group>"; };
-		5AF25D031DC9BB1C00CA07F8 /* ChatNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatNavigationController.swift; sourceTree = "<group>"; };
-		5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationNavigationController.swift; sourceTree = "<group>"; };
-		5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,7 +248,6 @@
 		5AF25CC51DC9AE0000CA07F8 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25D011DC9BB0800CA07F8 /* RegistrationNavigationController.swift */,
 				5AF25CD21DC9AFA300CA07F8 /* Entrance */,
 				5AF25CD31DC9AFAE00CA07F8 /* User */,
 				5AF25CD41DC9AFCC00CA07F8 /* TimeTable */,
@@ -276,7 +267,6 @@
 		5AF25CC81DC9AE6100CA07F8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25D031DC9BB1C00CA07F8 /* ChatNavigationController.swift */,
 				5AF25CD91DC9B0B700CA07F8 /* Entrance */,
 				5AF25CDA1DC9B0C300CA07F8 /* Room */,
 			);
@@ -286,7 +276,6 @@
 		5AF25CC91DC9AEAB00CA07F8 /* Recommendation */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */,
 				5AF25CDF1DC9B12C00CA07F8 /* Entrance */,
 			);
 			name = Recommendation;
@@ -295,7 +284,6 @@
 		5AF25CCA1DC9AEBC00CA07F8 /* Matching */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */,
 				5AF25CE01DC9B15300CA07F8 /* Entrance */,
 			);
 			name = Matching;
@@ -597,8 +585,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF25D061DC9BB3F00CA07F8 /* RecommendationNavigationController.swift in Sources */,
-				5AF25D021DC9BB0800CA07F8 /* RegistrationNavigationController.swift in Sources */,
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
 				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
@@ -607,14 +593,12 @@
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
-				5AF25D041DC9BB1C00CA07F8 /* ChatNavigationController.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
 				5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */,
 				5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */,
 				5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */,
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* RecommendationEntranceViewController.swift in Sources */,
-				5AF25D081DC9BB4C00CA07F8 /* MatchingNavigationController.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
