@@ -15,10 +15,10 @@
             </objects>
             <point key="canvasLocation" x="-1098" y="184"/>
         </scene>
-        <!--RecommendationEntrance-->
+        <!--MatchingEntrance-->
         <scene sceneID="fzj-Oj-BEJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="RecommendationEntrance" id="CxR-7N-rzV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MatchingEntrance" id="CxR-7N-rzV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="マッチング" id="Xc8-Rt-g4Y"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4z-bu-yKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,5 +1,5 @@
 //
-//  RecommendationEntranceViewController.swift
+//  MatchingResultViewController.swift
 //  OASIS
 //
 //  Created by 後藤誉昌 on 2016/11/02.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class RecommendationEntranceViewController: UIViewController, Storyboardable {
+class MatchingResultViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "RecommendationEntrance"
+    private let storyboardName = "MatchingResult"
 
     // MARK: - Lifecycle
 

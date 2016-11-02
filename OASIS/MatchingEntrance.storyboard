@@ -24,11 +24,13 @@
             </objects>
             <point key="canvasLocation" x="1234" y="-179"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--マッチング-->
         <scene sceneID="ShA-7R-cY9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pS1-Y9-Dt3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="マッチング" id="3vh-1D-tCE"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="htj-JZ-xTy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

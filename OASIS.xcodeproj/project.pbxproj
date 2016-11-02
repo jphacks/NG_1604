@@ -20,8 +20,7 @@
 		5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */; };
 		5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */; };
 		5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */; };
-		5AF25CE21DC9B17000CA07F8 /* RecommendationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE11DC9B17000CA07F8 /* RecommendationEntranceViewController.swift */; };
-		5AF25CE41DC9B17900CA07F8 /* MatchingEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE31DC9B17900CA07F8 /* MatchingEntranceViewController.swift */; };
+		5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE11DC9B17000CA07F8 /* MatchingEntranceViewController.swift */; };
 		5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE71DC9B2E400CA07F8 /* MyPageEntranceViewController.swift */; };
 		5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE91DC9B2ED00CA07F8 /* MyPageEditViewController.swift */; };
 		5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */; };
@@ -29,13 +28,16 @@
 		5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */; };
 		5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF11DC9B3F200CA07F8 /* ChatEntrance.storyboard */; };
 		5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */; };
-		5AF25CF61DC9B40300CA07F8 /* RecommendationEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF51DC9B40300CA07F8 /* RecommendationEntrance.storyboard */; };
 		5AF25CF81DC9B41900CA07F8 /* MatchingEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF71DC9B41900CA07F8 /* MatchingEntrance.storyboard */; };
 		5AF25CFA1DC9B42100CA07F8 /* MyPageEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */; };
 		5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */; };
 		5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */; };
 		5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */; };
 		5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */; };
+		5AF25D121DC9D0C800CA07F8 /* MatchingRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D111DC9D0C800CA07F8 /* MatchingRecommendation.storyboard */; };
+		5AF25D141DC9D0D200CA07F8 /* MatchingResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */; };
+		5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */; };
+		5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,8 +57,7 @@
 		5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTimeTableViewController.swift; sourceTree = "<group>"; };
 		5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
-		5AF25CE11DC9B17000CA07F8 /* RecommendationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationEntranceViewController.swift; sourceTree = "<group>"; };
-		5AF25CE31DC9B17900CA07F8 /* MatchingEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingEntranceViewController.swift; sourceTree = "<group>"; };
+		5AF25CE11DC9B17000CA07F8 /* MatchingEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CE71DC9B2E400CA07F8 /* MyPageEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CE91DC9B2ED00CA07F8 /* MyPageEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageEditViewController.swift; sourceTree = "<group>"; };
 		5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationEntrance.storyboard; sourceTree = "<group>"; };
@@ -64,13 +65,16 @@
 		5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationTimeTable.storyboard; sourceTree = "<group>"; };
 		5AF25CF11DC9B3F200CA07F8 /* ChatEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
-		5AF25CF51DC9B40300CA07F8 /* RecommendationEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecommendationEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CF71DC9B41900CA07F8 /* MatchingEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEdit.storyboard; sourceTree = "<group>"; };
 		5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5AF25D111DC9D0C800CA07F8 /* MatchingRecommendation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingRecommendation.storyboard; sourceTree = "<group>"; };
+		5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingResult.storyboard; sourceTree = "<group>"; };
+		5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingRecommendationViewController.swift; sourceTree = "<group>"; };
+		5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingResultViewController.swift; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -273,18 +277,12 @@
 			name = Chat;
 			sourceTree = "<group>";
 		};
-		5AF25CC91DC9AEAB00CA07F8 /* Recommendation */ = {
+		5AF25CC91DC9AEAB00CA07F8 /* Matching */ = {
 			isa = PBXGroup;
 			children = (
 				5AF25CDF1DC9B12C00CA07F8 /* Entrance */,
-			);
-			name = Recommendation;
-			sourceTree = "<group>";
-		};
-		5AF25CCA1DC9AEBC00CA07F8 /* Matching */ = {
-			isa = PBXGroup;
-			children = (
-				5AF25CE01DC9B15300CA07F8 /* Entrance */,
+				5AF25D0F1DC9D05900CA07F8 /* Recommendation */,
+				5AF25D101DC9D07200CA07F8 /* Result */,
 			);
 			name = Matching;
 			sourceTree = "<group>";
@@ -308,18 +306,12 @@
 			name = Chat;
 			sourceTree = "<group>";
 		};
-		5AF25CCD1DC9AEE400CA07F8 /* Recommendation */ = {
-			isa = PBXGroup;
-			children = (
-				5AF25CF51DC9B40300CA07F8 /* RecommendationEntrance.storyboard */,
-			);
-			name = Recommendation;
-			sourceTree = "<group>";
-		};
 		5AF25CCE1DC9AEEB00CA07F8 /* Matching */ = {
 			isa = PBXGroup;
 			children = (
 				5AF25CF71DC9B41900CA07F8 /* MatchingEntrance.storyboard */,
+				5AF25D111DC9D0C800CA07F8 /* MatchingRecommendation.storyboard */,
+				5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */,
 			);
 			name = Matching;
 			sourceTree = "<group>";
@@ -376,15 +368,7 @@
 		5AF25CDF1DC9B12C00CA07F8 /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25CE11DC9B17000CA07F8 /* RecommendationEntranceViewController.swift */,
-			);
-			name = Entrance;
-			sourceTree = "<group>";
-		};
-		5AF25CE01DC9B15300CA07F8 /* Entrance */ = {
-			isa = PBXGroup;
-			children = (
-				5AF25CE31DC9B17900CA07F8 /* MatchingEntranceViewController.swift */,
+				5AF25CE11DC9B17000CA07F8 /* MatchingEntranceViewController.swift */,
 			);
 			name = Entrance;
 			sourceTree = "<group>";
@@ -409,8 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CC81DC9AE6100CA07F8 /* Chat */,
-				5AF25CC91DC9AEAB00CA07F8 /* Recommendation */,
-				5AF25CCA1DC9AEBC00CA07F8 /* Matching */,
+				5AF25CC91DC9AEAB00CA07F8 /* Matching */,
 				5AF25CC71DC9AE2100CA07F8 /* MyPage */,
 			);
 			name = Main;
@@ -421,11 +404,26 @@
 			children = (
 				5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */,
 				5AF25CCC1DC9AED900CA07F8 /* Chat */,
-				5AF25CCD1DC9AEE400CA07F8 /* Recommendation */,
 				5AF25CCE1DC9AEEB00CA07F8 /* Matching */,
 				5AF25CCF1DC9AEF100CA07F8 /* MyPage */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		5AF25D0F1DC9D05900CA07F8 /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */,
+			);
+			name = Recommendation;
+			sourceTree = "<group>";
+		};
+		5AF25D101DC9D07200CA07F8 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */,
+			);
+			name = Result;
 			sourceTree = "<group>";
 		};
 		DD7BCD65714E01ECC8A4062E /* Pods */ = {
@@ -501,11 +499,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */,
-				5AF25CF61DC9B40300CA07F8 /* RecommendationEntrance.storyboard in Resources */,
 				5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */,
 				5AF25CEE1DC9B3E000CA07F8 /* RegistrationUser.storyboard in Resources */,
 				5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */,
 				5AF25CF81DC9B41900CA07F8 /* MatchingEntrance.storyboard in Resources */,
+				5AF25D121DC9D0C800CA07F8 /* MatchingRecommendation.storyboard in Resources */,
+				5AF25D141DC9D0D200CA07F8 /* MatchingResult.storyboard in Resources */,
 				5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */,
 				5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */,
 				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
@@ -585,10 +584,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */,
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
 				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
-				5AF25CE41DC9B17900CA07F8 /* MatchingEntranceViewController.swift in Sources */,
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
@@ -598,7 +597,8 @@
 				5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */,
 				5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */,
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
-				5AF25CE21DC9B17000CA07F8 /* RecommendationEntranceViewController.swift in Sources */,
+				5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */,
+				5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
