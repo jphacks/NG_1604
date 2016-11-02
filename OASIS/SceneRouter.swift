@@ -16,7 +16,7 @@ class SceneRouter {
         var viewController: UIViewController {
             switch self {
             case .registration:
-                return UIStoryboard(name: "RegistrationEntrance", bundle: nil).instantiateInitialViewController()
+                return UIStoryboard(name: "Registration", bundle: nil).instantiateInitialViewController()
                     as! UINavigationController // swiftlint:disable:this force_cast
             case .main:
                 return UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
