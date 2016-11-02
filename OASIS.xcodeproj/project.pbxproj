@@ -15,6 +15,9 @@
 		5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AD1DC66FCD006479DA /* AppColor.swift */; };
 		5A4972B01DC66FE8006479DA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AF1DC66FE8006479DA /* AppError.swift */; };
 		5A4972B41DC670CC006479DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972B31DC670CC006479DA /* Localizable.strings */; };
+		5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */; };
+		5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */; };
+		5AD4ABDE1DCA372E009CF1A5 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABDD1DCA372E009CF1A5 /* RegistrationController.swift */; };
 		5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */; };
 		5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */; };
 		5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */; };
@@ -55,6 +58,9 @@
 		5A4972AD1DC66FCD006479DA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		5A4972AF1DC66FE8006479DA /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		5A4972B31DC670CC006479DA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
+		5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		5AD4ABDD1DCA372E009CF1A5 /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserViewController.swift; sourceTree = "<group>"; };
 		5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTimeTableViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +219,7 @@
 			children = (
 				5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */,
 				5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */,
+				5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 		5AF25CC51DC9AE0000CA07F8 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				5AD4ABDD1DCA372E009CF1A5 /* RegistrationController.swift */,
 				5AF25CD21DC9AFA300CA07F8 /* Entrance */,
 				5AF25CD31DC9AFAE00CA07F8 /* User */,
 				5AF25CD41DC9AFCC00CA07F8 /* TimeTable */,
@@ -360,6 +368,7 @@
 		5AF25D0B1DC9BC1700CA07F8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */,
 				5AF25CC81DC9AE6100CA07F8 /* Chat */,
 				5AF25CC91DC9AEAB00CA07F8 /* Matching */,
 				5AF25CC71DC9AE2100CA07F8 /* MyPage */,
@@ -578,12 +587,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */,
+				5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */,
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
 				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
+				5AD4ABDE1DCA372E009CF1A5 /* RegistrationController.swift in Sources */,
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
+				5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */,
 				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,
 				5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,

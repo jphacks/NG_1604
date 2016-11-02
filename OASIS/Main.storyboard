@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="-392" y="184"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Controller-->
         <scene sceneID="esj-tj-xEi">
             <objects>
-                <tabBarController id="lMQ-1G-NHq" sceneMemberID="viewController">
+                <tabBarController id="lMQ-1G-NHq" customClass="MainController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="HyU-dK-21A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

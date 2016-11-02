@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="700" y="30"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Registration Conroller-->
         <scene sceneID="dqQ-d5-UNQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PzE-jJ-6HK" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PzE-jJ-6HK" customClass="RegistrationConroller" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QYB-Hw-2l2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
