@@ -38,6 +38,7 @@
 		5AF25D141DC9D0D200CA07F8 /* MatchingResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */; };
 		5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */; };
 		5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */; };
+		5AF25D1E1DC9EDE400CA07F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D1D1DC9EDE400CA07F8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		5AF25D131DC9D0D200CA07F8 /* MatchingResult.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingResult.storyboard; sourceTree = "<group>"; };
 		5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingRecommendationViewController.swift; sourceTree = "<group>"; };
 		5AF25D171DC9D16500CA07F8 /* MatchingResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingResultViewController.swift; sourceTree = "<group>"; };
+		5AF25D1D1DC9EDE400CA07F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				5A4972911DC66918006479DA /* Assets.xcassets */,
+				5A4972B31DC670CC006479DA /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -193,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				5A4972961DC66918006479DA /* Info.plist */,
-				5A4972B31DC670CC006479DA /* Localizable.strings */,
+				5AF25D1D1DC9EDE400CA07F8 /* GoogleService-Info.plist */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 			files = (
 				5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */,
 				5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */,
+				5AF25D1E1DC9EDE400CA07F8 /* GoogleService-Info.plist in Resources */,
 				5AF25CEE1DC9B3E000CA07F8 /* RegistrationUser.storyboard in Resources */,
 				5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */,
 				5AF25CF81DC9B41900CA07F8 /* MatchingEntrance.storyboard in Resources */,
