@@ -9,6 +9,10 @@ target 'OASIS' do
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
 
+    # auth
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+
     # util
     pod 'SwiftTask', git: 'https://github.com/ReactKit/SwiftTask.git', branch: 'swift/3.0'
 

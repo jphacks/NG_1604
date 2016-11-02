@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="VpY-ep-WnF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa5-ng-Sug">
+                                <state key="normal" title="Facebookでログイン"/>
+                                <connections>
+                                    <action selector="loginBtnDidTap:" destination="NkP-z8-XNf" eventType="touchUpInside" id="l2N-7I-zq1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="centerY" secondItem="VpY-ep-WnF" secondAttribute="centerY" id="22G-yt-3L8"/>
+                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="centerX" secondItem="VpY-ep-WnF" secondAttribute="centerX" id="2Hc-m0-nbV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D9g-63-Zmj"/>
                 </viewController>
