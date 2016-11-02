@@ -1,5 +1,5 @@
 //
-//  RecommendationListViewController.swift
+//  MatchingEntranceViewController.swift
 //  OASIS
 //
 //  Created by 後藤誉昌 on 2016/11/02.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecommendationListViewController: UIViewController {
+class MatchingEntranceViewController: UIViewController {
 
     // MARK: - Outlet
 

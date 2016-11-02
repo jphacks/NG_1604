@@ -1,5 +1,5 @@
 //
-//  MatchingListViewController.swift
+//  ProfileEntranceViewController.swift
 //  OASIS
 //
 //  Created by 後藤誉昌 on 2016/11/02.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MatchingListViewController: UIViewController {
+class ProfileEntranceViewController: UIViewController {
 
     // MARK: - Outlet
 
