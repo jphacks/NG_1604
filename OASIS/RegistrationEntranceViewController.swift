@@ -22,19 +22,24 @@ class RegistrationEntranceViewController: UIViewController, Storyboardable, Erro
         manager.logIn([.publicProfile], viewController: self) { result in
             switch result {
             case .success(_, _, let token):
-                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
-                FIRAuth.auth()?.signIn(with: credential) { _, error in
-                    if let error = error {
-                        self.handle(error: error)
-                    } else {
-                        let next = RegistrationUserViewController.makeFromStoryboard()
-                        self.navigationController?.pushViewController(next, animated: true)
-                    }
-                }
+                self.signIn(token: token)
             case .failed(let error):
                 self.handle(error: error)
             case .cancelled:
                 break
+            }
+        }
+    }
+
+    // MARK: - Private
+    func signIn(token: AccessToken) {
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+        FIRAuth.auth()?.signIn(with: credential) { [weak self] _, error in
+            if let error = error {
+                self?.handle(error: error)
+            } else {
+                let next = RegistrationUserViewController.makeFromStoryboard()
+                self?.navigationController?.pushViewController(next, animated: true)
             }
         }
     }

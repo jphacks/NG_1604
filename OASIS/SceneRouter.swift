@@ -15,12 +15,8 @@ class SceneRouter {
 
         var viewController: UIViewController {
             switch self {
-            case .registration:
-                return UIStoryboard(name: "Registration", bundle: nil).instantiateInitialViewController()
-                    as! UINavigationController // swiftlint:disable:this force_cast
-            case .main:
-                return UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-                    as! UITabBarController // swiftlint:disable:this force_cast
+            case .registration: return RegistrationController.makeFromStoryboard()
+            case .main: return MainController.makeFromStoryboard()
             }
         }
     }

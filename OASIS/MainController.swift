@@ -8,4 +8,8 @@
 
 import UIKit
 
-final class MainController: UITabBarController {}
+final class MainController: UITabBarController, Storyboardable {
+
+    // MARK: - Property
+    static let storyboardName = "Main"
+}

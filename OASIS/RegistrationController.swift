@@ -8,4 +8,8 @@
 
 import UIKit
 
-final class RegistrationConroller: UINavigationController {}
+final class RegistrationController: UINavigationController, Storyboardable {
+
+    // MARK: - Property
+    static let storyboardName = "Registration"
+}

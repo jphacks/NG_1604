@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y8v-gD-L9q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8WR-oV-jYe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Registration Conroller-->
-        <scene sceneID="Dxy-hz-vlm">
+        <!--Registration Controller-->
+        <scene sceneID="omB-ui-8rV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MiD-yg-375" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="y8v-gD-L9q" customClass="RegistrationConroller" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wZf-Z0-buI">
+                <navigationController id="8WR-oV-jYe" customClass="RegistrationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bMB-kJ-2Dn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="KjV-Fu-my6" kind="relationship" relationship="rootViewController" id="oNO-SR-e5G"/>
+                        <segue destination="0gQ-Ol-ffs" kind="relationship" relationship="rootViewController" id="h6k-z1-NZh"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCR-bw-5Kn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="-218"/>
+            <point key="canvasLocation" x="-590" y="34"/>
         </scene>
         <!--RegistrationEntrance-->
-        <scene sceneID="wzn-U4-Zhu">
+        <scene sceneID="bTj-t4-cJv">
             <objects>
-                <viewControllerPlaceholder storyboardName="RegistrationEntrance" id="KjV-Fu-my6" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Ply-Ak-LOf"/>
+                <viewControllerPlaceholder storyboardName="RegistrationEntrance" id="0gQ-Ol-ffs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="v6b-VQ-1Pw"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qfz-P8-wUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knt-Hf-wqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="-219"/>
+            <point key="canvasLocation" x="24" y="33"/>
         </scene>
     </scenes>
 </document>
