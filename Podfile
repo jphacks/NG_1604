@@ -15,7 +15,7 @@ target 'OASIS' do
     # view
     pod 'Kingfisher', '~> 3.0'
     pod 'Spring', git: 'https://github.com/MengTo/Spring.git', branch: 'swift3'
-    pod 'XLPagerTabStrip', '~> 5.0'
+    pod 'XLPagerTabStrip', '6.0'
 end
 
 post_install do |installer|
