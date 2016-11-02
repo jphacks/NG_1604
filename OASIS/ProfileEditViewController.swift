@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ProfileEditViewController: UIViewController {
+class ProfileEditViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "ProfileEdit"
 
     // MARK: - Lifecycle
 

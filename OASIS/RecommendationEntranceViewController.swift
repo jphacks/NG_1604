@@ -8,11 +8,12 @@
 
 import UIKit
 
-class RecommendationEntranceViewController: UIViewController {
+class RecommendationEntranceViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "RecommendationEntrance"
 
     // MARK: - Lifecycle
 

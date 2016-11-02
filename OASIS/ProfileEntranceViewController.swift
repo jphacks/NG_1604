@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ProfileEntranceViewController: UIViewController {
+class ProfileEntranceViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "ProfileEntrance"
 
     // MARK: - Lifecycle
 

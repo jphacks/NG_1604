@@ -8,11 +8,12 @@
 
 import UIKit
 
-class RegistrationEntranceViewController: UIViewController {
+class RegistrationEntranceViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "RegistrationEntrance"
 
     // MARK: - Lifecycle
 

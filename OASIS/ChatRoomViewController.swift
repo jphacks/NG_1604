@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ChatRoomViewController: UIViewController {
+class ChatRoomViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "ChatRoom"
 
     // MARK: - Lifecycle
 

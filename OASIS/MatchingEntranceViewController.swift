@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MatchingEntranceViewController: UIViewController {
+class MatchingEntranceViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "MatchingEntrance"
 
     // MARK: - Lifecycle
 

@@ -8,11 +8,12 @@
 
 import UIKit
 
-class RegistrationTimeTableViewController: UIViewController {
+class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
+    private let storyboardName = "RegistrationTimeTable"
 
     // MARK: - Lifecycle
 
