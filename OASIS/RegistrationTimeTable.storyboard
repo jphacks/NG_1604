@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Registration Time Table View Controller-->
+        <!--空きコマ登録-->
         <scene sceneID="Ykm-cH-lKc">
             <objects>
-                <viewController id="3PZ-Rt-W53" customClass="RegistrationTimeTableViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="空きコマ登録" id="3PZ-Rt-W53" customClass="RegistrationTimeTableViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rXa-HD-3EO"/>
                         <viewControllerLayoutGuide type="bottom" id="6jM-bN-9RF"/>

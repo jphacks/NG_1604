@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import Firebase
 
-class RegistrationUserViewController: UIViewController, Storyboardable {
-
-    // MARK: - Outlet
+class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHandlable {
 
     // MARK: - Property
     static let storyboardName = "RegistrationUser"
 
-    // MARK: - Lifecycle
-
     // MARK: - Action
+    @IBAction private func submitBtnDidTap(_ sender: UIButton) {
+        guard let user = FIRAuth.auth()?.currentUser else { return }
 
-    // MARK: - Public
-
-    // MARK: - Private
+        let request = user.profileChangeRequest()
+        request.displayName = "ヒデちゃん"
+        request.photoURL = URL(string: "http://www.othlo.tech/images/members/hide.png")
+        request.commitChanges { error in
+            if let error = error {
+                self.handle(error: error)
+            } else {
+                let next = RegistrationTimeTableViewController.makeFromStoryboard()
+                self.navigationController?.pushViewController(next, animated: true)
+            }
+        }
+    }
 }

@@ -23,12 +23,13 @@ class RegistrationEntranceViewController: UIViewController, Storyboardable, Erro
             switch result {
             case .success(_, _, let token):
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
-                FIRAuth.auth()?.signIn(with: credential) { user, error in
+                FIRAuth.auth()?.signIn(with: credential) { _, error in
                     if let error = error {
                         self.handle(error: error)
-                        return
+                    } else {
+                        let next = RegistrationUserViewController.makeFromStoryboard()
+                        self.navigationController?.pushViewController(next, animated: true)
                     }
-                    self.navigationController?.pushViewController(RegistrationUserViewController.makeFromStoryboard(), animated: true)
                 }
             case .failed(let error):
                 self.handle(error: error)
