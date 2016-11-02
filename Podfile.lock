@@ -52,6 +52,7 @@ PODS:
   - Kingfisher (3.1.4)
   - Spring (1.0.3)
   - SwiftTask (5.0.0)
+  - XLPagerTabStrip (5.1.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - Kingfisher (~> 3.0)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SwiftTask (from `https://github.com/ReactKit/SwiftTask.git`, branch `swift/3.0`)
+  - XLPagerTabStrip (~> 5.0)
 
 EXTERNAL SOURCES:
   Spring:
@@ -93,7 +95,8 @@ SPEC CHECKSUMS:
   Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
+  XLPagerTabStrip: 9191deaa2336735b7c47beb21e42be537fa4242a
 
-PODFILE CHECKSUM: c96f88694697cb811115d9f2d59b26bbe61771ac
+PODFILE CHECKSUM: b6e55439fed14fa023364e7630e44929c98e2692
 
 COCOAPODS: 1.1.1

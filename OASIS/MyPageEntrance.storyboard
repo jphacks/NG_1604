@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7aF-hS-Izt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Page Entrance View Controller-->
+        <scene sceneID="2IP-Fg-thd">
+            <objects>
+                <viewController id="27P-h5-3aA" customClass="MyPageEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="twb-cY-LFC"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdD-he-MQi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cF4-wy-1cg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hxm-hM-qDS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reh-KQ-O8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-237"/>
+        </scene>
+        <!--マイページ-->
+        <scene sceneID="P6u-ly-jj8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aF-hS-Izt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="マイページ" id="rIg-Ke-QfF"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r21-HD-YfX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="27P-h5-3aA" kind="relationship" relationship="rootViewController" id="hIU-Go-hIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYO-Zd-wyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381.60000000000002" y="-237.03148425787109"/>
+        </scene>
+    </scenes>
+</document>
