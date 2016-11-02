@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1234" y="-179"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Matching Navigation Controller-->
         <scene sceneID="ShA-7R-cY9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pS1-Y9-Dt3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pS1-Y9-Dt3" customClass="MatchingNavigationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="htj-JZ-xTy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

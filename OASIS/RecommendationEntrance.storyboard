@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1113" y="-268"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Recommendation Navigation Controller-->
         <scene sceneID="LuV-oc-QSK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oYl-4v-11v" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oYl-4v-11v" customClass="RecommendationNavigationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A93-4q-1HO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
