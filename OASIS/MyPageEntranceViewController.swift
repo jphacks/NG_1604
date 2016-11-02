@@ -1,5 +1,5 @@
 //
-//  ProfileEntranceViewController.swift
+//  MyPageEntranceViewController.swift
 //  OASIS
 //
 //  Created by 後藤誉昌 on 2016/11/02.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ProfileEntranceViewController: UIViewController, Storyboardable {
+class MyPageEntranceViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "ProfileEntrance"
+    private let storyboardName = "MyPageEntrance"
 
     // MARK: - Lifecycle
 

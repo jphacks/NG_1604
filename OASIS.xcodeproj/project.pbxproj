@@ -22,8 +22,8 @@
 		5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */; };
 		5AF25CE21DC9B17000CA07F8 /* RecommendationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE11DC9B17000CA07F8 /* RecommendationEntranceViewController.swift */; };
 		5AF25CE41DC9B17900CA07F8 /* MatchingEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE31DC9B17900CA07F8 /* MatchingEntranceViewController.swift */; };
-		5AF25CE81DC9B2E400CA07F8 /* ProfileEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE71DC9B2E400CA07F8 /* ProfileEntranceViewController.swift */; };
-		5AF25CEA1DC9B2ED00CA07F8 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE91DC9B2ED00CA07F8 /* ProfileEditViewController.swift */; };
+		5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE71DC9B2E400CA07F8 /* MyPageEntranceViewController.swift */; };
+		5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE91DC9B2ED00CA07F8 /* MyPageEditViewController.swift */; };
 		5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */; };
 		5AF25CEE1DC9B3E000CA07F8 /* RegistrationUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CED1DC9B3E000CA07F8 /* RegistrationUser.storyboard */; };
 		5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */; };
@@ -31,15 +31,14 @@
 		5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */; };
 		5AF25CF61DC9B40300CA07F8 /* RecommendationEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF51DC9B40300CA07F8 /* RecommendationEntrance.storyboard */; };
 		5AF25CF81DC9B41900CA07F8 /* MatchingEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF71DC9B41900CA07F8 /* MatchingEntrance.storyboard */; };
-		5AF25CFA1DC9B42100CA07F8 /* ProfileEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF91DC9B42100CA07F8 /* ProfileEntrance.storyboard */; };
-		5AF25CFC1DC9B42A00CA07F8 /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CFB1DC9B42A00CA07F8 /* ProfileEdit.storyboard */; };
+		5AF25CFA1DC9B42100CA07F8 /* MyPageEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */; };
+		5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */; };
 		5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */; };
 		5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */; };
 		5AF25D021DC9BB0800CA07F8 /* RegistrationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D011DC9BB0800CA07F8 /* RegistrationNavigationController.swift */; };
 		5AF25D041DC9BB1C00CA07F8 /* ChatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D031DC9BB1C00CA07F8 /* ChatNavigationController.swift */; };
 		5AF25D061DC9BB3F00CA07F8 /* RecommendationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */; };
 		5AF25D081DC9BB4C00CA07F8 /* MatchingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */; };
-		5AF25D0A1DC9BB5900CA07F8 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D091DC9BB5900CA07F8 /* ProfileNavigationController.swift */; };
 		5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +61,8 @@
 		5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		5AF25CE11DC9B17000CA07F8 /* RecommendationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CE31DC9B17900CA07F8 /* MatchingEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingEntranceViewController.swift; sourceTree = "<group>"; };
-		5AF25CE71DC9B2E400CA07F8 /* ProfileEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEntranceViewController.swift; sourceTree = "<group>"; };
-		5AF25CE91DC9B2ED00CA07F8 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		5AF25CE71DC9B2E400CA07F8 /* MyPageEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageEntranceViewController.swift; sourceTree = "<group>"; };
+		5AF25CE91DC9B2ED00CA07F8 /* MyPageEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageEditViewController.swift; sourceTree = "<group>"; };
 		5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CED1DC9B3E000CA07F8 /* RegistrationUser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationUser.storyboard; sourceTree = "<group>"; };
 		5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationTimeTable.storyboard; sourceTree = "<group>"; };
@@ -71,15 +70,14 @@
 		5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
 		5AF25CF51DC9B40300CA07F8 /* RecommendationEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecommendationEntrance.storyboard; sourceTree = "<group>"; };
 		5AF25CF71DC9B41900CA07F8 /* MatchingEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingEntrance.storyboard; sourceTree = "<group>"; };
-		5AF25CF91DC9B42100CA07F8 /* ProfileEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileEntrance.storyboard; sourceTree = "<group>"; };
-		5AF25CFB1DC9B42A00CA07F8 /* ProfileEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileEdit.storyboard; sourceTree = "<group>"; };
+		5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEntrance.storyboard; sourceTree = "<group>"; };
+		5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPageEdit.storyboard; sourceTree = "<group>"; };
 		5AF25CFD1DC9B78600CA07F8 /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		5AF25CFF1DC9B7E800CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		5AF25D011DC9BB0800CA07F8 /* RegistrationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D031DC9BB1C00CA07F8 /* ChatNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingNavigationController.swift; sourceTree = "<group>"; };
-		5AF25D091DC9BB5900CA07F8 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -266,14 +264,13 @@
 			name = Registration;
 			sourceTree = "<group>";
 		};
-		5AF25CC71DC9AE2100CA07F8 /* Profile */ = {
+		5AF25CC71DC9AE2100CA07F8 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25D091DC9BB5900CA07F8 /* ProfileNavigationController.swift */,
 				5AF25CE61DC9B27A00CA07F8 /* Entrance */,
 				5AF25CE51DC9B21900CA07F8 /* Edit */,
 			);
-			name = Profile;
+			name = MyPage;
 			sourceTree = "<group>";
 		};
 		5AF25CC81DC9AE6100CA07F8 /* Chat */ = {
@@ -339,13 +336,13 @@
 			name = Matching;
 			sourceTree = "<group>";
 		};
-		5AF25CCF1DC9AEF100CA07F8 /* Profile */ = {
+		5AF25CCF1DC9AEF100CA07F8 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25CF91DC9B42100CA07F8 /* ProfileEntrance.storyboard */,
-				5AF25CFB1DC9B42A00CA07F8 /* ProfileEdit.storyboard */,
+				5AF25CF91DC9B42100CA07F8 /* MyPageEntrance.storyboard */,
+				5AF25CFB1DC9B42A00CA07F8 /* MyPageEdit.storyboard */,
 			);
-			name = Profile;
+			name = MyPage;
 			sourceTree = "<group>";
 		};
 		5AF25CD21DC9AFA300CA07F8 /* Entrance */ = {
@@ -407,7 +404,7 @@
 		5AF25CE51DC9B21900CA07F8 /* Edit */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25CE91DC9B2ED00CA07F8 /* ProfileEditViewController.swift */,
+				5AF25CE91DC9B2ED00CA07F8 /* MyPageEditViewController.swift */,
 			);
 			name = Edit;
 			sourceTree = "<group>";
@@ -415,7 +412,7 @@
 		5AF25CE61DC9B27A00CA07F8 /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
-				5AF25CE71DC9B2E400CA07F8 /* ProfileEntranceViewController.swift */,
+				5AF25CE71DC9B2E400CA07F8 /* MyPageEntranceViewController.swift */,
 			);
 			name = Entrance;
 			sourceTree = "<group>";
@@ -426,7 +423,7 @@
 				5AF25CC81DC9AE6100CA07F8 /* Chat */,
 				5AF25CC91DC9AEAB00CA07F8 /* Recommendation */,
 				5AF25CCA1DC9AEBC00CA07F8 /* Matching */,
-				5AF25CC71DC9AE2100CA07F8 /* Profile */,
+				5AF25CC71DC9AE2100CA07F8 /* MyPage */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -438,7 +435,7 @@
 				5AF25CCC1DC9AED900CA07F8 /* Chat */,
 				5AF25CCD1DC9AEE400CA07F8 /* Recommendation */,
 				5AF25CCE1DC9AEEB00CA07F8 /* Matching */,
-				5AF25CCF1DC9AEF100CA07F8 /* Profile */,
+				5AF25CCF1DC9AEF100CA07F8 /* MyPage */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -524,9 +521,9 @@
 				5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */,
 				5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */,
 				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
-				5AF25CFC1DC9B42A00CA07F8 /* ProfileEdit.storyboard in Resources */,
+				5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */,
 				5A4972921DC66918006479DA /* Assets.xcassets in Resources */,
-				5AF25CFA1DC9B42100CA07F8 /* ProfileEntrance.storyboard in Resources */,
+				5AF25CFA1DC9B42100CA07F8 /* MyPageEntrance.storyboard in Resources */,
 				5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,19 +604,18 @@
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
 				5AF25CE41DC9B17900CA07F8 /* MatchingEntranceViewController.swift in Sources */,
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
-				5AF25CE81DC9B2E400CA07F8 /* ProfileEntranceViewController.swift in Sources */,
+				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5AF25D041DC9BB1C00CA07F8 /* ChatNavigationController.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
-				5AF25CEA1DC9B2ED00CA07F8 /* ProfileEditViewController.swift in Sources */,
+				5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */,
 				5AF25D001DC9B7E800CA07F8 /* NSObject+.swift in Sources */,
 				5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */,
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* RecommendationEntranceViewController.swift in Sources */,
 				5AF25D081DC9BB4C00CA07F8 /* MatchingNavigationController.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
-				5AF25D0A1DC9BB5900CA07F8 /* ProfileNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

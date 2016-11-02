@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile Edit View Controller-->
+        <!--My Page Edit View Controller-->
         <scene sceneID="gpl-As-sMa">
             <objects>
-                <viewController id="9We-YC-UAg" customClass="ProfileEditViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9We-YC-UAg" customClass="MyPageEditViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRh-zl-Tn7"/>
                         <viewControllerLayoutGuide type="bottom" id="xmU-0x-mOb"/>

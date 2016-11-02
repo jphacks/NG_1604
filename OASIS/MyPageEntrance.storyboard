@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile Entrance View Controller-->
+        <!--My Page Entrance View Controller-->
         <scene sceneID="2IP-Fg-thd">
             <objects>
-                <viewController id="27P-h5-3aA" customClass="ProfileEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="27P-h5-3aA" customClass="MyPageEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="twb-cY-LFC"/>
                         <viewControllerLayoutGuide type="bottom" id="xdD-he-MQi"/>
@@ -27,7 +27,7 @@
         <!--マイページ-->
         <scene sceneID="P6u-ly-jj8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aF-hS-Izt" customClass="ProfileNavigationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aF-hS-Izt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="マイページ" id="rIg-Ke-QfF"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

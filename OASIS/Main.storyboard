@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-748" y="184"/>
         </scene>
-        <!--ProfileEntrance-->
+        <!--MyPageEntrance-->
         <scene sceneID="TsG-gu-inG">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProfileEntrance" id="9wa-C3-uDx" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MyPageEntrance" id="9wa-C3-uDx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="マイページ" id="iS1-pA-bfB"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKt-Wv-Dhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
