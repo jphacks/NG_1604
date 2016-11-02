@@ -40,6 +40,7 @@
 		5AF25D061DC9BB3F00CA07F8 /* RecommendationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */; };
 		5AF25D081DC9BB4C00CA07F8 /* MatchingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */; };
 		5AF25D0A1DC9BB5900CA07F8 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D091DC9BB5900CA07F8 /* ProfileNavigationController.swift */; };
+		5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		5AF25D051DC9BB3E00CA07F8 /* RecommendationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D071DC9BB4C00CA07F8 /* MatchingNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingNavigationController.swift; sourceTree = "<group>"; };
 		5AF25D091DC9BB5900CA07F8 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,10 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CC51DC9AE0000CA07F8 /* Registration */,
-				5AF25CC81DC9AE6100CA07F8 /* Chat */,
-				5AF25CC91DC9AEAB00CA07F8 /* Recommendation */,
-				5AF25CCA1DC9AEBC00CA07F8 /* Matching */,
-				5AF25CC71DC9AE2100CA07F8 /* Profile */,
+				5AF25D0B1DC9BC1700CA07F8 /* Main */,
 			);
 			name = Presentation;
 			sourceTree = "<group>";
@@ -183,10 +182,7 @@
 			children = (
 				5A4972931DC66918006479DA /* LaunchScreen.storyboard */,
 				5AF25CCB1DC9AED200CA07F8 /* Registration */,
-				5AF25CCC1DC9AED900CA07F8 /* Chat */,
-				5AF25CCD1DC9AEE400CA07F8 /* Recommendation */,
-				5AF25CCE1DC9AEEB00CA07F8 /* Matching */,
-				5AF25CCF1DC9AEF100CA07F8 /* Profile */,
+				5AF25D0C1DC9BC2200CA07F8 /* Main */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -424,6 +420,29 @@
 			name = Entrance;
 			sourceTree = "<group>";
 		};
+		5AF25D0B1DC9BC1700CA07F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CC81DC9AE6100CA07F8 /* Chat */,
+				5AF25CC91DC9AEAB00CA07F8 /* Recommendation */,
+				5AF25CCA1DC9AEBC00CA07F8 /* Matching */,
+				5AF25CC71DC9AE2100CA07F8 /* Profile */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5AF25D0C1DC9BC2200CA07F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25D0D1DC9BC3B00CA07F8 /* Main.storyboard */,
+				5AF25CCC1DC9AED900CA07F8 /* Chat */,
+				5AF25CCD1DC9AEE400CA07F8 /* Recommendation */,
+				5AF25CCE1DC9AEEB00CA07F8 /* Matching */,
+				5AF25CCF1DC9AEF100CA07F8 /* Profile */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		DD7BCD65714E01ECC8A4062E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +522,7 @@
 				5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */,
 				5AF25CF81DC9B41900CA07F8 /* MatchingEntrance.storyboard in Resources */,
 				5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */,
+				5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */,
 				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
 				5AF25CFC1DC9B42A00CA07F8 /* ProfileEdit.storyboard in Resources */,
 				5A4972921DC66918006479DA /* Assets.xcassets in Resources */,

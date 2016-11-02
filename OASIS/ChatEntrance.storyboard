@@ -22,25 +22,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Us3-Di-jam" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="90"/>
+            <point key="canvasLocation" x="1895.2" y="89.505247376311857"/>
         </scene>
-        <!--Chat Navigation Controller-->
+        <!--チャット-->
         <scene sceneID="3Rg-lK-0ad">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vD5-Ur-fxy" customClass="ChatNavigationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="チャット" id="nlk-T7-tzV"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJx-92-jMP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PTk-kG-SfQ">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="DZR-se-YTH" kind="relationship" relationship="rootViewController" id="k5R-tl-21r"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey6-Yb-RXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160.80000000000001" y="89.505247376311857"/>
+            <point key="canvasLocation" x="1100" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>

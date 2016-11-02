@@ -24,11 +24,13 @@
             </objects>
             <point key="canvasLocation" x="1164" y="-237"/>
         </scene>
-        <!--Profile Navigation Controller-->
+        <!--マイページ-->
         <scene sceneID="P6u-ly-jj8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aF-hS-Izt" customClass="ProfileNavigationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="マイページ" id="rIg-Ke-QfF"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r21-HD-YfX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
