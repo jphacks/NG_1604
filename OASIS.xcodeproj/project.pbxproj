@@ -9,14 +9,30 @@
 /* Begin PBXBuildFile section */
 		4E5ED553B5AE88D92E36E11B /* Pods_OASIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
-		5A49728D1DC66918006479DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728C1DC66918006479DA /* ViewController.swift */; };
-		5A4972901DC66918006479DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A49728E1DC66918006479DA /* Main.storyboard */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
 		5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AB1DC66FBF006479DA /* AppConfig.swift */; };
 		5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AD1DC66FCD006479DA /* AppColor.swift */; };
 		5A4972B01DC66FE8006479DA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4972AF1DC66FE8006479DA /* AppError.swift */; };
 		5A4972B41DC670CC006479DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972B31DC670CC006479DA /* Localizable.strings */; };
+		5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */; };
+		5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */; };
+		5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */; };
+		5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */; };
+		5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */; };
+		5AF25CE21DC9B17000CA07F8 /* RecommendationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE11DC9B17000CA07F8 /* RecommendationListViewController.swift */; };
+		5AF25CE41DC9B17900CA07F8 /* MatchingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE31DC9B17900CA07F8 /* MatchingListViewController.swift */; };
+		5AF25CE81DC9B2E400CA07F8 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE71DC9B2E400CA07F8 /* ProfileDetailViewController.swift */; };
+		5AF25CEA1DC9B2ED00CA07F8 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CE91DC9B2ED00CA07F8 /* ProfileEditViewController.swift */; };
+		5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */; };
+		5AF25CEE1DC9B3E000CA07F8 /* RegistrationUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CED1DC9B3E000CA07F8 /* RegistrationUser.storyboard */; };
+		5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */; };
+		5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF11DC9B3F200CA07F8 /* ChatEntrance.storyboard */; };
+		5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */; };
+		5AF25CF61DC9B40300CA07F8 /* RecommendationList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF51DC9B40300CA07F8 /* RecommendationList.storyboard */; };
+		5AF25CF81DC9B41900CA07F8 /* MatchingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF71DC9B41900CA07F8 /* MatchingList.storyboard */; };
+		5AF25CFA1DC9B42100CA07F8 /* ProfileDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CF91DC9B42100CA07F8 /* ProfileDetail.storyboard */; };
+		5AF25CFC1DC9B42A00CA07F8 /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF25CFB1DC9B42A00CA07F8 /* ProfileEdit.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +40,6 @@
 		2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OASIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A49728C1DC66918006479DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5A49728F1DC66918006479DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A4972941DC66918006479DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A4972961DC66918006479DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +47,24 @@
 		5A4972AD1DC66FCD006479DA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		5A4972AF1DC66FE8006479DA /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		5A4972B31DC670CC006479DA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEntranceViewController.swift; sourceTree = "<group>"; };
+		5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserViewController.swift; sourceTree = "<group>"; };
+		5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTimeTableViewController.swift; sourceTree = "<group>"; };
+		5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEntranceViewController.swift; sourceTree = "<group>"; };
+		5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		5AF25CE11DC9B17000CA07F8 /* RecommendationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationListViewController.swift; sourceTree = "<group>"; };
+		5AF25CE31DC9B17900CA07F8 /* MatchingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingListViewController.swift; sourceTree = "<group>"; };
+		5AF25CE71DC9B2E400CA07F8 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		5AF25CE91DC9B2ED00CA07F8 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationEntrance.storyboard; sourceTree = "<group>"; };
+		5AF25CED1DC9B3E000CA07F8 /* RegistrationUser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationUser.storyboard; sourceTree = "<group>"; };
+		5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationTimeTable.storyboard; sourceTree = "<group>"; };
+		5AF25CF11DC9B3F200CA07F8 /* ChatEntrance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatEntrance.storyboard; sourceTree = "<group>"; };
+		5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		5AF25CF51DC9B40300CA07F8 /* RecommendationList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecommendationList.storyboard; sourceTree = "<group>"; };
+		5AF25CF71DC9B41900CA07F8 /* MatchingList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingList.storyboard; sourceTree = "<group>"; };
+		5AF25CF91DC9B42100CA07F8 /* ProfileDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileDetail.storyboard; sourceTree = "<group>"; };
+		5AF25CFB1DC9B42A00CA07F8 /* ProfileEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileEdit.storyboard; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +155,11 @@
 		5A4972A01DC66EE1006479DA /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				5A49728C1DC66918006479DA /* ViewController.swift */,
+				5AF25CC51DC9AE0000CA07F8 /* Registration */,
+				5AF25CC81DC9AE6100CA07F8 /* Chat */,
+				5AF25CC91DC9AEAB00CA07F8 /* Recommendation */,
+				5AF25CCA1DC9AEBC00CA07F8 /* Matching */,
+				5AF25CC71DC9AE2100CA07F8 /* Profile */,
 			);
 			name = Presentation;
 			sourceTree = "<group>";
@@ -132,7 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				5A4972931DC66918006479DA /* LaunchScreen.storyboard */,
-				5A49728E1DC66918006479DA /* Main.storyboard */,
+				5AF25CCB1DC9AED200CA07F8 /* Registration */,
+				5AF25CCC1DC9AED900CA07F8 /* Chat */,
+				5AF25CCD1DC9AEE400CA07F8 /* Recommendation */,
+				5AF25CCE1DC9AEEB00CA07F8 /* Matching */,
+				5AF25CCF1DC9AEF100CA07F8 /* Profile */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -201,6 +241,166 @@
 			children = (
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		5AF25CC51DC9AE0000CA07F8 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CD21DC9AFA300CA07F8 /* Entrance */,
+				5AF25CD31DC9AFAE00CA07F8 /* User */,
+				5AF25CD41DC9AFCC00CA07F8 /* TimeTable */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		5AF25CC71DC9AE2100CA07F8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CE61DC9B27A00CA07F8 /* Detail */,
+				5AF25CE51DC9B21900CA07F8 /* Edit */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5AF25CC81DC9AE6100CA07F8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CD91DC9B0B700CA07F8 /* Entrance */,
+				5AF25CDA1DC9B0C300CA07F8 /* Room */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		5AF25CC91DC9AEAB00CA07F8 /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CDF1DC9B12C00CA07F8 /* List */,
+			);
+			name = Recommendation;
+			sourceTree = "<group>";
+		};
+		5AF25CCA1DC9AEBC00CA07F8 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CE01DC9B15300CA07F8 /* List */,
+			);
+			name = Matching;
+			sourceTree = "<group>";
+		};
+		5AF25CCB1DC9AED200CA07F8 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CEB1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard */,
+				5AF25CED1DC9B3E000CA07F8 /* RegistrationUser.storyboard */,
+				5AF25CEF1DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		5AF25CCC1DC9AED900CA07F8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CF11DC9B3F200CA07F8 /* ChatEntrance.storyboard */,
+				5AF25CF31DC9B3F900CA07F8 /* ChatRoom.storyboard */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		5AF25CCD1DC9AEE400CA07F8 /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CF51DC9B40300CA07F8 /* RecommendationList.storyboard */,
+			);
+			name = Recommendation;
+			sourceTree = "<group>";
+		};
+		5AF25CCE1DC9AEEB00CA07F8 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CF71DC9B41900CA07F8 /* MatchingList.storyboard */,
+			);
+			name = Matching;
+			sourceTree = "<group>";
+		};
+		5AF25CCF1DC9AEF100CA07F8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CF91DC9B42100CA07F8 /* ProfileDetail.storyboard */,
+				5AF25CFB1DC9B42A00CA07F8 /* ProfileEdit.storyboard */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5AF25CD21DC9AFA300CA07F8 /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */,
+			);
+			name = Entrance;
+			sourceTree = "<group>";
+		};
+		5AF25CD31DC9AFAE00CA07F8 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		5AF25CD41DC9AFCC00CA07F8 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */,
+			);
+			name = TimeTable;
+			sourceTree = "<group>";
+		};
+		5AF25CD91DC9B0B700CA07F8 /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */,
+			);
+			name = Entrance;
+			sourceTree = "<group>";
+		};
+		5AF25CDA1DC9B0C300CA07F8 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CDD1DC9B0D800CA07F8 /* ChatRoomViewController.swift */,
+			);
+			name = Room;
+			sourceTree = "<group>";
+		};
+		5AF25CDF1DC9B12C00CA07F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CE11DC9B17000CA07F8 /* RecommendationListViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		5AF25CE01DC9B15300CA07F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CE31DC9B17900CA07F8 /* MatchingListViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		5AF25CE51DC9B21900CA07F8 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CE91DC9B2ED00CA07F8 /* ProfileEditViewController.swift */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
+		5AF25CE61DC9B27A00CA07F8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5AF25CE71DC9B2E400CA07F8 /* ProfileDetailViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		DD7BCD65714E01ECC8A4062E /* Pods */ = {
@@ -275,10 +475,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */,
+				5AF25CF61DC9B40300CA07F8 /* RecommendationList.storyboard in Resources */,
 				5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */,
+				5AF25CEE1DC9B3E000CA07F8 /* RegistrationUser.storyboard in Resources */,
+				5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */,
+				5AF25CF81DC9B41900CA07F8 /* MatchingList.storyboard in Resources */,
+				5AF25CEC1DC9B3D500CA07F8 /* RegistrationEntrance.storyboard in Resources */,
 				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
+				5AF25CFC1DC9B42A00CA07F8 /* ProfileEdit.storyboard in Resources */,
 				5A4972921DC66918006479DA /* Assets.xcassets in Resources */,
-				5A4972901DC66918006479DA /* Main.storyboard in Resources */,
+				5AF25CFA1DC9B42100CA07F8 /* ProfileDetail.storyboard in Resources */,
+				5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,9 +560,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
+				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
+				5AF25CE41DC9B17900CA07F8 /* MatchingListViewController.swift in Sources */,
+				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
+				5AF25CE81DC9B2E400CA07F8 /* ProfileDetailViewController.swift in Sources */,
+				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
-				5A49728D1DC66918006479DA /* ViewController.swift in Sources */,
+				5AF25CEA1DC9B2ED00CA07F8 /* ProfileEditViewController.swift in Sources */,
+				5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */,
+				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
+				5AF25CE21DC9B17000CA07F8 /* RecommendationListViewController.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,14 +578,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5A49728E1DC66918006479DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A49728F1DC66918006479DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A4972931DC66918006479DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
