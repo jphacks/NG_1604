@@ -6,7 +6,6 @@
 //  Copyright © 2016年 othlotech. All rights reserved.
 //
 
-
 import UIKit
 
 protocol Storyboardable: class {

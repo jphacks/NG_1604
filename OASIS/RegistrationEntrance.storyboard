@@ -8,7 +8,7 @@
         <!--Registration Entrance View Controller-->
         <scene sceneID="taZ-Np-WDm">
             <objects>
-                <viewController id="NkP-z8-XNf" customClass="RegistrationEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Entrance" id="NkP-z8-XNf" customClass="RegistrationEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d2J-kh-NIf"/>
                         <viewControllerLayoutGuide type="bottom" id="Hsq-kh-P8l"/>
@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1548" y="29"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Registration Controller-->
         <scene sceneID="xeO-6k-XC5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CIO-AN-Pem" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CIO-AN-Pem" customClass="RegistrationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cH-35-PvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

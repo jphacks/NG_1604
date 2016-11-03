@@ -19,12 +19,12 @@ class RegistrationEntranceViewController: UIViewController, Storyboardable, Erro
     // MARK: - Action
     @IBAction private func loginBtnDidTap(_ sender: UIButton) {
         let manager = LoginManager()
-        manager.logIn([.publicProfile], viewController: self) { result in
+        manager.logIn([.publicProfile], viewController: self) { [weak self] result in
             switch result {
             case .success(_, _, let token):
-                self.signIn(token: token)
+                self?.signIn(token: token)
             case .failed(let error):
-                self.handle(error: error)
+                self?.handle(error: error)
             case .cancelled:
                 break
             }
