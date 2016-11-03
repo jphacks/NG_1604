@@ -7,19 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 
-    // MARK: - Outlet
-
     // MARK: - Property
-    private let storyboardName = "RegistrationTimeTable"
-
-    // MARK: - Lifecycle
+    static let storyboardName = "RegistrationTimeTable"
 
     // MARK: - Action
+    @IBAction private func submitBtnDidTap(_ sender: UIButton) {
+        guard let _ = FIRAuth.auth()?.currentUser else { return }
 
-    // MARK: - Public
-
-    // MARK: - Private
+        SceneRouter.shared.route(scene: .main)
+    }
 }

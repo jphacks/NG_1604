@@ -12,3 +12,13 @@
 // Common
 "Ok" = "OK";
 "Cancel" = "キャンセル";
+
+// Error
+"Error.Connection.Title" = "読み込みに失敗しました";
+"Error.Connection.Message" = "ネットワーク環境をご確認の上、\nもう一度お試しください";
+"Error.Response.Title" = "データの取得に失敗しました";
+"Error.Response.Message" = "時間をおいて、\nもう一度お試しください";
+"Error.Unauthorized.Title" = "認証に失敗しました";
+"Error.Unauthorized.Message" = "ログインされているかご確認の上、\nもう一度お試しください";
+"Error.Unknown.Title" = "不明なエラーが発生しました";
+"Error.Unknown.Message" = "時間をおいて、\nもう一度お試しください";

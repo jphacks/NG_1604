@@ -13,7 +13,7 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "MatchingRecommendation"
+    static let storyboardName = "MatchingRecommendation"
 
     // MARK: - Lifecycle
 

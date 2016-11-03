@@ -13,7 +13,7 @@ class MatchingEntranceViewController: UIViewController, Storyboardable {
     // MARK: - Outlet
 
     // MARK: - Property
-    private let storyboardName = "MatchingEntrance"
+    static let storyboardName = "MatchingEntrance"
 
     // MARK: - Lifecycle
 

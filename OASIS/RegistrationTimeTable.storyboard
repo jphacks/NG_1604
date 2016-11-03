@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Registration Time Table View Controller-->
+        <!--空きコマ登録-->
         <scene sceneID="Ykm-cH-lKc">
             <objects>
-                <viewController id="3PZ-Rt-W53" customClass="RegistrationTimeTableViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="空きコマ登録" id="3PZ-Rt-W53" customClass="RegistrationTimeTableViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rXa-HD-3EO"/>
                         <viewControllerLayoutGuide type="bottom" id="6jM-bN-9RF"/>
@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="QUR-cE-e8q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R09-N4-fXf">
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="submitBtnDidTap:" destination="3PZ-Rt-W53" eventType="touchUpInside" id="gL0-gF-NzZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R09-N4-fXf" firstAttribute="centerY" secondItem="QUR-cE-e8q" secondAttribute="centerY" id="whn-N3-PJt"/>
+                            <constraint firstItem="R09-N4-fXf" firstAttribute="centerX" secondItem="QUR-cE-e8q" secondAttribute="centerX" id="yS8-gB-jyI"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
