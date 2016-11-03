@@ -15,8 +15,10 @@ class SceneRouter {
 
         var viewController: UIViewController {
             switch self {
-            case .registration: return RegistrationController.makeFromStoryboard()
-            case .main: return MainController.makeFromStoryboard()
+            case .registration:
+                return RegistrationController.makeFromStoryboard()
+            case .main:
+                return MainController.makeFromStoryboard()
             }
         }
     }
