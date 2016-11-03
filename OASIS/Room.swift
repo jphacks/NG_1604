@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Entity {
+struct Room {
 
     let user: User
     let messages: [Message]

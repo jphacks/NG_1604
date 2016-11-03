@@ -2,23 +2,70 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vD5-Ur-fxy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chat Entrance View Controller-->
+        <!--チャット-->
         <scene sceneID="dwF-9o-LHt">
             <objects>
-                <viewController id="DZR-se-YTH" customClass="ChatEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pwC-qN-TQI"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZLG-aC-0j9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="90s-Ul-RML">
+                <viewController title="チャット" id="DZR-se-YTH" customClass="ChatEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="uP4-Oe-eHg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" rowHeight="80" id="c0F-Ll-vsk" customClass="ChatEntranceRoomCell" customModule="OASIS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0F-Ll-vsk" id="reY-yg-Cf5">
+                                    <frame key="frameInset" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-xn-qxU">
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="D8X-xn-qxU" secondAttribute="height" multiplier="1:1" id="4zC-7F-10D"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひでちゃん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuR-6t-iDF">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近はウェイウェイしてるよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-Qf-CJr">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ZlZ-Qf-CJr" secondAttribute="trailing" constant="10" id="116-Fr-9p7"/>
+                                        <constraint firstItem="RuR-6t-iDF" firstAttribute="leading" secondItem="D8X-xn-qxU" secondAttribute="trailing" constant="10" id="778-mK-F6e"/>
+                                        <constraint firstAttribute="trailing" secondItem="RuR-6t-iDF" secondAttribute="trailing" constant="10" id="Sld-Eg-9oO"/>
+                                        <constraint firstItem="RuR-6t-iDF" firstAttribute="top" secondItem="reY-yg-Cf5" secondAttribute="top" constant="18" id="WPv-d4-8Nr"/>
+                                        <constraint firstAttribute="bottom" secondItem="D8X-xn-qxU" secondAttribute="bottom" constant="10" id="byz-55-ZrP"/>
+                                        <constraint firstItem="ZlZ-Qf-CJr" firstAttribute="top" secondItem="RuR-6t-iDF" secondAttribute="bottom" constant="5" id="gNb-0d-hmf"/>
+                                        <constraint firstItem="D8X-xn-qxU" firstAttribute="top" secondItem="reY-yg-Cf5" secondAttribute="top" constant="10" id="kHo-Us-Bmd"/>
+                                        <constraint firstItem="D8X-xn-qxU" firstAttribute="leading" secondItem="reY-yg-Cf5" secondAttribute="leading" constant="10" id="oCr-6w-N3E"/>
+                                        <constraint firstItem="ZlZ-Qf-CJr" firstAttribute="leading" secondItem="D8X-xn-qxU" secondAttribute="trailing" constant="10" id="vVX-XR-5fy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="messageLabel" destination="ZlZ-Qf-CJr" id="8ni-rJ-jbP"/>
+                                    <outlet property="nameLabel" destination="RuR-6t-iDF" id="KXw-wW-Xsg"/>
+                                    <outlet property="thumbView" destination="D8X-xn-qxU" id="RuS-6H-fso"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DZR-se-YTH" id="6Ry-e1-JRa"/>
+                            <outlet property="delegate" destination="DZR-se-YTH" id="tir-tf-BiU"/>
+                        </connections>
+                    </tableView>
                     <navigationItem key="navigationItem" id="fWN-rL-2fK"/>
+                    <connections>
+                        <outlet property="tableView" destination="uP4-Oe-eHg" id="FEn-CL-z7R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Us3-Di-jam" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

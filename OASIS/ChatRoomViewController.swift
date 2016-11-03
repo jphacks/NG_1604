@@ -15,6 +15,12 @@ class ChatRoomViewController: UIViewController, Storyboardable {
     // MARK: - Property
     static let storyboardName = "ChatRoom"
 
+    var room: Room? {
+        didSet {
+            
+        }
+    }
+
     // MARK: - Lifecycle
 
     // MARK: - Action

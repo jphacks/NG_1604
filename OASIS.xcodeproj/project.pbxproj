@@ -12,6 +12,7 @@
 		5A00513A1DCB244200F1632F /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0051391DCB244200F1632F /* Room.swift */; };
 		5A00513C1DCB245F00F1632F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00513B1DCB245F00F1632F /* User.swift */; };
 		5A00513E1DCB248400F1632F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00513D1DCB248400F1632F /* Message.swift */; };
+		5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
@@ -56,6 +57,7 @@
 		5A0051391DCB244200F1632F /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		5A00513B1DCB245F00F1632F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5A00513D1DCB248400F1632F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEntranceRoomCell.swift; sourceTree = "<group>"; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */,
+				5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */,
 			);
 			name = Entrance;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				5A00513A1DCB244200F1632F /* Room.swift in Sources */,
 				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,
 				5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */,
+				5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
 				5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */,
