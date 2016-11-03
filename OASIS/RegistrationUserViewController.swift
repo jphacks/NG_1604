@@ -9,23 +9,12 @@
 import UIKit
 import Firebase
 import FacebookCore
+import Himotoki
 
 class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHandlable {
 
     // MARK: - Property
     static let storyboardName = "RegistrationUser"
-//    struct UserProfileRequest: GraphRequestProtocol {
-//        let graphPath = "me"
-//        let parameters: [String : Any]? = [:]
-//        let accessToken: AccessToken?
-//        let httpMethod: GraphRequestHTTPMethod = .GET
-//        let apiVersion: GraphAPIVersion = .defaultVersion
-//
-//        init(token: String) {
-//            self.accessToken = AccessToken(authenticationToken: token)
-//        }
-//        
-//    }
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
@@ -33,7 +22,6 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
         user.getTokenWithCompletion { (token, error) in
             guard let token = token else { return }
-            print(token)
             self.fetchUserProfile(token: AccessToken(authenticationToken: token))
         }
 //        let request = user.profileChangeRequest()
@@ -51,7 +39,10 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Private
     private func fetchUserProfile(token: AccessToken) {
-        let graphRequest = GraphRequest(graphPath: "me", parameters: [:], accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion)
+        let params: [String: Any] = ["fields":"email,name,picture.width(1000).height(1000),gender,education", "locale": "ja_JP"]
+        let graphRequest = GraphRequest(graphPath: "me", parameters: params, accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion)
+
+        // Facebook Graph APIからプロフィールを取得
         graphRequest.start { (urlResponse, requestResult) in
             switch requestResult {
             case .failed(let error):
@@ -59,12 +50,11 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
                 break
             case .success(let graphResponse):
                 if let responseDictionary = graphResponse.dictionaryValue {
-                    dump(responseDictionary)
+                    let profile: FBProfile = try! decodeValue(responseDictionary)
+                    dump(profile)
                 }
             }
             
         }
-//        let connection = GraphRequestConnection()
-//        connection.add(<#T##request: T##T#>, batchEntryName: <#T##String?#>, completion: <#T##(HTTPURLResponse?, GraphRequestResult<T>) -> Void?##(HTTPURLResponse?, GraphRequestResult<T>) -> Void?##(HTTPURLResponse?, GraphRequestResult<T>) -> Void#>)
     }
 }

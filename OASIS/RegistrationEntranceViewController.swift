@@ -19,7 +19,7 @@ class RegistrationEntranceViewController: UIViewController, Storyboardable, Erro
     // MARK: - Action
     @IBAction private func loginBtnDidTap(_ sender: UIButton) {
         let manager = LoginManager()
-        manager.logIn([.publicProfile], viewController: self) { [weak self] result in
+        manager.logIn([.publicProfile, .custom("user_education_history")], viewController: self) { [weak self] result in
             switch result {
             case .success(_, _, let token):
                 self?.signIn(token: token)
