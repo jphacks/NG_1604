@@ -15,6 +15,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Property
     static let storyboardName = "RegistrationUser"
+    let ref = FIRDatabase.database().reference()
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
@@ -24,17 +25,6 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
             guard let token = token else { return }
             self.fetchUserProfile(token: AccessToken(authenticationToken: token))
         }
-//        let request = user.profileChangeRequest()
-//        request.displayName = "ヒデちゃん"
-//        request.photoURL = URL(string: "http://www.othlo.tech/images/members/hide.png")
-//        request.commitChanges { error in
-//            if let error = error {
-//                self.handle(error: error)
-//            } else {
-//                let next = RegistrationTimeTableViewController.makeFromStoryboard()
-//                self.navigationController?.pushViewController(next, animated: true)
-//            }
-//        }
     }
 
     // MARK: - Private
@@ -50,11 +40,27 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
                 break
             case .success(let graphResponse):
                 if let responseDictionary = graphResponse.dictionaryValue {
-                    let profile: FBProfile = try! decodeValue(responseDictionary)
+                    let profile: FBProfile = try! decodeValue(responseDictionary) //エラー処理はちゃんとやろう。
                     dump(profile)
+                    self.setProfile(profile: profile)
                 }
             }
             
         }
+    }
+
+    private func setProfile(profile: FBProfile) {
+        guard let user = FIRAuth.auth()?.currentUser else { return }
+
+        // Firebase Realtime Databaseに突っ込む
+        let data = ["name": profile.name, "univ": profile.education.last!.name, "gender": profile.gender]
+        ref.child("users/\(user.uid)").setValue(data) { (error, ref) in
+            if error != nil {
+                print(error)
+            } else {
+                print("done!")
+            }
+        }
+
     }
 }
