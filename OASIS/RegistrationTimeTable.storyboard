@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3PZ-Rt-W53">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,10 +30,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qVD-Th-A6E">
-                                <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qVD-Th-A6E">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qVD-Th-A6E" secondAttribute="height" multiplier="1:1" id="UKv-sf-DzF"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kit-UQ-LKT">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -55,15 +57,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-R7-0Jd">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ofA-eC-Gda"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKG-E2-GkC">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FTF-UA-9Ij"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qVD-Th-A6E" firstAttribute="leading" secondItem="jKG-E2-GkC" secondAttribute="trailing" id="FG7-2a-MYL"/>
                             <constraint firstItem="6jM-bN-9RF" firstAttribute="top" secondItem="2qj-SC-cKz" secondAttribute="bottom" constant="30" id="IfQ-iU-ykV"/>
+                            <constraint firstItem="qVD-Th-A6E" firstAttribute="centerY" secondItem="QUR-cE-e8q" secondAttribute="centerY" id="K23-BW-Mnn"/>
+                            <constraint firstItem="aIS-R7-0Jd" firstAttribute="leading" secondItem="qVD-Th-A6E" secondAttribute="leading" id="QWF-GH-v5m"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wes-18-jo0" secondAttribute="trailing" constant="30" id="TD1-Fg-0lv"/>
+                            <constraint firstItem="jKG-E2-GkC" firstAttribute="top" secondItem="qVD-Th-A6E" secondAttribute="top" id="TLR-1R-nZO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2qj-SC-cKz" secondAttribute="trailing" constant="30" id="V9j-QL-ILK"/>
                             <constraint firstItem="wes-18-jo0" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leadingMargin" constant="30" id="aAu-ki-7PM"/>
+                            <constraint firstItem="qVD-Th-A6E" firstAttribute="top" secondItem="aIS-R7-0Jd" secondAttribute="bottom" id="dxe-uM-1T4"/>
                             <constraint firstItem="2qj-SC-cKz" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leadingMargin" constant="30" id="kSa-KE-ngL"/>
                             <constraint firstItem="wes-18-jo0" firstAttribute="top" secondItem="rXa-HD-3EO" secondAttribute="bottom" constant="30" id="mwd-RN-tWb"/>
+                            <constraint firstItem="aIS-R7-0Jd" firstAttribute="width" secondItem="qVD-Th-A6E" secondAttribute="width" id="vQh-Xp-46E"/>
+                            <constraint firstItem="jKG-E2-GkC" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leading" constant="20" id="wdr-T9-ca1"/>
+                            <constraint firstItem="jKG-E2-GkC" firstAttribute="height" secondItem="qVD-Th-A6E" secondAttribute="height" id="yYP-hD-oed"/>
+                            <constraint firstAttribute="trailing" secondItem="qVD-Th-A6E" secondAttribute="trailing" constant="20" id="zdc-OH-U3r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="空きコマ登録" id="1vY-fg-2fH">
@@ -74,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jN4-67-DIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="4"/>
+            <point key="canvasLocation" x="13.6" y="3.1484257871064472"/>
         </scene>
     </scenes>
 </document>
