@@ -18,6 +18,6 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
         guard let _ = FIRAuth.auth()?.currentUser else { return }
 
-//        SceneRouter.shared.route(scene: .main)
+        SceneRouter.shared.route(scene: .main)
     }
 }
