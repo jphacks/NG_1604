@@ -29,7 +29,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Private
     private func fetchUserProfile(token: AccessToken) {
-        let params: [String: Any] = ["fields":"email,name,picture.width(1000).height(1000),gender,education", "locale": "ja_JP"]
+        let params: [String: Any] = ["fields":"email,name,picture.width(300).height(300),gender,education", "locale": "ja_JP"]
         let graphRequest = GraphRequest(graphPath: "me", parameters: params, accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion)
 
         // Facebook Graph APIからプロフィールを取得
@@ -40,12 +40,12 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
                 break
             case .success(let graphResponse):
                 if let responseDictionary = graphResponse.dictionaryValue {
+                    let jsonData = try! JSONSerialization.data(withJSONObject: responseDictionary, options: .prettyPrinted)
+                    print(NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue))
                     let profile: FBProfile = try! decodeValue(responseDictionary) //エラー処理はちゃんとやろう。
-                    dump(profile)
                     self.setProfile(profile: profile)
                 }
             }
-            
         }
     }
 
@@ -53,7 +53,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
         guard let user = FIRAuth.auth()?.currentUser else { return }
 
         // Firebase Realtime Databaseに突っ込む
-        let data = ["name": profile.name, "univ": profile.education.last!.name, "gender": profile.gender]
+        let data = ["name": profile.name, "univ": profile.education.last!.name, "gender": profile.gender, "profile_img": profile.profile_img, "department": profile.education.last?.concentration?.last?.name ?? ""]
         ref.child("users/\(user.uid)").setValue(data) { (error, ref) in
             if error != nil {
                 print(error)
