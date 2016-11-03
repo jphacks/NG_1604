@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class MatchingEntranceViewController: UIViewController, Storyboardable {
+class MatchingEntranceViewController: ButtonBarPagerTabStripViewController, Storyboardable {
 
     // MARK: - Outlet
 
@@ -16,6 +17,9 @@ class MatchingEntranceViewController: UIViewController, Storyboardable {
     static let storyboardName = "MatchingEntrance"
 
     // MARK: - Lifecycle
+    override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        return [MatchingRecommendationViewController.makeFromStoryboard(), MatchingResultViewController.makeFromStoryboard()]
+    }
 
     // MARK: - Action
 
