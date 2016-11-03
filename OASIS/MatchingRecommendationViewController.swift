@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
 class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
@@ -22,4 +23,11 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
     // MARK: - Public
 
     // MARK: - Private
+}
+
+// MARK: - IndicatorInfoProvider
+extension MatchingRecommendationViewController: IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "候補")
+    }
 }

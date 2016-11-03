@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pS1-Y9-Dt3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pS1-Y9-Dt3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -8,7 +8,7 @@
         <!--Matching Entrance View Controller-->
         <scene sceneID="tZO-iu-AWw">
             <objects>
-                <viewController id="3C8-QO-rhp" customClass="MatchingEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="3C8-QO-rhp" customClass="MatchingEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lbh-7c-feq"/>
                         <viewControllerLayoutGuide type="bottom" id="NLv-c1-I2U"/>
@@ -16,13 +16,51 @@
                     <view key="view" contentMode="scaleToFill" id="yT7-dS-KH7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-nG-gDf"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HM4-4J-pNI" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FoK-DR-YbH"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pLR-CA-uP1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TitleCell" id="jgf-Ig-SvM">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HM4-4J-pNI" firstAttribute="leading" secondItem="yT7-dS-KH7" secondAttribute="leading" id="1g4-1l-q6O"/>
+                            <constraint firstItem="HM4-4J-pNI" firstAttribute="top" secondItem="Lbh-7c-feq" secondAttribute="bottom" id="Mui-qN-7ZR"/>
+                            <constraint firstItem="fEr-nG-gDf" firstAttribute="top" secondItem="HM4-4J-pNI" secondAttribute="bottom" id="SME-bt-NIR"/>
+                            <constraint firstItem="fEr-nG-gDf" firstAttribute="leading" secondItem="yT7-dS-KH7" secondAttribute="leading" id="isp-Ba-fkF"/>
+                            <constraint firstAttribute="trailing" secondItem="HM4-4J-pNI" secondAttribute="trailing" id="jOw-4g-NMr"/>
+                            <constraint firstItem="NLv-c1-I2U" firstAttribute="top" secondItem="fEr-nG-gDf" secondAttribute="bottom" id="l4E-9f-LIb"/>
+                            <constraint firstAttribute="trailing" secondItem="fEr-nG-gDf" secondAttribute="trailing" id="u8F-5m-bVK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HAd-vX-xR3"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="HM4-4J-pNI" id="CYO-yZ-myr"/>
+                        <outlet property="containerView" destination="fEr-nG-gDf" id="zaf-bK-Btd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA3-wi-CMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="-179"/>
+            <point key="canvasLocation" x="1232.8" y="-179.46026986506749"/>
         </scene>
         <!--マッチング-->
         <scene sceneID="ShA-7R-cY9">

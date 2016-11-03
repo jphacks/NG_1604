@@ -11,5 +11,5 @@ import UIKit
 final class RegistrationController: UINavigationController, Storyboardable {
 
     // MARK: - Property
-    static let storyboardName = "Registration"
+    static let storyboardName = "RegistrationEntrance"
 }
