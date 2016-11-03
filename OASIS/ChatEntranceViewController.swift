@@ -29,7 +29,6 @@ class ChatEntranceViewController: UIViewController, Storyboardable {
     // MARK: - Private
 }
 
-
 // MARK: - UITableViewDataSource
 extension ChatEntranceViewController: UITableViewDataSource {
 
