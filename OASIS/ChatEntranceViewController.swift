@@ -48,6 +48,7 @@ extension ChatEntranceViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let next = ChatRoomViewController.makeFromStoryboard()
+        next.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(next, animated: true)
     }
 }
