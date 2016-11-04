@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FacebookCore
 import Himotoki
+import SwiftTask
 
 class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHandlable {
 
@@ -20,47 +21,69 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
         guard let user = FIRAuth.auth()?.currentUser else { return }
-
-        user.getTokenWithCompletion { (token, error) in
-            guard let token = token else { return }
-            self.fetchUserProfile(token: AccessToken(authenticationToken: token))
-        }
     }
 
     // MARK: - Private
-    private func fetchUserProfile(token: AccessToken) {
-        let params: [String: Any] = ["fields":"email,name,picture.width(300).height(300),gender,education", "locale": "ja_JP"]
-        let graphRequest = GraphRequest(graphPath: "me", parameters: params, accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion)
-
-        // Facebook Graph APIからプロフィールを取得
-        graphRequest.start { (urlResponse, requestResult) in
-            switch requestResult {
-            case .failed(let error):
-                print("error in graph request:", error)
-                break
-            case .success(let graphResponse):
-                if let responseDictionary = graphResponse.dictionaryValue {
-                    let jsonData = try! JSONSerialization.data(withJSONObject: responseDictionary, options: .prettyPrinted)
-                    print(NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue))
-                    let profile: FBProfile = try! decodeValue(responseDictionary) //エラー処理はちゃんとやろう。
-                    self.setProfile(profile: profile)
+    private func getToken(user: FIRUser) -> Task<Float, AccessToken, Error?> {
+        return Task<Float, AccessToken, Error?> { _, fulfill, reject, _ in
+            user.getTokenWithCompletion { (token, error) in
+                if error != nil {
+                    reject(error)
+                    return
+                } else if let token = token {
+                    fulfill(AccessToken(authenticationToken: token))
                 }
             }
         }
     }
 
-    private func setProfile(profile: FBProfile) {
-        guard let user = FIRAuth.auth()?.currentUser else { return }
+    // Facebook Graph APIからプロフィールを取得
+    private func fetchUserProfile(token: AccessToken) -> Task<Float, FBProfile, Error?> {
+        return Task<Float, FBProfile, Error?> { _, fulfill, reject, _ in
+            let params: [String: Any] = ["fields":"email,name,picture.width(300).height(300),gender,education", "locale": "ja_JP"]
+            let graphRequest = GraphRequest(graphPath: "me", parameters: params, accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion)
 
-        // Firebase Realtime Databaseに突っ込む
-        let data = ["name": profile.name, "univ": profile.education.last!.name, "gender": profile.gender, "profile_img": profile.profile_img, "department": profile.education.last?.concentration?.last?.name ?? ""]
-        ref.child("users/\(user.uid)").setValue(data) { (error, ref) in
-            if error != nil {
-                print(error)
-            } else {
-                print("done!")
+            graphRequest.start({ (urlResponse, requestResult) in
+                switch requestResult {
+                case .failed(let error):
+                    reject(error)
+                    break
+                case .success(let graphResponse):
+                    guard let response = graphResponse.dictionaryValue else {
+                        reject(nil)
+                        return
+                    }
+
+                    print(graphResponse.stringValue)
+                    do { fulfill(try decodeValue(response))
+                    } catch { reject(error) }
+                    break
+                }
+            })
+        }
+    }
+
+    // Firebase Realtime Databaseに突っ込む
+    private func setProfile(profile: FBProfile) -> Task<Float, String?, Error?> {
+        return Task<Float, String?, Error?> { _, fulfill, reject, _ in
+            guard let user = FIRAuth.auth()?.currentUser else {
+                reject(nil)
+                return
+            }
+
+            let data = ["name": profile.name,
+                        "univ": profile.education.last!.name,
+                        "gender": profile.gender,
+                        "profile_img": profile.profileImage,
+                        "department": profile.education.last?.concentration?.last?.name ?? ""]
+
+            self.ref.child("users/\(user.uid)").setValue(data) { (error, ref) in
+                if error != nil {
+                    reject(error)
+                } else {
+                    fulfill(nil)
+                }
             }
         }
-
     }
 }
