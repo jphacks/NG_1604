@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftTask
 
 class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 
@@ -17,11 +18,14 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
     // MARK: - Properties
     static let storyboardName = "RegistrationTimeTable"
     let emptyCellIdentifier = "EmptyCell"
+    let selectedCellIdentifier = "SelectedCell"
     let cellMargin: CGFloat = 6.0
     lazy var cellSize: CGSize = {
         let cellWidth: CGFloat = (self.collectionView.frame.size.width - self.cellMargin*4)/5
         return CGSize(width: cellWidth, height: cellWidth)
     }()
+
+    let schedule = ClassSchedule()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -33,23 +37,22 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
-        guard let _ = FIRAuth.auth()?.currentUser else { return }
+        guard let user = FIRAuth.auth()?.currentUser else { return }
 
+        
         SceneRouter.shared.route(scene: .main)
+    }
+
+    // MARK: - Private
+    private func updateSchedule(schedule: ClassSchedule) {
     }
 }
 
 // MARK: - UICollectionViewDelegate
 extension RegistrationTimeTableViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-
-        if cell.reuseIdentifier == emptyCellIdentifier {
-
-        } else {
-
-        }
-
+//        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        schedule.toggle(at: indexPath.row)
         collectionView.reloadItems(at: [indexPath])
     }
 }
@@ -57,11 +60,21 @@ extension RegistrationTimeTableViewController: UICollectionViewDelegate {
 // MARK: - UICollectionViewDataSource
 extension RegistrationTimeTableViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 25
+        return schedule.classes.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: emptyCellIdentifier, for: indexPath)
+        var cell: UICollectionViewCell
+
+        switch (schedule.get(at: indexPath.row)) {
+        case true:
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: selectedCellIdentifier, for: indexPath)
+            break
+        case false:
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: emptyCellIdentifier, for: indexPath)
+            break
+        }
+
         return cell
     }
 }
