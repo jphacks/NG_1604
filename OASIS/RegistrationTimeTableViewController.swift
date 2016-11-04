@@ -26,7 +26,7 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -45,9 +45,9 @@ extension RegistrationTimeTableViewController: UICollectionViewDelegate {
         guard let cell = collectionView.cellForItem(at: indexPath) else { return }
 
         if cell.reuseIdentifier == emptyCellIdentifier {
-            
+
         } else {
-            
+
         }
 
         collectionView.reloadItems(at: [indexPath])
