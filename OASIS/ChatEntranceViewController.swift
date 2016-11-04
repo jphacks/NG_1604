@@ -16,10 +16,6 @@ class ChatEntranceViewController: UIViewController, Storyboardable {
     // MARK: - Property
     static let storyboardName = "ChatEntrance"
 
-    fileprivate let rooms: [Room] = [
-        Room(user: User(name: "ひでちゃん", image: URL(string: "http://www.othlo.tech/images/members/hide.png")!), messages: [])
-    ]
-
     // MARK: - Lifecycle
 
     // MARK: - Action
@@ -33,14 +29,14 @@ class ChatEntranceViewController: UIViewController, Storyboardable {
 extension ChatEntranceViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rooms.count
+        return Mock.rooms.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RoomCell", for: indexPath as IndexPath)
 
         if let roomCell = cell as? ChatEntranceRoomCell {
-            roomCell.room = rooms[indexPath.row]
+            roomCell.room = Mock.rooms[indexPath.row]
         }
 
         return cell

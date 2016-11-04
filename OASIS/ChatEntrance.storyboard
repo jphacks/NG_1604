@@ -10,7 +10,7 @@
         <scene sceneID="dwF-9o-LHt">
             <objects>
                 <viewController title="チャット" id="DZR-se-YTH" customClass="ChatEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="uP4-Oe-eHg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="uP4-Oe-eHg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -19,16 +19,21 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0F-Ll-vsk" id="reY-yg-Cf5">
-                                    <frame key="frameInset" width="375" height="80"/>
+                                    <frame key="frameInset" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-xn-qxU">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-xn-qxU" customClass="DesignableImageView" customModule="Spring">
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="D8X-xn-qxU" secondAttribute="height" multiplier="1:1" id="4zC-7F-10D"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひでちゃん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuR-6t-iDF">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -46,7 +51,7 @@
                                         <constraint firstAttribute="bottom" secondItem="D8X-xn-qxU" secondAttribute="bottom" constant="10" id="byz-55-ZrP"/>
                                         <constraint firstItem="ZlZ-Qf-CJr" firstAttribute="top" secondItem="RuR-6t-iDF" secondAttribute="bottom" constant="5" id="gNb-0d-hmf"/>
                                         <constraint firstItem="D8X-xn-qxU" firstAttribute="top" secondItem="reY-yg-Cf5" secondAttribute="top" constant="10" id="kHo-Us-Bmd"/>
-                                        <constraint firstItem="D8X-xn-qxU" firstAttribute="leading" secondItem="reY-yg-Cf5" secondAttribute="leading" constant="10" id="oCr-6w-N3E"/>
+                                        <constraint firstItem="D8X-xn-qxU" firstAttribute="leading" secondItem="reY-yg-Cf5" secondAttribute="leading" constant="16" id="oCr-6w-N3E"/>
                                         <constraint firstItem="ZlZ-Qf-CJr" firstAttribute="leading" secondItem="D8X-xn-qxU" secondAttribute="trailing" constant="10" id="vVX-XR-5fy"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -62,7 +67,7 @@
                             <outlet property="delegate" destination="DZR-se-YTH" id="tir-tf-BiU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fWN-rL-2fK"/>
+                    <navigationItem key="navigationItem" title="チャット一覧" id="fWN-rL-2fK"/>
                     <connections>
                         <outlet property="tableView" destination="uP4-Oe-eHg" id="FEn-CL-z7R"/>
                     </connections>
@@ -71,11 +76,11 @@
             </objects>
             <point key="canvasLocation" x="1895.2" y="89.505247376311857"/>
         </scene>
-        <!--チャット-->
+        <!--Navigation Controller-->
         <scene sceneID="3Rg-lK-0ad">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vD5-Ur-fxy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="チャット" id="nlk-T7-tzV"/>
+                    <tabBarItem key="tabBarItem" title="" id="nlk-T7-tzV"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJx-92-jMP">

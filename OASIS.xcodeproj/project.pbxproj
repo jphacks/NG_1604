@@ -22,6 +22,7 @@
 		5A4972B41DC670CC006479DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972B31DC670CC006479DA /* Localizable.strings */; };
 		5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */; };
 		5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */; };
+		5AE440EF1DCCEE26001B6830 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE440EE1DCCEE26001B6830 /* Mock.swift */; };
 		5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */; };
 		5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */; };
 		5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */; };
@@ -72,6 +73,7 @@
 		5A4972B31DC670CC006479DA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		5AE440EE1DCCEE26001B6830 /* Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserViewController.swift; sourceTree = "<group>"; };
 		5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTimeTableViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				5A4972AB1DC66FBF006479DA /* AppConfig.swift */,
 				5A4972AD1DC66FCD006479DA /* AppColor.swift */,
 				5A4972AF1DC66FE8006479DA /* AppError.swift */,
+				5AE440EE1DCCEE26001B6830 /* Mock.swift */,
 				5AF25D271DCA31FC00CA07F8 /* Common */,
 				5AF25D281DCA320600CA07F8 /* Model */,
 				5A4972A01DC66EE1006479DA /* ViewControllers */,
@@ -621,6 +624,7 @@
 				D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */,
 				5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */,
 				5A00513A1DCB244200F1632F /* Room.swift in Sources */,
+				5AE440EF1DCCEE26001B6830 /* Mock.swift in Sources */,
 				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,
 				5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */,
 				5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */,
