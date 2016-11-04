@@ -23,11 +23,11 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
         guard let user = FIRAuth.auth()?.currentUser else { return }
 
         getToken(user: user)
-            .success { (token) -> Task<Float, FBProfile, Error?> in
+            .success { token -> Task<Float, FBProfile, Error?> in
                 return self.fetchUserProfile(token: token)
-            }.success { (profile) -> Task<Float, String, Error?> in
+            }.success { profile -> Task<Float, String, Error?> in
                 return self.setProfile(profile: profile)
-            }.success { (result) -> Void in
+            }.success { result -> Void in
                 print(result)
                 return
             }
