@@ -23,6 +23,8 @@
 		5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */; };
 		5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */; };
 		5AE440EF1DCCEE26001B6830 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE440EE1DCCEE26001B6830 /* Mock.swift */; };
+		5AE440F31DCD0446001B6830 /* FBSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE440F21DCD0446001B6830 /* FBSchool.swift */; };
+		5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE440F41DCD0450001B6830 /* FBDepartment.swift */; };
 		5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */; };
 		5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */; };
 		5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */; };
@@ -74,6 +76,8 @@
 		5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		5AE440EE1DCCEE26001B6830 /* Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		5AE440F21DCD0446001B6830 /* FBSchool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBSchool.swift; sourceTree = "<group>"; };
+		5AE440F41DCD0450001B6830 /* FBDepartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBDepartment.swift; sourceTree = "<group>"; };
 		5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserViewController.swift; sourceTree = "<group>"; };
 		5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTimeTableViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +211,9 @@
 				5A00513B1DCB245F00F1632F /* User.swift */,
 				5A0051391DCB244200F1632F /* Room.swift */,
 				5A00513D1DCB248400F1632F /* Message.swift */,
+				D12FFCE01DCB5490001B272F /* FBProfile.swift */,
+				5AE440F21DCD0446001B6830 /* FBSchool.swift */,
+				5AE440F41DCD0450001B6830 /* FBDepartment.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -214,8 +221,7 @@
 		5A4972A51DC66F50006479DA /* ValueObjects */ = {
 			isa = PBXGroup;
 			children = (
-				D12FFCE01DCB5490001B272F /* FBProfile.swift */,
-				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
+				D1CC47301DCC982600059E1C /* DayOfWeek.swift */,
 			);
 			name = ValueObjects;
 			sourceTree = "<group>";
@@ -232,7 +238,7 @@
 		5A4972A91DC66F82006479DA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D1CC47301DCC982600059E1C /* DayOfWeek.swift */,
+				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -613,6 +619,7 @@
 				5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */,
 				5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */,
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
+				5AE440F31DCD0446001B6830 /* FBSchool.swift in Sources */,
 				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
@@ -638,6 +645,7 @@
 				5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */,
 				5A00513E1DCB248400F1632F /* Message.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
+				5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */,
 				5A00513C1DCB245F00F1632F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
