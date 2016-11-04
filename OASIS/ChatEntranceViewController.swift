@@ -11,6 +11,7 @@ import UIKit
 class ChatEntranceViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
+    @IBOutlet private var tableView: UITableView!
 
     // MARK: - Property
     static let storyboardName = "ChatEntrance"
@@ -22,4 +23,32 @@ class ChatEntranceViewController: UIViewController, Storyboardable {
     // MARK: - Public
 
     // MARK: - Private
+}
+
+// MARK: - UITableViewDataSource
+extension ChatEntranceViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Mock.rooms.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RoomCell", for: indexPath as IndexPath)
+
+        if let roomCell = cell as? ChatEntranceRoomCell {
+            roomCell.room = Mock.rooms[indexPath.row]
+        }
+
+        return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension ChatEntranceViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let next = ChatRoomViewController.makeFromStoryboard()
+        next.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(next, animated: true)
+    }
 }

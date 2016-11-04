@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4E5ED553B5AE88D92E36E11B /* Pods_OASIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */; };
 		5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0051371DCB193D00F1632F /* RegistrationController.swift */; };
+		5A00513A1DCB244200F1632F /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0051391DCB244200F1632F /* Room.swift */; };
+		5A00513C1DCB245F00F1632F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00513B1DCB245F00F1632F /* User.swift */; };
+		5A00513E1DCB248400F1632F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00513D1DCB248400F1632F /* Message.swift */; };
+		5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
@@ -18,6 +22,7 @@
 		5A4972B41DC670CC006479DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972B31DC670CC006479DA /* Localizable.strings */; };
 		5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */; };
 		5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */; };
+		5AE440EF1DCCEE26001B6830 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE440EE1DCCEE26001B6830 /* Mock.swift */; };
 		5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */; };
 		5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */; };
 		5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */; };
@@ -53,6 +58,10 @@
 		13FBAB8F7FBB424EB346BF5B /* Pods-OASIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.release.xcconfig"; sourceTree = "<group>"; };
 		2784C17D06A229DCAC6A2A52 /* Pods_OASIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OASIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0051371DCB193D00F1632F /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		5A0051391DCB244200F1632F /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		5A00513B1DCB245F00F1632F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A00513D1DCB248400F1632F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEntranceRoomCell.swift; sourceTree = "<group>"; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +73,7 @@
 		5A4972B31DC670CC006479DA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5AD4ABD71DCA3622009CF1A5 /* SceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		5AD4ABDB1DCA3723009CF1A5 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		5AE440EE1DCCEE26001B6830 /* Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		5AF25CD01DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEntranceViewController.swift; sourceTree = "<group>"; };
 		5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserViewController.swift; sourceTree = "<group>"; };
 		5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTimeTableViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 				5A4972AB1DC66FBF006479DA /* AppConfig.swift */,
 				5A4972AD1DC66FCD006479DA /* AppColor.swift */,
 				5A4972AF1DC66FE8006479DA /* AppError.swift */,
+				5AE440EE1DCCEE26001B6830 /* Mock.swift */,
 				5AF25D271DCA31FC00CA07F8 /* Common */,
 				5AF25D281DCA320600CA07F8 /* Model */,
 				5A4972A01DC66EE1006479DA /* ViewControllers */,
@@ -193,6 +204,9 @@
 		5A4972A41DC66F49006479DA /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				5A00513B1DCB245F00F1632F /* User.swift */,
+				5A0051391DCB244200F1632F /* Room.swift */,
+				5A00513D1DCB248400F1632F /* Message.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -338,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CDB1DC9B0D000CA07F8 /* ChatEntranceViewController.swift */,
+				5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */,
 			);
 			name = Entrance;
 			sourceTree = "<group>";
@@ -608,8 +623,11 @@
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
 				D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */,
 				5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */,
+				5A00513A1DCB244200F1632F /* Room.swift in Sources */,
+				5AE440EF1DCCEE26001B6830 /* Mock.swift in Sources */,
 				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,
 				5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */,
+				5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
 				5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */,
@@ -618,7 +636,9 @@
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */,
 				5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */,
+				5A00513E1DCB248400F1632F /* Message.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
+				5A00513C1DCB245F00F1632F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
