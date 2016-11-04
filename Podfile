@@ -15,6 +15,7 @@ target 'OASIS' do
 
     # util
     pod 'SwiftTask', git: 'https://github.com/ReactKit/SwiftTask.git', branch: 'swift/3.0'
+    pod 'Himotoki', '~> 3.0'
 
     # view
     pod 'Kingfisher', '~> 3.0'
