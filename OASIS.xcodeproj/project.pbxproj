@@ -45,6 +45,7 @@
 		5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D231DCA2C0300CA07F8 /* String+.swift */; };
 		5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D251DCA314C00CA07F8 /* NSObject+.swift */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
+		D1CC472D1DCC903900059E1C /* RegistrationUserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472C1DCC903900059E1C /* RegistrationUserFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		5AF25D231DCA2C0300CA07F8 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		5AF25D251DCA314C00CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
+		D1CC472C1DCC903900059E1C /* RegistrationUserFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserFormViewController.swift; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CD51DC9B09300CA07F8 /* RegistrationUserViewController.swift */,
+				D1CC472C1DCC903900059E1C /* RegistrationUserFormViewController.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
 				5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
+				D1CC472D1DCC903900059E1C /* RegistrationUserFormViewController.swift in Sources */,
 				D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */,
 				5AD4ABD81DCA3622009CF1A5 /* SceneRouter.swift in Sources */,
 				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Y8-3Y-ZWl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Y8-3Y-ZWl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7J-AM-XA4">
+                                <connections>
+                                    <segue destination="YV5-61-SFe" kind="embed" id="kVe-9a-CVX"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bR-6q-dnn">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tpR-NO-5fc">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tpR-NO-5fc" secondAttribute="height" multiplier="1:1" id="1TJ-E9-GJb"/>
+                                    <constraint firstAttribute="height" constant="100" id="Kv4-Zt-6XM"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olm-2V-riC">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="完了"/>
                                 <connections>
                                     <action selector="submitBtnDidTap:" destination="9Y8-3Y-ZWl" eventType="touchUpInside" id="RVJ-Aq-RqP"/>
@@ -26,8 +46,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="olm-2V-riC" firstAttribute="centerY" secondItem="bvt-9r-Bda" secondAttribute="centerY" id="E8z-Wc-Lgf"/>
-                            <constraint firstItem="olm-2V-riC" firstAttribute="centerX" secondItem="bvt-9r-Bda" secondAttribute="centerX" id="mcx-sa-eiW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="olm-2V-riC" secondAttribute="trailing" constant="40" id="CIF-7V-nHJ"/>
+                            <constraint firstItem="Qlc-zB-Vn7" firstAttribute="top" secondItem="olm-2V-riC" secondAttribute="bottom" constant="30" id="McG-ks-TQP"/>
+                            <constraint firstItem="olm-2V-riC" firstAttribute="leading" secondItem="bvt-9r-Bda" secondAttribute="leadingMargin" constant="40" id="NSQ-vU-uHo"/>
+                            <constraint firstItem="0bR-6q-dnn" firstAttribute="leading" secondItem="bvt-9r-Bda" secondAttribute="leadingMargin" constant="30" id="X3h-zV-lqj"/>
+                            <constraint firstItem="V7J-AM-XA4" firstAttribute="top" secondItem="tpR-NO-5fc" secondAttribute="bottom" constant="20" id="a2i-SF-aFq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0bR-6q-dnn" secondAttribute="trailing" constant="30" id="bm4-kp-09I"/>
+                            <constraint firstItem="V7J-AM-XA4" firstAttribute="leading" secondItem="bvt-9r-Bda" secondAttribute="leading" constant="30" id="eTb-WR-vJq"/>
+                            <constraint firstItem="0bR-6q-dnn" firstAttribute="top" secondItem="tzR-vt-7Bd" secondAttribute="bottom" constant="20" id="hrJ-rD-JDj"/>
+                            <constraint firstItem="olm-2V-riC" firstAttribute="top" secondItem="V7J-AM-XA4" secondAttribute="bottom" constant="20" id="ioX-Vo-28v"/>
+                            <constraint firstAttribute="trailing" secondItem="V7J-AM-XA4" secondAttribute="trailing" constant="30" id="owR-Qe-7rG"/>
+                            <constraint firstItem="tpR-NO-5fc" firstAttribute="top" secondItem="0bR-6q-dnn" secondAttribute="bottom" constant="20" id="r95-2f-cYw"/>
+                            <constraint firstItem="tpR-NO-5fc" firstAttribute="centerX" secondItem="bvt-9r-Bda" secondAttribute="centerX" id="zqY-Dn-ELy"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -36,6 +66,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEU-sM-xue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="-223"/>
+        </scene>
+        <!--Registration User Form View Controller-->
+        <scene sceneID="82q-VB-PBo">
+            <objects>
+                <viewController id="YV5-61-SFe" customClass="RegistrationUserFormViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZ4-As-mha">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="342"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUl-Eq-lJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="-224"/>
         </scene>
     </scenes>
 </document>

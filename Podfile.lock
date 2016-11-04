@@ -5,6 +5,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - Eureka (2.0.0-beta.1)
   - FacebookCore (0.2.0):
     - Bolts (~> 1.8)
     - FBSDKCoreKit (~> 4.15)
@@ -74,6 +75,7 @@ PODS:
   - XLPagerTabStrip (6.0.0)
 
 DEPENDENCIES:
+  - Eureka (~> 2.0.0-beta.1)
   - FacebookCore
   - FacebookLogin
   - Firebase/Auth
@@ -104,6 +106,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
   FBSDKCoreKit: 30a21d2d7b92984b3d80497113433c00824c35e9
@@ -125,6 +128,6 @@ SPEC CHECKSUMS:
   SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: db53f3172643020069afa0e8f687e3209e9e75a8
+PODFILE CHECKSUM: 7354bcc43e4a451932b6aa4e0f0be175af910f4f
 
 COCOAPODS: 1.1.1
