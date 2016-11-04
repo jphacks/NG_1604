@@ -26,6 +26,7 @@ variable_name:
     - vc
     - ad
     - Ad
+    - e
 
 type_name:
   excluded:
