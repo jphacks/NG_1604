@@ -39,6 +39,7 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
         guard let _ = FIRAuth.auth()?.currentUser else { return }
 
+        // コレクションビューで選択した空きコマをFirebaseに保存
         updateSchedule().success { value -> Void in
             print(value)
             SceneRouter.shared.route(scene: .main)
@@ -62,7 +63,6 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
                         "wed": self.schedule.toCSV(on: .wed),
                         "thu": self.schedule.toCSV(on: .thu),
                         "fri": self.schedule.toCSV(on: .fri)]
-            dump(data)
 
             ref.child("users/\(user.uid)/classes").setValue(data) { (error, ref) in
                 if error != nil {
@@ -80,7 +80,6 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 // MARK: - UICollectionViewDelegate
 extension RegistrationTimeTableViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
         schedule.toggle(at: indexPath.row)
         collectionView.reloadItems(at: [indexPath])
     }

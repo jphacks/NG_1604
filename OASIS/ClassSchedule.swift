@@ -15,12 +15,12 @@ class ClassSchedule {
         classes = Array(repeating: false, count: 25)
     }
 
-    func set(value: Bool, on: DayOfWeek, at: Int) {
-        
+    func set(value: Bool, at index: Int) {
+        classes[index] = value
     }
 
-    func get(on: DayOfWeek, at: Int) {
-        
+    func get(at: Int) -> Bool {
+        return classes[at]
     }
 
     func get(on dayOfWeek: DayOfWeek) -> [Bool] {
@@ -28,8 +28,8 @@ class ClassSchedule {
         return classes.enumerated().filter { ($0.offset-n) % 5 == 0 }.map { $0.element }
     }
 
-    func get(at: Int) -> Bool {
-        return classes[at]
+    func get(on dayOfWeek: DayOfWeek, at index: Int) -> Bool {
+        return get(on: dayOfWeek)[index]
     }
 
     func toggle(at: Int) {
