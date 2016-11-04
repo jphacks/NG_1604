@@ -14,7 +14,7 @@ enum DayOfWeek: Int {
     func weekDayNum() -> Int {
         switch self {
         case .mon, .tue, .wed, .thu, .fri:
-            return self.rawValue
+            return self.rawValue-1
         case .sun, .sat:
             return 0
         }

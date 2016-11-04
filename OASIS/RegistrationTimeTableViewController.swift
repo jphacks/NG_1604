@@ -37,14 +37,43 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
-        guard let user = FIRAuth.auth()?.currentUser else { return }
+        guard let _ = FIRAuth.auth()?.currentUser else { return }
 
-        
-        SceneRouter.shared.route(scene: .main)
+        updateSchedule().success { value -> Void in
+            print(value)
+            SceneRouter.shared.route(scene: .main)
+        }.failure { error, _ in
+            print(error)
+        }
     }
 
     // MARK: - Private
-    private func updateSchedule(schedule: ClassSchedule) {
+    private func updateSchedule() -> Task<Float, String, Error?> {
+        return Task<Float, String, Error?> { _, fulfill, reject, _ in
+            let ref = FIRDatabase.database().reference()
+
+            guard let user = FIRAuth.auth()?.currentUser else {
+                reject(nil)
+                return
+            }
+
+            let data = ["mon": self.schedule.toCSV(on: .mon),
+                        "tue": self.schedule.toCSV(on: .tue),
+                        "wed": self.schedule.toCSV(on: .wed),
+                        "thu": self.schedule.toCSV(on: .thu),
+                        "fri": self.schedule.toCSV(on: .fri)]
+            dump(data)
+
+            ref.child("users/\(user.uid)/classes").setValue(data) { (error, ref) in
+                if error != nil {
+                    reject(error)
+                    print(error)
+                } else {
+                    fulfill("done!")
+                }
+            }
+
+        }
     }
 }
 

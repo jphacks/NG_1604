@@ -30,6 +30,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitBtnDidTap:" destination="3PZ-Rt-W53" eventType="touchUpInside" id="gpv-9e-sfV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="講義の空きコマを選択してください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wes-18-jo0">
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -164,7 +167,7 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedCell" id="3Bb-BG-Xp5">
-                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="61.5" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -194,13 +197,6 @@
                             <constraint firstAttribute="trailing" secondItem="qVD-Th-A6E" secondAttribute="trailing" constant="20" id="zdc-OH-U3r"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="空きコマ登録" id="1vY-fg-2fH">
-                        <barButtonItem key="rightBarButtonItem" title="登録" id="qX0-hk-jnh">
-                            <connections>
-                                <action selector="submitBtnDidTap:" destination="3PZ-Rt-W53" id="gBp-a3-tsb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
