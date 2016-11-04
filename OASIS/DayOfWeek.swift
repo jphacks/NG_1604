@@ -11,7 +11,7 @@ import Foundation
 enum DayOfWeek: Int {
     case sun, mon, tue, wed, thu, fri, sat
 
-    func weekDayNum() -> Int {
+    var weekDayNum: Int {
         switch self {
         case .mon, .tue, .wed, .thu, .fri:
             return self.rawValue-1

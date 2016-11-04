@@ -17,9 +17,9 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 
     // MARK: - Properties
     static let storyboardName = "RegistrationTimeTable"
-    let emptyCellIdentifier = "EmptyCell"
-    let selectedCellIdentifier = "SelectedCell"
+
     let cellMargin: CGFloat = 6.0
+
     lazy var cellSize: CGSize = {
         let cellWidth: CGFloat = (self.collectionView.frame.size.width - self.cellMargin*4)/5
         return CGSize(width: cellWidth, height: cellWidth)
@@ -40,7 +40,7 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
         guard let _ = FIRAuth.auth()?.currentUser else { return }
 
         // コレクションビューで選択した空きコマをFirebaseに保存
-        updateSchedule().success { value -> Void in
+        updateSchedule().success { value -> () in
             print(value)
             SceneRouter.shared.route(scene: .main)
         }.failure { error, _ in
@@ -49,30 +49,30 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
     }
 
     // MARK: - Private
-    private func updateSchedule() -> Task<Float, String, Error?> {
-        return Task<Float, String, Error?> { _, fulfill, reject, _ in
+    private func updateSchedule() -> Task<Float, Void, Error> {
+        return Task<Float, Void, Error> { _, fulfill, reject, _ in
             let ref = FIRDatabase.database().reference()
 
             guard let user = FIRAuth.auth()?.currentUser else {
-                reject(nil)
+                reject(AppError.unauthorized)
                 return
             }
 
-            let data = ["mon": self.schedule.toCSV(on: .mon),
-                        "tue": self.schedule.toCSV(on: .tue),
-                        "wed": self.schedule.toCSV(on: .wed),
-                        "thu": self.schedule.toCSV(on: .thu),
-                        "fri": self.schedule.toCSV(on: .fri)]
+            let data = [
+                "mon": self.schedule.toCSV(on: .mon),
+                "tue": self.schedule.toCSV(on: .tue),
+                "wed": self.schedule.toCSV(on: .wed),
+                "thu": self.schedule.toCSV(on: .thu),
+                "fri": self.schedule.toCSV(on: .fri)
+            ]
 
-            ref.child("users/\(user.uid)/classes").setValue(data) { (error, ref) in
-                if error != nil {
+            ref.child("users/\(user.uid)/classes").setValue(data) { error, ref in
+                if let error = error {
                     reject(error)
-                    print(error)
                 } else {
-                    fulfill("done!")
+                    fulfill()
                 }
             }
-
         }
     }
 }
@@ -92,18 +92,11 @@ extension RegistrationTimeTableViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell: UICollectionViewCell
-
-        switch (schedule.get(at: indexPath.row)) {
-        case true:
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: selectedCellIdentifier, for: indexPath)
-            break
-        case false:
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: emptyCellIdentifier, for: indexPath)
-            break
+        if schedule.get(at: indexPath.row) {
+            return collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedCell", for: indexPath)
+        } else {
+            return collectionView.dequeueReusableCell(withReuseIdentifier: "EmptyCell", for: indexPath)
         }
-
-        return cell
     }
 }
 

@@ -24,7 +24,7 @@ class ClassSchedule {
     }
 
     func get(on dayOfWeek: DayOfWeek) -> [Bool] {
-        let n: Int = dayOfWeek.weekDayNum()
+        let n = dayOfWeek.weekDayNum
         return classes.enumerated().filter { ($0.offset-n) % 5 == 0 }.map { $0.element }
     }
 
@@ -33,7 +33,7 @@ class ClassSchedule {
     }
 
     func toggle(at: Int) {
-        classes[at] = classes[at] ? false : true
+        classes[at] = !classes[at]
     }
 
     static func toCSV(data: [Bool]) -> String {
