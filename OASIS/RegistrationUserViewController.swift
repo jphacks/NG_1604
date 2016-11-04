@@ -21,6 +21,16 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
         guard let user = FIRAuth.auth()?.currentUser else { return }
+
+        getToken(user: user)
+            .success { (token) -> Task<Float, FBProfile, Error?> in
+                return self.fetchUserProfile(token: token)
+            }.success { (profile) -> Task<Float, String, Error?> in
+                return self.setProfile(profile: profile)
+            }.success { (result) -> Void in
+                print(result)
+                return
+            }
     }
 
     // MARK: - Private
@@ -29,6 +39,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
             user.getTokenWithCompletion { (token, error) in
                 if error != nil {
                     reject(error)
+                    print(error)
                     return
                 } else if let token = token {
                     fulfill(AccessToken(authenticationToken: token))
@@ -47,6 +58,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
                 switch requestResult {
                 case .failed(let error):
                     reject(error)
+                    print(error)
                     break
                 case .success(let graphResponse):
                     guard let response = graphResponse.dictionaryValue else {
@@ -54,7 +66,6 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
                         return
                     }
 
-                    print(graphResponse.stringValue)
                     do { fulfill(try decodeValue(response))
                     } catch { reject(error) }
                     break
@@ -64,8 +75,8 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
     }
 
     // Firebase Realtime Databaseに突っ込む
-    private func setProfile(profile: FBProfile) -> Task<Float, String?, Error?> {
-        return Task<Float, String?, Error?> { _, fulfill, reject, _ in
+    private func setProfile(profile: FBProfile) -> Task<Float, String, Error?> {
+        return Task<Float, String, Error?> { _, fulfill, reject, _ in
             guard let user = FIRAuth.auth()?.currentUser else {
                 reject(nil)
                 return
@@ -80,8 +91,9 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
             self.ref.child("users/\(user.uid)").setValue(data) { (error, ref) in
                 if error != nil {
                     reject(error)
+                    print(error)
                 } else {
-                    fulfill(nil)
+                    fulfill("done!")
                 }
             }
         }
