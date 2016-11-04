@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SceneRouter.shared.window = window
 
         if let _ = FIRAuth.auth()?.currentUser {
-//            SceneRouter.shared.route(scene: .registration, animated: false)
+            SceneRouter.shared.route(scene: .registration, animated: false)
         } else {
             SceneRouter.shared.route(scene: .registration, animated: false)
         }
