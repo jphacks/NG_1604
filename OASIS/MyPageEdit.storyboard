@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="cGD-qq-N3B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-8f-bR9">
+                                <state key="normal" title="ログアウト"/>
+                                <connections>
+                                    <action selector="signOutBtnDidTap:" destination="9We-YC-UAg" eventType="touchUpInside" id="HqC-72-vGP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fkq-8f-bR9" firstAttribute="centerY" secondItem="cGD-qq-N3B" secondAttribute="centerY" id="e2N-gQ-nbV"/>
+                            <constraint firstItem="fkq-8f-bR9" firstAttribute="centerX" secondItem="cGD-qq-N3B" secondAttribute="centerX" id="pvk-wc-Szr"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

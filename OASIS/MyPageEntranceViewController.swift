@@ -18,6 +18,11 @@ class MyPageEntranceViewController: UIViewController, Storyboardable {
     // MARK: - Lifecycle
 
     // MARK: - Action
+    @IBAction private func editBtnDidTap(_ sender: UIButton) {
+        let next = MyPageEditViewController.makeFromStoryboard()
+        next.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(next, animated: true)
+    }
 
     // MARK: - Public
 
