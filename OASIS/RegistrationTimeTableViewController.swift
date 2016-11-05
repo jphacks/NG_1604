@@ -10,41 +10,32 @@ import UIKit
 import Firebase
 import SwiftTask
 
-class RegistrationTimeTableViewController: UIViewController, Storyboardable {
+class RegistrationTimeTableViewController: UIViewController, Storyboardable, ErrorHandlable {
 
     // MARK: - Outlets
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
 
     // MARK: - Properties
     static let storyboardName = "RegistrationTimeTable"
-
-    let cellMargin: CGFloat = 6.0
+    fileprivate let scheduler = ClassesScheduler()
+    fileprivate let cellMargin: CGFloat = 6.0
 
     lazy var cellSize: CGSize = {
         let cellWidth: CGFloat = (self.collectionView.frame.size.width - self.cellMargin*4)/5
         return CGSize(width: cellWidth, height: cellWidth)
     }()
 
-    let scheduler = ClassesScheduler()
-
-    // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
+    var user: RegisteringUser!
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
         guard let _ = FIRAuth.auth()?.currentUser else { return }
 
-        // コレクションビューで選択した空きコマをFirebaseに保存
         updateSchedule().success { value -> () in
-            print(value)
             SceneRouter.shared.route(scene: .main)
-        }.failure { error, _ in
-            print(error)
+        }.failure { errorInfo in
+            guard let error = errorInfo.error else { return }
+            self.handle(error: error)
         }
     }
 

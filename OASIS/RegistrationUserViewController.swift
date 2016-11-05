@@ -42,7 +42,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
-        WebAPI.Users.create(
+        let user = RegisteringUser(
             image: fbProfile.profileImage,
             name: formViewController.name,
             gender: fbProfile.gender,
@@ -51,13 +51,9 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
             grade: formViewController.grade.id,
             profile: formViewController.profile
         )
-            .success { _ in
-                let next = RegistrationTimeTableViewController.makeFromStoryboard()
-                self.navigationController?.pushViewController(next, animated: true)
-            }
-            .failure { errorInfo in
-                guard let error = errorInfo.error else { return }
-                self.handle(error: error)
-            }
+        
+        let next = RegistrationTimeTableViewController.makeFromStoryboard()
+        next.user = user
+        self.navigationController?.pushViewController(next, animated: true)
     }
 }
