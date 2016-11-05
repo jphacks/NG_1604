@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3PZ-Rt-W53">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3PZ-Rt-W53">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -21,13 +21,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qj-SC-cKz" customClass="DesignableButton" customModule="Spring">
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="backgroundColor" red="0.39215686919999998" green="0.74901962280000001" blue="0.15686275059999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lCo-Iw-48P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="登録"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -35,7 +40,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="講義の空きコマを選択してください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wes-18-jo0">
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -167,7 +172,7 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedCell" id="3Bb-BG-Xp5">
-                                        <rect key="frame" x="61.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -176,21 +181,24 @@
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="3PZ-Rt-W53" id="6hu-Fi-yh4"/>
+                                    <outlet property="delegate" destination="3PZ-Rt-W53" id="kI5-GL-bXF"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qVD-Th-A6E" firstAttribute="leading" secondItem="jKG-E2-GkC" secondAttribute="trailing" id="FG7-2a-MYL"/>
-                            <constraint firstItem="6jM-bN-9RF" firstAttribute="top" secondItem="2qj-SC-cKz" secondAttribute="bottom" constant="30" id="IfQ-iU-ykV"/>
+                            <constraint firstItem="6jM-bN-9RF" firstAttribute="top" secondItem="2qj-SC-cKz" secondAttribute="bottom" constant="20" id="IfQ-iU-ykV"/>
                             <constraint firstItem="aIS-R7-0Jd" firstAttribute="leading" secondItem="qVD-Th-A6E" secondAttribute="leading" id="QWF-GH-v5m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wes-18-jo0" secondAttribute="trailing" constant="30" id="TD1-Fg-0lv"/>
                             <constraint firstItem="jKG-E2-GkC" firstAttribute="top" secondItem="qVD-Th-A6E" secondAttribute="top" id="TLR-1R-nZO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2qj-SC-cKz" secondAttribute="trailing" constant="30" id="V9j-QL-ILK"/>
-                            <constraint firstItem="wes-18-jo0" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leadingMargin" constant="30" id="aAu-ki-7PM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2qj-SC-cKz" secondAttribute="trailing" constant="20" id="V9j-QL-ILK"/>
                             <constraint firstItem="qVD-Th-A6E" firstAttribute="top" secondItem="aIS-R7-0Jd" secondAttribute="bottom" id="dxe-uM-1T4"/>
-                            <constraint firstItem="2qj-SC-cKz" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leadingMargin" constant="30" id="kSa-KE-ngL"/>
+                            <constraint firstItem="wes-18-jo0" firstAttribute="centerX" secondItem="QUR-cE-e8q" secondAttribute="centerX" id="iJ4-F4-jf7"/>
+                            <constraint firstItem="2qj-SC-cKz" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leadingMargin" constant="20" id="kSa-KE-ngL"/>
                             <constraint firstItem="wes-18-jo0" firstAttribute="top" secondItem="rXa-HD-3EO" secondAttribute="bottom" constant="30" id="mwd-RN-tWb"/>
-                            <constraint firstItem="aIS-R7-0Jd" firstAttribute="top" secondItem="wes-18-jo0" secondAttribute="bottom" constant="40" id="rqx-9R-s0g"/>
+                            <constraint firstItem="aIS-R7-0Jd" firstAttribute="top" secondItem="wes-18-jo0" secondAttribute="bottom" constant="60" id="rqx-9R-s0g"/>
                             <constraint firstItem="aIS-R7-0Jd" firstAttribute="width" secondItem="qVD-Th-A6E" secondAttribute="width" id="vQh-Xp-46E"/>
                             <constraint firstItem="jKG-E2-GkC" firstAttribute="leading" secondItem="QUR-cE-e8q" secondAttribute="leading" constant="20" id="wdr-T9-ca1"/>
                             <constraint firstItem="jKG-E2-GkC" firstAttribute="height" secondItem="qVD-Th-A6E" secondAttribute="height" id="yYP-hD-oed"/>

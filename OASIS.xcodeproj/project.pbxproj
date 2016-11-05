@@ -19,6 +19,7 @@
 		5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DC1DCDC3E400ADEB06 /* Classes.swift */; };
 		5A4495DF1DCE356B00ADEB06 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DE1DCE356A00ADEB06 /* Grade.swift */; };
 		5A4495E11DCE35D600ADEB06 /* EnumEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */; };
+		5A4495E51DCE4AC300ADEB06 /* RegisteringUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495E41DCE4AC300ADEB06 /* RegisteringUser.swift */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
@@ -82,6 +83,7 @@
 		5A4495DC1DCDC3E400ADEB06 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		5A4495DE1DCE356A00ADEB06 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumEnumerable.swift; sourceTree = "<group>"; };
+		5A4495E41DCE4AC300ADEB06 /* RegisteringUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteringUser.swift; sourceTree = "<group>"; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				5A00513B1DCB245F00F1632F /* User.swift */,
+				5A4495E41DCE4AC300ADEB06 /* RegisteringUser.swift */,
 				5A4495DC1DCDC3E400ADEB06 /* Classes.swift */,
 				5A0051391DCB244200F1632F /* Room.swift */,
 				5A00513D1DCB248400F1632F /* Message.swift */,
@@ -724,6 +727,7 @@
 				D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */,
 				5A00513E1DCB248400F1632F /* Message.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
+				5A4495E51DCE4AC300ADEB06 /* RegisteringUser.swift in Sources */,
 				5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */,
 				5A00513C1DCB245F00F1632F /* User.swift in Sources */,
 				5A4495DB1DCDBBCE00ADEB06 /* WebAPI.Users.swift in Sources */,
