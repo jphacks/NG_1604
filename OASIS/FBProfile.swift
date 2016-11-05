@@ -15,6 +15,10 @@ struct FBProfile: Decodable {
     let profileImage: String
     let education: [FBSchool]
 
+    var image: URL? {
+        return URL(string: profileImage)
+    }
+
     static func decode(_ e: Extractor) throws -> FBProfile {
         return try FBProfile(
             name: e <| "name",
