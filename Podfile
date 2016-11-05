@@ -13,6 +13,9 @@ target 'OASIS' do
     pod 'FacebookCore'
     pod 'FacebookLogin'
 
+    # network
+    pod 'Alamofire', '~> 3.5'
+
     # util
     pod 'SwiftTask', git: 'https://github.com/ReactKit/SwiftTask.git', branch: 'swift/3.0'
     pod 'Himotoki', '~> 3.0'

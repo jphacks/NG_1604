@@ -131,6 +131,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A4495C91DCD8EF100ADEB06 /* WebAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WebAPI;
+			sourceTree = "<group>";
+		};
+		5A4495CA1DCD8EFA00ADEB06 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
 		5A49727E1DC66918006479DA = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +450,8 @@
 		5AF25D271DCA31FC00CA07F8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5A4495CA1DCD8EFA00ADEB06 /* Firebase */,
+				5A4495C91DCD8EF100ADEB06 /* WebAPI */,
 				5A4972A81DC66F7B006479DA /* Extensions */,
 				5A4972A91DC66F82006479DA /* Utilities */,
 				5A4972AA1DC66F89006479DA /* Helpers */,
