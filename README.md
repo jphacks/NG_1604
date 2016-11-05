@@ -6,6 +6,27 @@
 [![CocoaPods](https://img.shields.io/badge/CocoaPdos-1.1.1-orange.svg)](https://cocoapods.org)
 [![SwiftLint](https://img.shields.io/badge/SwiftLint-0.11.1-orange.svg)](https://github.com/realm/SwiftLint)
 
+## セットアップ
+- SwiftLint のインストール
+```
+$ brew install swiftlint
+```
+
+- gem のインストール
+```
+$ bundle install --path=vendor/bundle
+```
+
+- カラーパレットのインストール
+```
+$ make install
+```
+
+- ライブラリのインストール
+```
+$ pod install
+```
+
 ## 製品概要
 ### X Tech（X → 今回皆さんが選定した好きな言葉に書き換えてください）
 
@@ -13,8 +34,6 @@
 ### 製品説明（具体的な製品の説明）
 ### 特長
 ####1. 特長1
-####2. 特長2
-####3. 特長3
 
 ### 解決出来ること
 ### 今後の展望
