@@ -64,7 +64,7 @@
 		D11EF6281DCDD856008ADFB3 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
 		D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */; };
-		D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassSchedule.swift */; };
+		D1CC472F1DCC949600059E1C /* ClassesScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassesScheduler.swift */; };
 		D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC47301DCC982600059E1C /* DayOfWeek.swift */; };
 /* End PBXBuildFile section */
 
@@ -130,7 +130,7 @@
 		D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
 		D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingRecommendationCell.swift; sourceTree = "<group>"; };
-		D1CC472E1DCC949600059E1C /* ClassSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
+		D1CC472E1DCC949600059E1C /* ClassesScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesScheduler.swift; sourceTree = "<group>"; };
 		D1CC47301DCC982600059E1C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -283,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */,
-				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
 				5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */,
 			);
 			name = Utilities;
@@ -397,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */,
+				D1CC472E1DCC949600059E1C /* ClassesScheduler.swift */,
 			);
 			name = TimeTable;
 			sourceTree = "<group>";
@@ -698,7 +698,7 @@
 				D11EF6241DCDD587008ADFB3 /* ScheduleView.swift in Sources */,
 				5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */,
 				5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */,
-				D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */,
+				D1CC472F1DCC949600059E1C /* ClassesScheduler.swift in Sources */,
 				5A4495E11DCE35D600ADEB06 /* EnumEnumerable.swift in Sources */,
 				D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
