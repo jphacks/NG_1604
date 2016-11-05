@@ -36,7 +36,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendationCell" id="0hi-Bh-mrz" customClass="MatchingRecommendationCell" customModule="OASIS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="9" width="300" height="600"/>
+                                        <rect key="frame" x="0.0" y="8.5" width="300" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
@@ -48,7 +48,7 @@
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-bj-206">
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-GB-b1c" customClass="DesignableImageView" customModule="Spring">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-GB-b1c" customClass="DesignableImageView" customModule="Spring">
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="70" id="ARe-Po-tSQ"/>
                                                                                 <constraint firstAttribute="width" secondItem="zn6-GB-b1c" secondAttribute="height" multiplier="1:1" id="ClQ-6Z-6jX"/>
@@ -150,6 +150,9 @@
                                                                 </view>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8h-Wi-mQM">
                                                                     <state key="normal" title="また今度"/>
+                                                                    <connections>
+                                                                        <action selector="didTapDislikeButton:" destination="0hi-Bh-mrz" eventType="touchUpInside" id="Yqf-DU-hED"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-6u-S7n" userLabel="ShortHorizontalLine" customClass="DesignableView" customModule="Spring">
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,6 +167,9 @@
                                                                 </view>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8Y-xo-nRz">
                                                                     <state key="normal" title="いいね！"/>
+                                                                    <connections>
+                                                                        <action selector="didTapLikeButton:" destination="0hi-Bh-mrz" eventType="touchUpInside" id="7Lv-de-yWd"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -30,4 +30,8 @@ class MatchingRecommendationCell: UICollectionViewCell {
             scheduleView.schedule = ClassesScheduler(with: user.classes)
         }
     }
+    @IBAction func didTapDislikeButton(_ sender: AnyObject) {
+    }
+    @IBAction func didTapLikeButton(_ sender: AnyObject) {
+    }
 }
