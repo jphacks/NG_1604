@@ -25,7 +25,7 @@ class MatchingRecommendationCell: UICollectionViewCell {
             guard let user = user else { return }
             imageView.kf.setImage(with: user.image)
             nameLabel.text = user.name
-            universityLabel.text = user.university
+            universityLabel.text = "\(user.university) \(user.department) \(Grade(with: user.grade).rawValue)"
             profileLabel.text = user.profile
             scheduleView.schedule = ClassesScheduler(with: user.classes)
         }
