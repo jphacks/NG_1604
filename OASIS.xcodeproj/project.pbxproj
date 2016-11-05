@@ -282,7 +282,6 @@
 		5A4972A91DC66F82006479DA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */,
 				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
 				5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */,
 			);
@@ -469,6 +468,7 @@
 			children = (
 				5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */,
 				D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */,
+				D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */,
 			);
 			name = Recommendation;
 			sourceTree = "<group>";

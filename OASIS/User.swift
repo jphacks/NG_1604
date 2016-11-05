@@ -28,15 +28,15 @@ struct User {
 extension User: Decodable {
     static func decode(_ e: Extractor) throws -> User {
         return try User(
-            uuid: e <| "uuid",
-            name: e <| "name",
-            imageUrl: e <| "profile_img",
-            department: e <| "department",
-            gender: e <| "gender",
-            grade: e <| "medium",
-            profile: e <| "profile",
-            university: e <| "univ_name",
-            classes: e <| "classes"
+            uuid: e <| ["user", "uuid"],
+            name: e <| ["user", "name"],
+            imageUrl: e <| ["user", "profile_img"],
+            department: e <| ["user", "department"],
+            gender: e <| ["user", "gender"],
+            grade: e <| ["user", "grade"],
+            profile: e <| ["user", "profile"],
+            university: e <| ["user", "univ_name"],
+            classes: e <| ["user", "classes"]
         )
     }
 }

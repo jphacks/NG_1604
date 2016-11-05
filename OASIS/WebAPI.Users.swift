@@ -73,8 +73,12 @@ extension WebAPI {
                             reject(error)
                         }
 
-                        if let json = response.result.value as? [String: String], let user = try? User.decodeValue(json) {
-                            fulfill(user)
+                        do {
+                            if let data = response.result.value {
+                                fulfill(try User.decodeValue(data))
+                            }
+                        } catch {
+                            reject(error)
                         }
 
                         reject(AppError.unknown)
