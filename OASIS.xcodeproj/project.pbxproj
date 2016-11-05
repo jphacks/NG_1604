@@ -51,6 +51,7 @@
 		5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */; };
 		5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D231DCA2C0300CA07F8 /* String+.swift */; };
 		5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D251DCA314C00CA07F8 /* NSObject+.swift */; };
+		D11EF6171DCDA48F008ADFB3 /* ScheduleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
 		D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassSchedule.swift */; };
 		D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC47301DCC982600059E1C /* DayOfWeek.swift */; };
@@ -105,6 +106,7 @@
 		5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlable.swift; sourceTree = "<group>"; };
 		5AF25D231DCA2C0300CA07F8 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		5AF25D251DCA314C00CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScheduleViewController.storyboard; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
 		D1CC472E1DCC949600059E1C /* ClassSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
 		D1CC47301DCC982600059E1C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		5A4972A11DC66EE6006479DA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D11EF6151DCDA43D008ADFB3 /* Common */,
 				5A4972931DC66918006479DA /* LaunchScreen.storyboard */,
 				5AF25CCB1DC9AED200CA07F8 /* Registration */,
 				5AF25D0C1DC9BC2200CA07F8 /* Main */,
@@ -452,6 +455,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		D11EF6151DCDA43D008ADFB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		DD7BCD65714E01ECC8A4062E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +552,7 @@
 				5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */,
 				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
 				5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */,
+				D11EF6171DCDA48F008ADFB3 /* ScheduleViewController.storyboard in Resources */,
 				5A4972921DC66918006479DA /* Assets.xcassets in Resources */,
 				5AF25CFA1DC9B42100CA07F8 /* MyPageEntrance.storyboard in Resources */,
 				5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */,
