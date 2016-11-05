@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Matching Entrance View Controller-->
+        <!--新しい出会い-->
         <scene sceneID="tZO-iu-AWw">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="3C8-QO-rhp" customClass="MatchingEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="新しい出会い" automaticallyAdjustsScrollViewInsets="NO" id="3C8-QO-rhp" customClass="MatchingEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lbh-7c-feq"/>
                         <viewControllerLayoutGuide type="bottom" id="NLv-c1-I2U"/>
@@ -52,7 +52,7 @@
                             <constraint firstAttribute="trailing" secondItem="fEr-nG-gDf" secondAttribute="trailing" id="u8F-5m-bVK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HAd-vX-xR3"/>
+                    <navigationItem key="navigationItem" title="新しい出会い" id="HAd-vX-xR3"/>
                     <connections>
                         <outlet property="buttonBarView" destination="HM4-4J-pNI" id="CYO-yZ-myr"/>
                         <outlet property="containerView" destination="fEr-nG-gDf" id="zaf-bK-Btd"/>
@@ -62,16 +62,17 @@
             </objects>
             <point key="canvasLocation" x="1232.8" y="-179.46026986506749"/>
         </scene>
-        <!--マッチング-->
+        <!--新しい出会い-->
         <scene sceneID="ShA-7R-cY9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pS1-Y9-Dt3" sceneMemberID="viewController">
+                <navigationController title="新しい出会い" automaticallyAdjustsScrollViewInsets="NO" id="pS1-Y9-Dt3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="マッチング" id="3vh-1D-tCE"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="htj-JZ-xTy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="htj-JZ-xTy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
