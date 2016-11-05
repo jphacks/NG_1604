@@ -11,10 +11,21 @@ import UIKit
 class ClassesScheduler {
     var classes: [Bool]
 
+    // MARK: - Initializer
     init() {
         classes = Array(repeating: false, count: 25)
     }
 
+    init(with classes: Classes) {
+        self.classes = []
+        self.classes += ClassesScheduler.fromCSV(data: classes.mon)
+        self.classes += ClassesScheduler.fromCSV(data: classes.tue)
+        self.classes += ClassesScheduler.fromCSV(data: classes.wed)
+        self.classes += ClassesScheduler.fromCSV(data: classes.thu)
+        self.classes += ClassesScheduler.fromCSV(data: classes.fri)
+    }
+
+    // MARK: - Public
     func set(value: Bool, at index: Int) {
         classes[index] = value
     }
@@ -36,11 +47,16 @@ class ClassesScheduler {
         classes[at] = !classes[at]
     }
 
+    func toCSV(on dayOfWeek: DayOfWeek) -> String {
+        return ClassesScheduler.toCSV(data: get(on: dayOfWeek))
+    }
+
+    // MARK: - Static
     static func toCSV(data: [Bool]) -> String {
         return data.map { String($0 ? "1" : "0") }.joined(separator: ",")
     }
 
-    func toCSV(on dayOfWeek: DayOfWeek) -> String {
-        return ClassesScheduler.toCSV(data: get(on: dayOfWeek))
+    static func fromCSV(data: String) -> [Bool] {
+        return data.components(separatedBy: ",").map { $0 == "1" ? true : false }
     }
 }

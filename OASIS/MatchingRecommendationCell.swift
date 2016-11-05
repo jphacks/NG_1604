@@ -22,10 +22,12 @@ class MatchingRecommendationCell: UICollectionViewCell {
     // MARK: - Property
     var user: User? {
         didSet {
-            imageView.kf.setImage(with: user?.image)
-            nameLabel.text = user?.name
-            universityLabel.text = user?.university
-            profileLabel.text = user?.profile
+            guard let user = user else { return }
+            imageView.kf.setImage(with: user.image)
+            nameLabel.text = user.name
+            universityLabel.text = user.university
+            profileLabel.text = user.profile
+            scheduleView.schedule = ClassesScheduler(with: user.classes)
         }
     }
 }
