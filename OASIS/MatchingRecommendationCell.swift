@@ -30,8 +30,21 @@ class MatchingRecommendationCell: UICollectionViewCell {
             scheduleView.schedule = ClassesScheduler(with: user.classes)
         }
     }
+
+    // MARK: - Action
     @IBAction func didTapDislikeButton(_ sender: AnyObject) {
+        guard let user = user else { return }
+        WebAPI.Users.dislike(opponent: user.uuid)
+            .failure { error, _ in
+                print(error)
+            }
     }
+
     @IBAction func didTapLikeButton(_ sender: AnyObject) {
+        guard let user = user else { return }
+        WebAPI.Users.like(opponent: user.uuid)
+            .failure { error, _ in
+                print(error)
+        }
     }
 }
