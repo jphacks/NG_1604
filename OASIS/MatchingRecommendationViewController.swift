@@ -25,8 +25,10 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
         collectionView.dataSource = self
         WebAPI.Users.show(uuid: "123456789")
-            .success { user -> Void in
+            .success { user, recommends -> Void in
                 dump(user)
+            }.failure { error, _ in
+                print(error)
             }
     }
 

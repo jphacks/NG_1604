@@ -15,7 +15,7 @@ extension WebAPI {
     struct Users {
 
         typealias VoidTask = Task<Void, Void, Error>
-        typealias UserTask = Task<Void, User, Error>
+        typealias UserTask = Task<Void, (User, Recommends), Error>
 
         static func create(image: String, name: String, gender: String, univ: String, department: String, grade: Int, profile: String) -> VoidTask {
             return VoidTask { _, fulfill, reject, _ in
@@ -60,7 +60,9 @@ extension WebAPI {
 
                         do {
                             if let data = response.result.value {
-                                fulfill(try User.decodeValue(data))
+                                let user = try User.decodeValue(data, rootKeyPath: "user")
+                                let recommends = try Recommends.decodeValue(data)
+                                fulfill(user, recommends)
                             }
                         } catch {
                             reject(error)
