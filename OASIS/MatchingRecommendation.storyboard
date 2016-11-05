@@ -36,17 +36,17 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendationCell" id="0hi-Bh-mrz" customClass="MatchingRecommendationCell" customModule="OASIS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-17" width="300" height="600"/>
+                                        <rect key="frame" x="0.0" y="-16.5" width="300" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-9H-937">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-HP-sJL" customClass="DesignableView" customModule="Spring">
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-dL-Yny">
+                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-9H-937">
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-bj-206" customClass="DesignableView" customModule="Spring">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-bj-206">
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-GB-b1c" customClass="DesignableImageView" customModule="Spring">
                                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,30 +128,47 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstItem="aHc-bj-206" firstAttribute="top" secondItem="60Y-dL-Yny" secondAttribute="top" constant="5" id="Mz2-ll-vfx"/>
-                                                                <constraint firstAttribute="bottom" secondItem="aHc-bj-206" secondAttribute="bottom" constant="5" id="v5q-yr-vke"/>
-                                                                <constraint firstAttribute="trailing" secondItem="aHc-bj-206" secondAttribute="trailing" constant="5" id="y5V-dC-oGg"/>
-                                                                <constraint firstItem="aHc-bj-206" firstAttribute="leading" secondItem="60Y-dL-Yny" secondAttribute="leading" constant="5" id="yya-G5-vdo"/>
+                                                                <constraint firstItem="aHc-bj-206" firstAttribute="width" secondItem="3kd-9H-937" secondAttribute="width" id="EBE-6x-GTa"/>
+                                                                <constraint firstAttribute="trailing" secondItem="aHc-bj-206" secondAttribute="trailing" id="O06-MD-Rh9"/>
+                                                                <constraint firstItem="aHc-bj-206" firstAttribute="top" secondItem="3kd-9H-937" secondAttribute="top" id="f5G-dU-BSi"/>
+                                                                <constraint firstAttribute="bottom" secondItem="aHc-bj-206" secondAttribute="bottom" id="hjP-Oo-lG6"/>
+                                                                <constraint firstItem="aHc-bj-206" firstAttribute="leading" secondItem="3kd-9H-937" secondAttribute="leading" id="ntG-Ac-QaF"/>
                                                             </constraints>
-                                                        </view>
+                                                        </scrollView>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="60Y-dL-Yny" secondAttribute="bottom" id="SlW-mW-Eua"/>
-                                                        <constraint firstItem="60Y-dL-Yny" firstAttribute="width" secondItem="3kd-9H-937" secondAttribute="width" id="Udb-TU-E2v"/>
-                                                        <constraint firstAttribute="trailing" secondItem="60Y-dL-Yny" secondAttribute="trailing" id="cTZ-iZ-iu2"/>
-                                                        <constraint firstItem="60Y-dL-Yny" firstAttribute="top" secondItem="3kd-9H-937" secondAttribute="top" id="esU-8l-AkS"/>
-                                                        <constraint firstItem="60Y-dL-Yny" firstAttribute="leading" secondItem="3kd-9H-937" secondAttribute="leading" id="kSz-Wq-CHO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3kd-9H-937" secondAttribute="trailing" constant="5" id="3Bu-Yg-dCW"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3kd-9H-937" secondAttribute="bottom" id="5gk-0C-Kan"/>
+                                                        <constraint firstItem="3kd-9H-937" firstAttribute="leading" secondItem="4PZ-HP-sJL" secondAttribute="leading" constant="5" id="PFp-he-eT5"/>
+                                                        <constraint firstItem="3kd-9H-937" firstAttribute="top" secondItem="4PZ-HP-sJL" secondAttribute="top" id="xJJ-6t-ZN5"/>
                                                     </constraints>
-                                                </scrollView>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="3kd-9H-937" firstAttribute="top" secondItem="0hi-Bh-mrz" secondAttribute="top" id="bqM-pI-03I"/>
-                                            <constraint firstAttribute="trailing" secondItem="3kd-9H-937" secondAttribute="trailing" id="dmG-i5-MG2"/>
-                                            <constraint firstAttribute="bottom" secondItem="3kd-9H-937" secondAttribute="bottom" id="ihS-6E-Bnb"/>
-                                            <constraint firstItem="3kd-9H-937" firstAttribute="leading" secondItem="0hi-Bh-mrz" secondAttribute="leading" id="jtr-ZA-qcr"/>
+                                            <constraint firstItem="4PZ-HP-sJL" firstAttribute="leading" secondItem="0hi-Bh-mrz" secondAttribute="leadingMargin" constant="5" id="6Ta-Di-380"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4PZ-HP-sJL" secondAttribute="trailing" constant="5" id="AqT-Oc-9ZM"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="4PZ-HP-sJL" secondAttribute="bottom" constant="5" id="IBM-Dk-KT7"/>
+                                            <constraint firstItem="4PZ-HP-sJL" firstAttribute="top" secondItem="0hi-Bh-mrz" secondAttribute="topMargin" constant="5" id="Qkr-w8-syk"/>
                                         </constraints>
                                         <size key="customSize" width="300" height="600"/>
                                         <connections>

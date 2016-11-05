@@ -10,4 +10,13 @@ import UIKit
 
 class ScheduleCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
+    var isFree: Bool = false {
+        didSet {
+            if isFree {
+                self.backgroundColor = .green
+            } else {
+                image.isHidden = true
+            }
+        }
+    }
 }
