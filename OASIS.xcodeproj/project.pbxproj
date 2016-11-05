@@ -57,9 +57,13 @@
 		5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */; };
 		5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D231DCA2C0300CA07F8 /* String+.swift */; };
 		5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D251DCA314C00CA07F8 /* NSObject+.swift */; };
-		D11EF6171DCDA48F008ADFB3 /* ScheduleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */; };
-		D11EF61A1DCDA7EB008ADFB3 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6191DCDA7EB008ADFB3 /* ScheduleViewController.swift */; };
+		D11EF61C1DCDC50B008ADFB3 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */; };
+		D11EF6221DCDD1BB008ADFB3 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D11EF6211DCDD1BB008ADFB3 /* ScheduleView.xib */; };
+		D11EF6241DCDD587008ADFB3 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6231DCDD587008ADFB3 /* ScheduleView.swift */; };
+		D11EF6261DCDD7FF008ADFB3 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D11EF6251DCDD7FF008ADFB3 /* ScheduleCell.xib */; };
+		D11EF6281DCDD856008ADFB3 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
+		D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */; };
 		D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassSchedule.swift */; };
 		D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC47301DCC982600059E1C /* DayOfWeek.swift */; };
 /* End PBXBuildFile section */
@@ -119,9 +123,13 @@
 		5AF25D211DCA2BE900CA07F8 /* ErrorHandlable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlable.swift; sourceTree = "<group>"; };
 		5AF25D231DCA2C0300CA07F8 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		5AF25D251DCA314C00CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
-		D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScheduleViewController.storyboard; sourceTree = "<group>"; };
-		D11EF6191DCDA7EB008ADFB3 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
+		D11EF6211DCDD1BB008ADFB3 /* ScheduleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleView.xib; sourceTree = "<group>"; };
+		D11EF6231DCDD587008ADFB3 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		D11EF6251DCDD7FF008ADFB3 /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
+		D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
+		D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingRecommendationCell.swift; sourceTree = "<group>"; };
 		D1CC472E1DCC949600059E1C /* ClassSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
 		D1CC47301DCC982600059E1C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,8 +220,8 @@
 		5A4972A11DC66EE6006479DA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				D11EF6151DCDA43D008ADFB3 /* Common */,
 				5A4972931DC66918006479DA /* LaunchScreen.storyboard */,
+				D11EF6151DCDA43D008ADFB3 /* Common */,
 				5AF25CCB1DC9AED200CA07F8 /* Registration */,
 				5AF25D0C1DC9BC2200CA07F8 /* Main */,
 			);
@@ -274,6 +282,7 @@
 		5A4972A91DC66F82006479DA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */,
 				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
 				5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */,
 			);
@@ -459,6 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */,
+				D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */,
 			);
 			name = Recommendation;
 			sourceTree = "<group>";
@@ -495,7 +505,8 @@
 		D11EF6151DCDA43D008ADFB3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */,
+				D11EF6211DCDD1BB008ADFB3 /* ScheduleView.xib */,
+				D11EF6251DCDD7FF008ADFB3 /* ScheduleCell.xib */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -503,7 +514,8 @@
 		D11EF6181DCDA7D5008ADFB3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D11EF6191DCDA7EB008ADFB3 /* ScheduleViewController.swift */,
+				D11EF6231DCDD587008ADFB3 /* ScheduleView.swift */,
+				D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -587,7 +599,9 @@
 			files = (
 				5AF25CF01DC9B3E800CA07F8 /* RegistrationTimeTable.storyboard in Resources */,
 				5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */,
+				D11EF6261DCDD7FF008ADFB3 /* ScheduleCell.xib in Resources */,
 				5AF25D1E1DC9EDE400CA07F8 /* GoogleService-Info.plist in Resources */,
+				D11EF6221DCDD1BB008ADFB3 /* ScheduleView.xib in Resources */,
 				5AF25CEE1DC9B3E000CA07F8 /* RegistrationUser.storyboard in Resources */,
 				5AF25CF21DC9B3F200CA07F8 /* ChatEntrance.storyboard in Resources */,
 				5AF25CF81DC9B41900CA07F8 /* MatchingEntrance.storyboard in Resources */,
@@ -597,7 +611,6 @@
 				5AF25D0E1DC9BC3B00CA07F8 /* Main.storyboard in Resources */,
 				5A4972B41DC670CC006479DA /* Localizable.strings in Resources */,
 				5AF25CFC1DC9B42A00CA07F8 /* MyPageEdit.storyboard in Resources */,
-				D11EF6171DCDA48F008ADFB3 /* ScheduleViewController.storyboard in Resources */,
 				5A4972921DC66918006479DA /* Assets.xcassets in Resources */,
 				5AF25CFA1DC9B42100CA07F8 /* MyPageEntrance.storyboard in Resources */,
 				5AF25CF41DC9B3F900CA07F8 /* ChatRoom.storyboard in Resources */,
@@ -675,13 +688,14 @@
 			files = (
 				5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */,
 				5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */,
+				D11EF61C1DCDC50B008ADFB3 /* CarouselFlowLayout.swift in Sources */,
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
-				D11EF61A1DCDA7EB008ADFB3 /* ScheduleViewController.swift in Sources */,
 				5AE440F31DCD0446001B6830 /* FBSchool.swift in Sources */,
 				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
+				D11EF6241DCDD587008ADFB3 /* ScheduleView.swift in Sources */,
 				5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */,
 				5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */,
 				D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */,
@@ -699,6 +713,7 @@
 				5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
+				D11EF6281DCDD856008ADFB3 /* ScheduleCell.swift in Sources */,
 				5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */,
 				5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */,
 				5A4495DF1DCE356B00ADEB06 /* Grade.swift in Sources */,
@@ -706,6 +721,7 @@
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */,
 				5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */,
+				D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */,
 				5A00513E1DCB248400F1632F /* Message.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
 				5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */,
