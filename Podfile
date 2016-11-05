@@ -22,6 +22,7 @@ target 'OASIS' do
     pod 'Spring', git: 'https://github.com/MengTo/Spring.git', branch: 'swift3'
     pod 'XLPagerTabStrip', '6.0'
     pod 'JSQMessagesViewController'
+    pod 'Eureka', '~> 2.0.0-beta.1'
 end
 
 post_install do |installer|

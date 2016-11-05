@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Firebase
 
-class MyPageEditViewController: UIViewController, Storyboardable {
+class MyPageEditViewController: UIViewController, Storyboardable, ErrorHandlable {
 
     // MARK: - Outlet
 
@@ -18,6 +19,14 @@ class MyPageEditViewController: UIViewController, Storyboardable {
     // MARK: - Lifecycle
 
     // MARK: - Action
+    @IBAction private func signOutBtnDidTap(_ sender: UIButton) {
+        do {
+            try FIRAuth.auth()?.signOut()
+            SceneRouter.shared.route(scene: .registration)
+        } catch let error {
+            handle(error: error)
+        }
+    }
 
     // MARK: - Public
 

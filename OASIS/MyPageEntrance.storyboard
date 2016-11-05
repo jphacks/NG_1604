@@ -18,7 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Hxm-hM-qDS"/>
+                    <navigationItem key="navigationItem" id="Hxm-hM-qDS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="kZJ-kS-KjF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GXj-3E-sBz">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="編集"/>
+                                <connections>
+                                    <action selector="editBtnDidTap:" destination="27P-h5-3aA" eventType="touchUpInside" id="rD8-o7-kQm"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reh-KQ-O8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
