@@ -24,7 +24,7 @@ class ScheduleView: UIView {
 
     // MARK: - Lifecycle
     override func awakeFromNib() {
-        contentView = Bundle.main.loadNibNamed("ScheduleView", owner: self, options: nil)!.first! as! UIView
+        contentView = Bundle.main.loadNibNamed("ScheduleView", owner: self, options: nil)!.first! as? UIView // swiftlint:disable:this force_cast
         contentView.frame = frame
         addSubview(contentView)
 
@@ -46,7 +46,7 @@ extension ScheduleView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return schedule.classes.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: "ScheduleCell", for: indexPath)
     }
@@ -54,15 +54,15 @@ extension ScheduleView: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 extension ScheduleView: UICollectionViewDelegateFlowLayout {
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return cellSize
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return cellMargin
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return cellMargin
     }

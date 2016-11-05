@@ -25,10 +25,7 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let layout = CarouselFlowLayout()
-        layout.itemSize = collectionView.frame.size
-        layout.scrollDirection = .horizontal
-        collectionView.collectionViewLayout = layout
+        setFlowLayout()
     }
 
     // MARK: - Action
@@ -36,6 +33,15 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
     // MARK: - Public
 
     // MARK: - Private
+    func setFlowLayout() {
+        let layout = CarouselFlowLayout()
+        layout.itemSize = CGSize(width: self.collectionView.frame.size.width-40, height: self.collectionView.frame.size.height-40)
+        layout.scrollDirection = .horizontal
+        layout.spacingMode = CarouselFlowLayoutSpacingMode.fixed(spacing: 0)
+        layout.sideItemAlpha = 1.0
+        layout.sideItemScale = 1.0
+        collectionView.collectionViewLayout = layout
+    }
 }
 
 // MARK: - IndicatorInfoProvider
