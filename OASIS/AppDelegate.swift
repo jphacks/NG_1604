@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SceneRouter.shared.route(scene: .registration, animated: false)
         }
 
+        WebAPI.User.create()
+
         return true
     }
 

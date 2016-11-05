@@ -14,6 +14,9 @@
 		5A00513E1DCB248400F1632F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00513D1DCB248400F1632F /* Message.swift */; };
 		5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */; };
 		5A4495D51DCDA04100ADEB06 /* RegistrationUserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495D41DCDA04100ADEB06 /* RegistrationUserFormViewController.swift */; };
+		5A4495D91DCDB54E00ADEB06 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495D81DCDB54E00ADEB06 /* WebAPI.swift */; };
+		5A4495DB1DCDBBCE00ADEB06 /* WebAPI.Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DA1DCDBBCE00ADEB06 /* WebAPI.Users.swift */; };
+		5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DC1DCDC3E400ADEB06 /* Classes.swift */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
@@ -66,6 +69,9 @@
 		5A00513D1DCB248400F1632F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5A09B9391DCB272B00B9681B /* ChatEntranceRoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEntranceRoomCell.swift; sourceTree = "<group>"; };
 		5A4495D41DCDA04100ADEB06 /* RegistrationUserFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUserFormViewController.swift; sourceTree = "<group>"; };
+		5A4495D81DCDB54E00ADEB06 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		5A4495DA1DCDBBCE00ADEB06 /* WebAPI.Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.Users.swift; sourceTree = "<group>"; };
+		5A4495DC1DCDC3E400ADEB06 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 		5A4495C91DCD8EF100ADEB06 /* WebAPI */ = {
 			isa = PBXGroup;
 			children = (
+				5A4495D81DCDB54E00ADEB06 /* WebAPI.swift */,
+				5A4495DA1DCDBBCE00ADEB06 /* WebAPI.Users.swift */,
 			);
 			name = WebAPI;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				5A00513B1DCB245F00F1632F /* User.swift */,
+				5A4495DC1DCDC3E400ADEB06 /* Classes.swift */,
 				5A0051391DCB244200F1632F /* Room.swift */,
 				5A00513D1DCB248400F1632F /* Message.swift */,
 				D12FFCE01DCB5490001B272F /* FBProfile.swift */,
@@ -643,6 +652,7 @@
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
 				5AF25CD11DC9AF6000CA07F8 /* RegistrationEntranceViewController.swift in Sources */,
 				5AF25CE81DC9B2E400CA07F8 /* MyPageEntranceViewController.swift in Sources */,
+				5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */,
 				5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */,
 				D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */,
 				D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */,
@@ -654,6 +664,7 @@
 				5A4495D51DCDA04100ADEB06 /* RegistrationUserFormViewController.swift in Sources */,
 				5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */,
 				5AF25D221DCA2BE900CA07F8 /* ErrorHandlable.swift in Sources */,
+				5A4495D91DCDB54E00ADEB06 /* WebAPI.swift in Sources */,
 				5A09B93A1DCB272B00B9681B /* ChatEntranceRoomCell.swift in Sources */,
 				5A4972AE1DC66FCD006479DA /* AppColor.swift in Sources */,
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
@@ -667,6 +678,7 @@
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
 				5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */,
 				5A00513C1DCB245F00F1632F /* User.swift in Sources */,
+				5A4495DB1DCDBBCE00ADEB06 /* WebAPI.Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
