@@ -30,6 +30,8 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
                 return self.setProfile(profile: profile)
             }
             .success { result -> () in
+                let next = RegistrationTimeTableViewController.makeFromStoryboard()
+                self.navigationController?.pushViewController(next, animated: true)
                 return
             }
     }
