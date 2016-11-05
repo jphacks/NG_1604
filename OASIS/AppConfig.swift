@@ -8,4 +8,9 @@
 
 import Foundation
 
-struct AppConfig {}
+struct AppConfig {
+
+    struct WebAPI {
+        static let BaseURL = "https://oasis-coma.herokuapp.com/api"
+    }
+}

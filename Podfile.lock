@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (3.5.1)
+  - Alamofire (4.0.1)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -79,7 +79,7 @@ PODS:
   - XLPagerTabStrip (6.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.5)
+  - Alamofire (~> 4.0)
   - Eureka (~> 2.0.0-beta.1)
   - FacebookCore
   - FacebookLogin
@@ -111,7 +111,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/ReactKit/SwiftTask.git
 
 SPEC CHECKSUMS:
-  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
@@ -137,6 +137,6 @@ SPEC CHECKSUMS:
   SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: 65f2ecf3ebfc713b392970b60668195a11feabe0
+PODFILE CHECKSUM: 335026ea78b0225ef387caeb919993f4717e8ffc
 
 COCOAPODS: 1.1.1
