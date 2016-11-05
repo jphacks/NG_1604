@@ -1,5 +1,5 @@
 //
-//  ClassSchedule.swift
+//  ClassesScheduler.swift
 //  OASIS
 //
 //  Created by Yuto Yazaki on 2016/11/04.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClassSchedule {
+class ClassesScheduler {
     var classes: [Bool]
 
     init() {
@@ -41,6 +41,6 @@ class ClassSchedule {
     }
 
     func toCSV(on dayOfWeek: DayOfWeek) -> String {
-        return ClassSchedule.toCSV(data: get(on: dayOfWeek))
+        return ClassesScheduler.toCSV(data: get(on: dayOfWeek))
     }
 }
