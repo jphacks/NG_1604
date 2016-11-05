@@ -44,6 +44,11 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
         layout.sideItemScale = 1.0
         collectionView.collectionViewLayout = layout
     }
+
+    func fetchRecommends(uid: String) -> Task<Float, [User], Error> {
+        return Task<Float, [User], Error> { _, fulfill, reject, _ in
+        }
+    }
 }
 
 // MARK: - IndicatorInfoProvider
