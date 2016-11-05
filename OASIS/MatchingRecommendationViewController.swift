@@ -24,6 +24,12 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
         super.viewDidLoad()
 
         collectionView.dataSource = self
+        WebAPI.Users.show(uuid: "123456789")
+            .success { user, recommends -> Void in
+                dump(user)
+            }.failure { error, _ in
+                print(error)
+            }
     }
 
     override func viewDidAppear(_ animated: Bool) {
