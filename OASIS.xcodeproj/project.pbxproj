@@ -52,6 +52,7 @@
 		5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D231DCA2C0300CA07F8 /* String+.swift */; };
 		5AF25D261DCA314C00CA07F8 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF25D251DCA314C00CA07F8 /* NSObject+.swift */; };
 		D11EF6171DCDA48F008ADFB3 /* ScheduleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */; };
+		D11EF61A1DCDA7EB008ADFB3 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6191DCDA7EB008ADFB3 /* ScheduleViewController.swift */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
 		D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassSchedule.swift */; };
 		D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC47301DCC982600059E1C /* DayOfWeek.swift */; };
@@ -107,6 +108,7 @@
 		5AF25D231DCA2C0300CA07F8 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		5AF25D251DCA314C00CA07F8 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		D11EF6161DCDA48F008ADFB3 /* ScheduleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScheduleViewController.storyboard; sourceTree = "<group>"; };
+		D11EF6191DCDA7EB008ADFB3 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
 		D1CC472E1DCC949600059E1C /* ClassSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
 		D1CC47301DCC982600059E1C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		5A4972A01DC66EE1006479DA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D11EF6181DCDA7D5008ADFB3 /* Common */,
 				5AF25CC51DC9AE0000CA07F8 /* Registration */,
 				5AF25D0B1DC9BC1700CA07F8 /* Main */,
 			);
@@ -463,6 +466,14 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		D11EF6181DCDA7D5008ADFB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D11EF6191DCDA7EB008ADFB3 /* ScheduleViewController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		DD7BCD65714E01ECC8A4062E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +642,7 @@
 				5AF25D161DC9D15700CA07F8 /* MatchingRecommendationViewController.swift in Sources */,
 				5AD4ABDC1DCA3723009CF1A5 /* MainController.swift in Sources */,
 				5A4972AC1DC66FBF006479DA /* AppConfig.swift in Sources */,
+				D11EF61A1DCDA7EB008ADFB3 /* ScheduleViewController.swift in Sources */,
 				5AE440F31DCD0446001B6830 /* FBSchool.swift in Sources */,
 				5AF25CDC1DC9B0D000CA07F8 /* ChatEntranceViewController.swift in Sources */,
 				5AF25CFE1DC9B78600CA07F8 /* Storyboardable.swift in Sources */,
