@@ -17,7 +17,7 @@ extension WebAPI {
         typealias VoidTask = Task<Void, Void, Error>
         typealias UserTask = Task<Void, User, Error>
 
-        static func create(image: String, name: String, gender: String, univ: String, department: String, grade: Int, profile: String) -> VoidTask {
+        static func create(user: RegisteringUser) -> VoidTask {
             return VoidTask { _, fulfill, reject, _ in
                 guard let uuid = WebAPI.uuid else {
                     reject(AppError.unauthorized)
@@ -28,13 +28,20 @@ extension WebAPI {
 
                 let params: Parameters = [
                     "uuid": uuid,
-                    "department": department,
-                    "gender": gender,
-                    "name": name,
-                    "grade": grade,
-                    "profile": profile,
-                    "profile_img": image,
-                    "univ_name": univ
+                    "department": user.department,
+                    "gender": user.gender,
+                    "name": user.name,
+                    "grade": user.grade,
+                    "profile": user.profile,
+                    "profile_img": user.image,
+                    "univ_name": user.univ,
+                    "classes": [
+                        "mon": user.classes.mon,
+                        "tue": user.classes.tue,
+                        "wed": user.classes.wed,
+                        "thu": user.classes.thu,
+                        "fri": user.classes.fri,
+                    ]
                 ]
 
                 Alamofire.request(url, method: .post, parameters: params)

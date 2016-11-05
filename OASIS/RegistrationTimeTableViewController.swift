@@ -29,42 +29,22 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable, Err
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
-        guard let _ = FIRAuth.auth()?.currentUser else { return }
+        user.classes = Classes(
+            mon: scheduler.toCSV(on: .mon),
+            tue: scheduler.toCSV(on: .tue),
+            wed: scheduler.toCSV(on: .wed),
+            thu: scheduler.toCSV(on: .thu),
+            fri: scheduler.toCSV(on: .fri)
+        )
 
-        updateSchedule().success { value -> () in
-            SceneRouter.shared.route(scene: .main)
-        }.failure { errorInfo in
-            guard let error = errorInfo.error else { return }
-            self.handle(error: error)
-        }
-    }
-
-    // MARK: - Private
-    private func updateSchedule() -> Task<Float, Void, Error> {
-        return Task<Float, Void, Error> { _, fulfill, reject, _ in
-            let ref = FIRDatabase.database().reference()
-
-            guard let user = FIRAuth.auth()?.currentUser else {
-                reject(AppError.unauthorized)
-                return
+        WebAPI.Users.create(user: user)
+            .success { _ in
+                SceneRouter.shared.route(scene: .main)
             }
-
-            let data = [
-                "mon": self.scheduler.toCSV(on: .mon),
-                "tue": self.scheduler.toCSV(on: .tue),
-                "wed": self.scheduler.toCSV(on: .wed),
-                "thu": self.scheduler.toCSV(on: .thu),
-                "fri": self.scheduler.toCSV(on: .fri)
-            ]
-
-            ref.child("users/\(user.uid)/classes").setValue(data) { error, ref in
-                if let error = error {
-                    reject(error)
-                } else {
-                    fulfill()
-                }
+            .failure { errorInfo in
+                guard let error = errorInfo.error else { return }
+                self.handle(error: error)
             }
-        }
     }
 }
 
@@ -83,11 +63,8 @@ extension RegistrationTimeTableViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if scheduler.get(at: indexPath.row) {
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedCell", for: indexPath)
-        } else {
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "EmptyCell", for: indexPath)
-        }
+        let id = scheduler.get(at: indexPath.row) ? "SelectedCell" : "EmptyCell"
+        return collectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath)
     }
 }
 
