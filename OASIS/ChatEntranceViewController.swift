@@ -29,14 +29,14 @@ class ChatEntranceViewController: UIViewController, Storyboardable {
 extension ChatEntranceViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Mock.rooms.count
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RoomCell", for: indexPath as IndexPath)
 
         if let roomCell = cell as? ChatEntranceRoomCell {
-            roomCell.room = Mock.rooms[indexPath.row]
+//            roomCell.room = Mock.rooms[indexPath.row]
         }
 
         return cell

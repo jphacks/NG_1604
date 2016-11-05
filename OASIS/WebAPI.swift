@@ -10,7 +10,7 @@ import Firebase
 
 struct WebAPI {
 
-    static let uuid: String {
+    static var uuid: String? {
         return FIRAuth.auth()?.currentUser?.uid
     }
 }

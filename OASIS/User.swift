@@ -18,6 +18,10 @@ struct User {
     let profile: String
     let university: String
     let classes: Classes
+
+    var image: URL? {
+        return URL(string: imageUrl)
+    }
 }
 
 extension User: Decodable {
