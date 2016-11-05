@@ -10,6 +10,7 @@ import Himotoki
 
 struct User {
 
+    let uuid: String
     let name: String
     let imageUrl: String
     let department: String
@@ -27,6 +28,7 @@ struct User {
 extension User: Decodable {
     static func decode(_ e: Extractor) throws -> User {
         return try User(
+            uuid: e <| "uuid",
             name: e <| "name",
             imageUrl: e <| "profile_img",
             department: e <| "department",
