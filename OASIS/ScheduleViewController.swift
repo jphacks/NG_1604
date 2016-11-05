@@ -15,7 +15,7 @@ class ScheduleViewController: UIViewController, Storyboardable {
 
     // MARK: - Properties
     static let storyboardName = "ScheduleViewController"
-    var schedule = ClassSchedule()
+    var scheduler = ClassScheduler()
 
     fileprivate let cellMargin: CGFloat = 6.0
     fileprivate lazy var cellSize: CGSize = {
@@ -32,15 +32,15 @@ class ScheduleViewController: UIViewController, Storyboardable {
     }
 
     // MARK: - Public
-    func setSchedule(schedule: ClassSchedule) {
-        self.schedule = schedule
+    func setSchedule(scheduler: ClassScheduler) {
+        self.scheduler = scheduler
     }
 }
 
 // MARK: - UICollectionViewDelegate
 extension ScheduleViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        schedule.toggle(at: indexPath.row)
+        scheduler.toggle(at: indexPath.row)
         collectionView.reloadItems(at: [indexPath])
     }
 }
@@ -48,11 +48,11 @@ extension ScheduleViewController: UICollectionViewDelegate {
 // MARK: - UICollectionViewDataSource
 extension ScheduleViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return schedule.classes.count
+        return scheduler.classes.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if schedule.get(at: indexPath.row) {
+        if scheduler.get(at: indexPath.row) {
             return collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedCell", for: indexPath)
         } else {
             return collectionView.dequeueReusableCell(withReuseIdentifier: "EmptyCell", for: indexPath)

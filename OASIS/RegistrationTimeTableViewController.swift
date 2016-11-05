@@ -25,7 +25,7 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
         return CGSize(width: cellWidth, height: cellWidth)
     }()
 
-    let schedule = ClassSchedule()
+    let scheduler = ClassScheduler()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -59,11 +59,11 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
             }
 
             let data = [
-                "mon": self.schedule.toCSV(on: .mon),
-                "tue": self.schedule.toCSV(on: .tue),
-                "wed": self.schedule.toCSV(on: .wed),
-                "thu": self.schedule.toCSV(on: .thu),
-                "fri": self.schedule.toCSV(on: .fri)
+                "mon": self.scheduler.toCSV(on: .mon),
+                "tue": self.scheduler.toCSV(on: .tue),
+                "wed": self.scheduler.toCSV(on: .wed),
+                "thu": self.scheduler.toCSV(on: .thu),
+                "fri": self.scheduler.toCSV(on: .fri)
             ]
 
             ref.child("users/\(user.uid)/classes").setValue(data) { error, ref in
@@ -80,7 +80,7 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable {
 // MARK: - UICollectionViewDelegate
 extension RegistrationTimeTableViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        schedule.toggle(at: indexPath.row)
+        scheduler.toggle(at: indexPath.row)
         collectionView.reloadItems(at: [indexPath])
     }
 }
@@ -88,11 +88,11 @@ extension RegistrationTimeTableViewController: UICollectionViewDelegate {
 // MARK: - UICollectionViewDataSource
 extension RegistrationTimeTableViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return schedule.classes.count
+        return scheduler.classes.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if schedule.get(at: indexPath.row) {
+        if scheduler.get(at: indexPath.row) {
             return collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedCell", for: indexPath)
         } else {
             return collectionView.dequeueReusableCell(withReuseIdentifier: "EmptyCell", for: indexPath)

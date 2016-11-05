@@ -22,7 +22,7 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
         switch segue.destination {
         case let vc as ScheduleViewController:
             scheduleVC = vc
-            scheduleVC.setSchedule(schedule: ClassSchedule())
+            scheduleVC.setSchedule(scheduler: ClassScheduler())
         default:
             break
         }
