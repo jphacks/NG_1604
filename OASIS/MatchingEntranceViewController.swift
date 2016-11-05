@@ -39,6 +39,7 @@ class MatchingEntranceViewController: ButtonBarPagerTabStripViewController, Stor
         settings.style.selectedBarHeight = 4
         settings.style.selectedBarBackgroundColor = UIColor.gray.withAlphaComponent(0.5)
 
+        containerView.isScrollEnabled = false
         buttonBarView.collectionViewLayout = UICollectionViewFlowLayout()
         buttonBarView.frame.size.height = 40
     }

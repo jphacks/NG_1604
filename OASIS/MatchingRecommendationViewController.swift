@@ -22,8 +22,12 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
         super.viewDidLoad()
 
         collectionView.dataSource = self
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
         let layout = CarouselFlowLayout()
-        layout.itemSize = CGSize(width: 300, height: 600)
+        layout.itemSize = collectionView.frame.size
+        layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout
     }
 
