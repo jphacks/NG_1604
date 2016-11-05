@@ -31,9 +31,9 @@ open class CarouselFlowLayout: UICollectionViewFlowLayout {
 
     override open func prepare() {
         super.prepare()
-    
+
         let currentState = LayoutState(size: self.collectionView!.bounds.size, direction: self.scrollDirection)
-    
+
         if !self.state.isEqual(currentState) {
             self.setupCollectionView()
             self.updateLayout()
@@ -98,7 +98,7 @@ open class CarouselFlowLayout: UICollectionViewFlowLayout {
         attributes.alpha = alpha
         attributes.transform3D = CATransform3DScale(CATransform3DIdentity, scale, scale, 1)
         attributes.zIndex = Int(alpha * 10)
-    
+
         return attributes
     }
 

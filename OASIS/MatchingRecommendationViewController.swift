@@ -12,20 +12,19 @@ import XLPagerTabStrip
 class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
     // MARK: - Outlet
+    @IBOutlet weak var collectionView: UICollectionView!
 
     // MARK: - Property
     static let storyboardName = "MatchingRecommendation"
-    private var scheduleVC: ScheduleViewController!
 
     // MARK: - Lifecycle
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.destination {
-        case let vc as ScheduleViewController:
-            scheduleVC = vc
-            scheduleVC.setSchedule(schedule: ClassSchedule())
-        default:
-            break
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        collectionView.dataSource = self
+//        let layout = CarouselFlowLayout()
+//        layout.itemSize = CGSize(width: 300, height: 600)
+//        collectionView.collectionViewLayout = layout
     }
 
     // MARK: - Action
@@ -41,3 +40,30 @@ extension MatchingRecommendationViewController: IndicatorInfoProvider {
         return IndicatorInfo(title: "候補")
     }
 }
+
+// MARK: - UICollectionViewDataSource
+extension MatchingRecommendationViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            return collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendationCell", for: indexPath)
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+//extension MatchingRecommendationViewController: UICollectionViewDelegateFlowLayout {
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return cellSize
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return cellMargin
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return cellMargin
+//    }
+//}

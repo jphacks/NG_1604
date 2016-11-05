@@ -1,5 +1,5 @@
 //
-//  ScheduleViewController.swift
+//  ScheduleView.swift
 //  OASIS
 //
 //  Created by Yuto Yazaki on 2016/11/05.
@@ -8,37 +8,32 @@
 
 import UIKit
 
-class ScheduleViewController: UIViewController, Storyboardable {
+class ScheduleView: UIView {
 
     // MARK: - Outlets
-    @IBOutlet weak private var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
 
     // MARK: - Properties
-    static let storyboardName = "ScheduleViewController"
-    var schedule = ClassSchedule()
-
-    fileprivate let cellMargin: CGFloat = 6.0
-    fileprivate lazy var cellSize: CGSize = {
+    let schedule = ClassSchedule()
+    let cellMargin: CGFloat = 6.0
+    lazy var cellSize: CGSize = {
         let cellWidth: CGFloat = (self.collectionView.frame.size.width - self.cellMargin*4)/5
         return CGSize(width: cellWidth, height: cellWidth)
     }()
 
     // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
-
-    // MARK: - Public
-    func setSchedule(schedule: ClassSchedule) {
-        self.schedule = schedule
+    override func awakeFromNib() {
+//        let contentView = Bundle.main.loadNibNamed("ScheduleView", owner: self, options: nil)!.first! as! UIView
+//        contentView.frame = frame
+//        addSubview(contentView)
+//
+//        let nib = UINib(nibName: "ScheduleCell", bundle: nil)
+//        collectionView.register(nib, forCellWithReuseIdentifier: "ScheduleCell")
     }
 }
 
 // MARK: - UICollectionViewDelegate
-extension ScheduleViewController: UICollectionViewDelegate {
+extension ScheduleView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         schedule.toggle(at: indexPath.row)
         collectionView.reloadItems(at: [indexPath])
@@ -46,31 +41,27 @@ extension ScheduleViewController: UICollectionViewDelegate {
 }
 
 // MARK: - UICollectionViewDataSource
-extension ScheduleViewController: UICollectionViewDataSource {
+extension ScheduleView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return schedule.classes.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if schedule.get(at: indexPath.row) {
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedCell", for: indexPath)
-        } else {
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "EmptyCell", for: indexPath)
-        }
+        return collectionView.dequeueReusableCell(withReuseIdentifier: "ScheduleCell", for: indexPath)
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
-extension ScheduleViewController: UICollectionViewDelegateFlowLayout {
-
+extension ScheduleView: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return cellSize
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return cellMargin
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return cellMargin
     }
