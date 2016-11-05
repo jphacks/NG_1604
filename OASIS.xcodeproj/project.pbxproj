@@ -19,6 +19,7 @@
 		5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DC1DCDC3E400ADEB06 /* Classes.swift */; };
 		5A4495DF1DCE356B00ADEB06 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DE1DCE356A00ADEB06 /* Grade.swift */; };
 		5A4495E11DCE35D600ADEB06 /* EnumEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */; };
+		5A4495E51DCE4AC300ADEB06 /* RegisteringUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495E41DCE4AC300ADEB06 /* RegisteringUser.swift */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
@@ -64,7 +65,7 @@
 		D11EF6281DCDD856008ADFB3 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
 		D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */; };
-		D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassSchedule.swift */; };
+		D1CC472F1DCC949600059E1C /* ClassesScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassesScheduler.swift */; };
 		D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC47301DCC982600059E1C /* DayOfWeek.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		5A4495DC1DCDC3E400ADEB06 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		5A4495DE1DCE356A00ADEB06 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumEnumerable.swift; sourceTree = "<group>"; };
+		5A4495E41DCE4AC300ADEB06 /* RegisteringUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteringUser.swift; sourceTree = "<group>"; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,7 +132,7 @@
 		D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
 		D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingRecommendationCell.swift; sourceTree = "<group>"; };
-		D1CC472E1DCC949600059E1C /* ClassSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
+		D1CC472E1DCC949600059E1C /* ClassesScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesScheduler.swift; sourceTree = "<group>"; };
 		D1CC47301DCC982600059E1C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				5A00513B1DCB245F00F1632F /* User.swift */,
+				5A4495E41DCE4AC300ADEB06 /* RegisteringUser.swift */,
 				5A4495DC1DCDC3E400ADEB06 /* Classes.swift */,
 				5A0051391DCB244200F1632F /* Room.swift */,
 				5A00513D1DCB248400F1632F /* Message.swift */,
@@ -282,7 +285,7 @@
 		5A4972A91DC66F82006479DA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
+				D11EF61B1DCDC50B008ADFB3 /* CarouselFlowLayout.swift */,
 				5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */,
 			);
 			name = Utilities;
@@ -396,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25CD71DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift */,
+				D1CC472E1DCC949600059E1C /* ClassesScheduler.swift */,
 			);
 			name = TimeTable;
 			sourceTree = "<group>";
@@ -698,7 +702,7 @@
 				D11EF6241DCDD587008ADFB3 /* ScheduleView.swift in Sources */,
 				5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */,
 				5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */,
-				D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */,
+				D1CC472F1DCC949600059E1C /* ClassesScheduler.swift in Sources */,
 				5A4495E11DCE35D600ADEB06 /* EnumEnumerable.swift in Sources */,
 				D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
@@ -724,6 +728,7 @@
 				D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */,
 				5A00513E1DCB248400F1632F /* Message.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
+				5A4495E51DCE4AC300ADEB06 /* RegisteringUser.swift in Sources */,
 				5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */,
 				5A00513C1DCB245F00F1632F /* User.swift in Sources */,
 				5A4495DB1DCDBBCE00ADEB06 /* WebAPI.Users.swift in Sources */,

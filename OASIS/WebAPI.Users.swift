@@ -48,21 +48,6 @@ extension WebAPI {
             }
         }
 
-        static func update(uuid: String) -> VoidTask {
-            return VoidTask { _, fulfill, reject, _ in
-                let url = AppConfig.WebAPI.BaseURL + "/users/" + uuid
-
-                Alamofire.request(url, method: .post)
-                    .responseJSON { response in
-                        if let error = response.result.error {
-                            reject(error)
-                        }
-
-                        fulfill(())
-                }
-            }
-        }
-
         static func show(uuid: String) -> UserTask {
             return UserTask { _, fulfill, reject, _ in
                 let url = AppConfig.WebAPI.BaseURL + "/users/" + uuid
