@@ -10,6 +10,10 @@ import UIKit
 import Spring
 import Kingfisher
 
+protocol MatchingRecommendationDelegate {
+    func deleteCell()
+}
+
 class MatchingRecommendationCell: UICollectionViewCell {
 
     // MARK: - Outlet
@@ -20,6 +24,7 @@ class MatchingRecommendationCell: UICollectionViewCell {
     @IBOutlet weak var scheduleView: ScheduleView!
 
     // MARK: - Property
+    var delegate: MatchingRecommendationDelegate!
     var user: User? {
         didSet {
             guard let user = user else { return }
@@ -35,6 +40,9 @@ class MatchingRecommendationCell: UICollectionViewCell {
     @IBAction func didTapDislikeButton(_ sender: AnyObject) {
         guard let user = user else { return }
         WebAPI.Users.dislike(opponent: user.uuid)
+            .success { _ -> Void in
+                self.delegate.deleteCell()
+            }
             .failure { error, _ in
                 print(error)
             }
@@ -43,6 +51,9 @@ class MatchingRecommendationCell: UICollectionViewCell {
     @IBAction func didTapLikeButton(_ sender: AnyObject) {
         guard let user = user else { return }
         WebAPI.Users.like(opponent: user.uuid)
+            .success { _ -> Void in
+                self.delegate.deleteCell()
+            }
             .failure { error, _ in
                 print(error)
         }

@@ -75,6 +75,17 @@ extension MatchingRecommendationViewController: UICollectionViewDataSource {
         let reusableCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendationCell", for: indexPath)
         guard let cell = reusableCell as? MatchingRecommendationCell else { return reusableCell }
         cell.user = recommends[indexPath.row]
+        cell.delegate = self
         return cell
+    }
+}
+
+extension MatchingRecommendationViewController: MatchingRecommendationDelegate {
+    func deleteCell() {
+        let point = CGPoint(x: collectionView.frame.midX, y: collectionView.frame.midY)
+        if let indexPath = collectionView.indexPathForItem(at: point) {
+            recommends.remove(at: indexPath.row)
+            collectionView.deleteItems(at: [indexPath])
+        }
     }
 }
