@@ -20,8 +20,8 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Property
     static let storyboardName = "RegistrationUser"
-    private let ref = FIRDatabase.database().reference()
     private var formViewController: RegistrationUserFormViewController!
+    private var user = RegisteringUser()
 
     var fbProfile: FBProfile!
 
@@ -42,16 +42,14 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
-        let user = RegisteringUser(
-            image: fbProfile.profileImage,
-            name: formViewController.name,
-            gender: fbProfile.gender,
-            univ: formViewController.univ,
-            department: formViewController.department,
-            grade: formViewController.grade.id,
-            profile: formViewController.profile
-        )
-        
+        user.image = fbProfile.profileImage
+        user.name = formViewController.name
+        user.gender = fbProfile.gender
+        user.univ = formViewController.univ
+        user.department = formViewController.department
+        user.grade = formViewController.grade.id
+        user.profile = formViewController.profile
+
         let next = RegistrationTimeTableViewController.makeFromStoryboard()
         next.user = user
         self.navigationController?.pushViewController(next, animated: true)
