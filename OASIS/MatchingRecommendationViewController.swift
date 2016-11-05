@@ -25,8 +25,9 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
         collectionView.dataSource = self
         WebAPI.Users.show(uuid: "123456789")
-            .success { user, recommends -> Void in
-                dump(user)
+            .success { _, recommends -> Void in
+                self.recommends = recommends.users
+                self.collectionView.reloadData()
             }.failure { error, _ in
                 print(error)
             }
@@ -67,13 +68,13 @@ extension MatchingRecommendationViewController: IndicatorInfoProvider {
 // MARK: - UICollectionViewDataSource
 extension MatchingRecommendationViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return recommends.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let reusableCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendationCell", for: indexPath)
         guard let cell = reusableCell as? MatchingRecommendationCell else { return reusableCell }
-
+        cell.user = recommends[indexPath.row]
         return cell
     }
 }
