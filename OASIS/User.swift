@@ -6,10 +6,37 @@
 //  Copyright © 2016年 othlotech. All rights reserved.
 //
 
-import Foundation
+import Himotoki
 
 struct User {
 
+    let uuid: String
     let name: String
-    let image: URL
+    let imageUrl: String
+    let department: String
+    let gender: String
+    let grade: Int
+    let profile: String
+    let university: String
+    let classes: Classes
+
+    var image: URL? {
+        return URL(string: imageUrl)
+    }
+}
+
+extension User: Decodable {
+    static func decode(_ e: Extractor) throws -> User {
+        return try User(
+            uuid: e <| "uuid",
+            name: e <| "name",
+            imageUrl: e <| "profile_img",
+            department: e <| "department",
+            gender: e <| "date",
+            grade: e <| "medium",
+            profile: e <| "profile",
+            university: e <| "univ_name",
+            classes: e <| "classes"
+        )
+    }
 }

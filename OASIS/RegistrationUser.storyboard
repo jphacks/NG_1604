@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Y8-3Y-ZWl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,25 +18,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olm-2V-riC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不足している情報を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suE-sG-MrZ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wey-FQ-BnX" customClass="DesignableImageView" customModule="Spring">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wey-FQ-BnX" secondAttribute="height" multiplier="1:1" id="uBl-BS-fSZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brW-uM-XBO">
+                                <connections>
+                                    <segue destination="g5l-Xi-EaX" kind="embed" id="Pxx-Mm-ppj"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="brW-uM-XBO" firstAttribute="top" secondItem="wey-FQ-BnX" secondAttribute="bottom" id="2HB-hl-Hzc"/>
+                            <constraint firstItem="Qlc-zB-Vn7" firstAttribute="top" secondItem="brW-uM-XBO" secondAttribute="bottom" id="4qs-Sd-M8g"/>
+                            <constraint firstItem="suE-sG-MrZ" firstAttribute="top" secondItem="tzR-vt-7Bd" secondAttribute="bottom" constant="30" id="6df-Oi-RX3"/>
+                            <constraint firstAttribute="trailing" secondItem="wey-FQ-BnX" secondAttribute="trailing" constant="140" id="9fp-OR-lXf"/>
+                            <constraint firstItem="brW-uM-XBO" firstAttribute="leading" secondItem="bvt-9r-Bda" secondAttribute="leading" id="LyX-iU-oA3"/>
+                            <constraint firstItem="wey-FQ-BnX" firstAttribute="top" secondItem="suE-sG-MrZ" secondAttribute="bottom" constant="20" id="jdE-mi-KSu"/>
+                            <constraint firstAttribute="trailing" secondItem="brW-uM-XBO" secondAttribute="trailing" id="o7P-Cu-N4R"/>
+                            <constraint firstItem="suE-sG-MrZ" firstAttribute="centerX" secondItem="bvt-9r-Bda" secondAttribute="centerX" id="rfk-WP-SEy"/>
+                            <constraint firstItem="wey-FQ-BnX" firstAttribute="leading" secondItem="bvt-9r-Bda" secondAttribute="leading" constant="140" id="v63-kP-o5t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ユーザー情報" id="J9f-9d-IMe">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3XK-Ef-fKx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="olm-2V-riC">
+                                <rect key="frame" x="328" y="7" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="完了"/>
                                 <connections>
                                     <action selector="submitBtnDidTap:" destination="9Y8-3Y-ZWl" eventType="touchUpInside" id="RVJ-Aq-RqP"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="olm-2V-riC" firstAttribute="centerY" secondItem="bvt-9r-Bda" secondAttribute="centerY" id="E8z-Wc-Lgf"/>
-                            <constraint firstItem="olm-2V-riC" firstAttribute="centerX" secondItem="bvt-9r-Bda" secondAttribute="centerX" id="mcx-sa-eiW"/>
-                        </constraints>
-                    </view>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="thumbView" destination="wey-FQ-BnX" id="9fU-if-EGE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEU-sM-xue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="-223"/>
+            <point key="canvasLocation" x="476" y="-223.53823088455775"/>
+        </scene>
+        <!--Registration User Form View Controller-->
+        <scene sceneID="WeP-b2-YIO">
+            <objects>
+                <viewController id="g5l-Xi-EaX" customClass="RegistrationUserFormViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6A4-wA-zyG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Etv-Jw-Oh7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xql-FP-6Ax">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="438.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ri-Bb-tKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="-224"/>
         </scene>
     </scenes>
 </document>
