@@ -9,6 +9,5 @@
 import UIKit
 
 class ScheduleCell: UICollectionViewCell {
-    
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var image: UIImageView!
 }

@@ -11,6 +11,7 @@ import UIKit
 class ScheduleView: UIView {
 
     // MARK: - Outlets
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
 
     // MARK: - Properties
@@ -23,12 +24,12 @@ class ScheduleView: UIView {
 
     // MARK: - Lifecycle
     override func awakeFromNib() {
-//        let contentView = Bundle.main.loadNibNamed("ScheduleView", owner: self, options: nil)!.first! as! UIView
-//        contentView.frame = frame
-//        addSubview(contentView)
-//
-//        let nib = UINib(nibName: "ScheduleCell", bundle: nil)
-//        collectionView.register(nib, forCellWithReuseIdentifier: "ScheduleCell")
+        contentView = Bundle.main.loadNibNamed("ScheduleView", owner: self, options: nil)!.first! as! UIView
+        contentView.frame = frame
+        addSubview(contentView)
+
+        let nib = UINib(nibName: "ScheduleCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "ScheduleCell")
     }
 }
 

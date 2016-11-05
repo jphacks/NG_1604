@@ -6,9 +6,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleView" customModule="OASIS" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleView" customModule="OASIS" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Zy1-hz-lQi" id="ibf-UZ-bnV"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="WEG-jj-9Em"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleView" customModule="OASIS" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -147,9 +152,6 @@
                 <constraint firstAttribute="bottom" secondItem="fFk-Kk-hwL" secondAttribute="bottom" id="sPc-9g-WWw"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <connections>
-                <outlet property="collectionView" destination="Zy1-hz-lQi" id="taY-e4-P5H"/>
-            </connections>
             <point key="canvasLocation" x="-10" y="-1"/>
         </view>
     </objects>
