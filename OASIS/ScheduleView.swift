@@ -15,7 +15,11 @@ class ScheduleView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
 
     // MARK: - Properties
-    let schedule = ClassesScheduler()
+    var schedule = ClassesScheduler() {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     let cellMargin: CGFloat = 6.0
     lazy var cellSize: CGSize = {
         let cellWidth: CGFloat = (self.collectionView.frame.size.width - self.cellMargin*4)/5

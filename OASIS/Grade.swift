@@ -26,4 +26,16 @@ enum Grade: String, EnumEnumerable {
         case .graduate2: return 6
         }
     }
+
+    init(with int: Int) {
+        switch int {
+        case 1: self = .undergraduate1
+        case 2: self = .undergraduate2
+        case 3: self = .undergraduate3
+        case 4: self = .undergraduate4
+        case 5: self = .graduate1
+        case 6: self = .graduate2
+        default: self = .undergraduate1
+        }
+    }
 }
