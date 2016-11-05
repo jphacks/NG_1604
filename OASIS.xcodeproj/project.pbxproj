@@ -61,6 +61,7 @@
 		D11EF6261DCDD7FF008ADFB3 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D11EF6251DCDD7FF008ADFB3 /* ScheduleCell.xib */; };
 		D11EF6281DCDD856008ADFB3 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */; };
 		D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FFCE01DCB5490001B272F /* FBProfile.swift */; };
+		D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */; };
 		D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC472E1DCC949600059E1C /* ClassSchedule.swift */; };
 		D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC47301DCC982600059E1C /* DayOfWeek.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		D11EF6251DCDD7FF008ADFB3 /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
 		D11EF6271DCDD856008ADFB3 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		D12FFCE01DCB5490001B272F /* FBProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBProfile.swift; sourceTree = "<group>"; };
+		D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingRecommendationCell.swift; sourceTree = "<group>"; };
 		D1CC472E1DCC949600059E1C /* ClassSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
 		D1CC47301DCC982600059E1C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		E4C0CC7AACB26DAC363F569F /* Pods-OASIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OASIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OASIS/Pods-OASIS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF25D151DC9D15700CA07F8 /* MatchingRecommendationViewController.swift */,
+				D1703E821DCE3F5800C32B2A /* MatchingRecommendationCell.swift */,
 			);
 			name = Recommendation;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */,
 				5AF25D181DC9D16500CA07F8 /* MatchingResultViewController.swift in Sources */,
+				D1703E831DCE3F5900C32B2A /* MatchingRecommendationCell.swift in Sources */,
 				5A00513E1DCB248400F1632F /* Message.swift in Sources */,
 				5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */,
 				5AE440F51DCD0450001B6830 /* FBDepartment.swift in Sources */,

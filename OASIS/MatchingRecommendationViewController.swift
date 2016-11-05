@@ -8,6 +8,7 @@
 
 import UIKit
 import XLPagerTabStrip
+import SwiftTask
 
 class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
@@ -16,6 +17,7 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
     // MARK: - Property
     static let storyboardName = "MatchingRecommendation"
+    var recommends: [User] = []
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -58,6 +60,9 @@ extension MatchingRecommendationViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendationCell", for: indexPath)
+        let reusableCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendationCell", for: indexPath)
+        guard let cell = reusableCell as? MatchingRecommendationCell else { return reusableCell }
+
+        return cell
     }
 }
