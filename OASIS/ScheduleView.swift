@@ -20,7 +20,7 @@ class ScheduleView: UIView {
             self.collectionView.reloadData()
         }
     }
-    let cellMargin: CGFloat = 6.0
+    let cellMargin: CGFloat = 4.0
     lazy var cellSize: CGSize = {
         let cellWidth: CGFloat = (self.collectionView.frame.size.width - self.cellMargin*4)/5
         return CGSize(width: cellWidth, height: cellWidth)
@@ -37,14 +37,6 @@ class ScheduleView: UIView {
     }
 }
 
-// MARK: - UICollectionViewDelegate
-extension ScheduleView: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        schedule.toggle(at: indexPath.row)
-        collectionView.reloadItems(at: [indexPath])
-    }
-}
-
 // MARK: - UICollectionViewDataSource
 extension ScheduleView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -52,7 +44,10 @@ extension ScheduleView: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "ScheduleCell", for: indexPath)
+        let reusableCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ScheduleCell", for: indexPath)
+        guard let cell = reusableCell as? ScheduleCell else { return reusableCell }
+        cell.isFree = schedule.get(at: indexPath.row)
+        return cell
     }
 }
 

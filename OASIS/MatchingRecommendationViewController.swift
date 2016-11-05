@@ -44,7 +44,7 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
     // MARK: - Private
     func setFlowLayout() {
         let layout = CarouselFlowLayout()
-        layout.itemSize = CGSize(width: self.collectionView.frame.size.width-40, height: self.collectionView.frame.size.height-40)
+        layout.itemSize = CGSize(width: self.collectionView.frame.size.width-40, height: self.collectionView.frame.size.height)
         layout.scrollDirection = .horizontal
         layout.spacingMode = CarouselFlowLayoutSpacingMode.fixed(spacing: 0)
         layout.sideItemAlpha = 1.0
