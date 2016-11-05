@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA3-wi-CMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232.8" y="-179.46026986506749"/>
+            <point key="canvasLocation" x="1046" y="-138"/>
         </scene>
         <!--新しい出会い-->
         <scene sceneID="ShA-7R-cY9">
@@ -72,7 +72,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="htj-JZ-xTy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -81,7 +81,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmc-w3-rWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="-179.46026986506749"/>
+            <point key="canvasLocation" x="135" y="-138"/>
         </scene>
     </scenes>
 </document>
