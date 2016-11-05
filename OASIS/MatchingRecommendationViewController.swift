@@ -15,8 +15,18 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
     // MARK: - Property
     static let storyboardName = "MatchingRecommendation"
+    private var scheduleVC: ScheduleViewController!
 
     // MARK: - Lifecycle
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.destination {
+        case let vc as ScheduleViewController:
+            scheduleVC = vc
+            scheduleVC.setSchedule(schedule: ClassSchedule())
+        default:
+            break
+        }
+    }
 
     // MARK: - Action
 
