@@ -37,7 +37,7 @@ class ClassSchedule {
     }
 
     static func toCSV(data: [Bool]) -> String {
-        return data.reduce("") { $0 + ($1 ? "1," : "0,") }
+        return data.map { String($0 ? "1" : "0") }.joined(separator: ",")
     }
 
     func toCSV(on dayOfWeek: DayOfWeek) -> String {
