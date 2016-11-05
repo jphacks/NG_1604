@@ -42,46 +42,22 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
-//        guard let user = FIRAuth.auth()?.currentUser else { return }
-//
-//        getToken(user: user)
-//            .success { token -> Task<Float, FBProfile, Error> in
-//                return self.fetchUserProfile(token: token)
-//            }
-//            .success { profile -> Task<Float, Void, Error> in
-//                return self.setProfile(profile: profile)
-//            }
-//            .success { result -> () in
-//                let next = RegistrationTimeTableViewController.makeFromStoryboard()
-//                self.navigationController?.pushViewController(next, animated: true)
-//                return
-//            }
-    }
-
-    // MARK: - Private
-
-    private func setProfile(profile: FBProfile) -> Task<Float, Void, Error> {
-        return Task<Float, Void, Error> { _, fulfill, reject, _ in
-            guard let user = FIRAuth.auth()?.currentUser else {
-                reject(AppError.unauthorized)
-                return
+        WebAPI.Users.create(
+            image: fbProfile.profileImage,
+            name: formViewController.name,
+            gender: fbProfile.gender,
+            univ: formViewController.univ,
+            department: formViewController.department,
+            grade: formViewController.grade.id,
+            profile: formViewController.profile
+        )
+            .success { _ in
+                let next = RegistrationTimeTableViewController.makeFromStoryboard()
+                self.navigationController?.pushViewController(next, animated: true)
             }
-
-            let data = [
-                "name": profile.name,
-                "univ": profile.education.last!.name,
-                "gender": profile.gender,
-                "profile_img": profile.profileImage,
-                "department": profile.education.last?.concentration?.last?.name ?? ""
-            ]
-
-            self.ref.child("users/\(user.uid)").setValue(data) { error, ref in
-                if let error = error {
-                    reject(error)
-                } else {
-                    fulfill()
-                }
+            .failure { errorInfo in
+                guard let error = errorInfo.error else { return }
+                self.handle(error: error)
             }
-        }
     }
 }

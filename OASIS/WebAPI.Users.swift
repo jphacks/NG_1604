@@ -14,10 +14,11 @@ extension WebAPI {
 
     struct Users {
 
+        typealias VoidTask = Task<Void, Void, Error>
         typealias UserTask = Task<Void, User, Error>
 
-        static func create(image: String, name: String, gender: String, univ: String, department: String, grade: Int, profile: String) -> UserTask {
-            return UserTask { _, fulfill, reject, _ in
+        static func create(image: String, name: String, gender: String, univ: String, department: String, grade: Int, profile: String) -> VoidTask {
+            return VoidTask { _, fulfill, reject, _ in
                 guard let uuid = WebAPI.uuid else {
                     reject(AppError.unauthorized)
                     return
@@ -42,17 +43,13 @@ extension WebAPI {
                             reject(error)
                         }
 
-                        if let json = response.result.value as? [String: String], let user = try? User.decodeValue(json) {
-                            fulfill(user)
-                        }
-
-                        reject(AppError.unknown)
+                        fulfill(())
                 }
             }
         }
 
-        static func update(uuid: String) -> UserTask {
-            return UserTask { _, fulfill, reject, _ in
+        static func update(uuid: String) -> VoidTask {
+            return VoidTask { _, fulfill, reject, _ in
                 let url = AppConfig.WebAPI.BaseURL + "/users/" + uuid
 
                 Alamofire.request(url, method: .post)
@@ -61,11 +58,7 @@ extension WebAPI {
                             reject(error)
                         }
 
-                        if let json = response.result.value as? [String: String], let user = try? User.decodeValue(json) {
-                            fulfill(user)
-                        }
-
-                        reject(AppError.unknown)
+                        fulfill(())
                 }
             }
         }
@@ -89,8 +82,8 @@ extension WebAPI {
             }
         }
 
-        static func remove() -> UserTask {
-            return UserTask { _, fulfill, reject, _ in
+        static func remove() -> VoidTask {
+            return VoidTask { _, fulfill, reject, _ in
                 guard let uuid = WebAPI.uuid else {
                     reject(AppError.unauthorized)
                     return
@@ -104,17 +97,13 @@ extension WebAPI {
                             reject(error)
                         }
 
-                        if let json = response.result.value as? [String: String], let user = try? User.decodeValue(json) {
-                            fulfill(user)
-                        }
-
-                        reject(AppError.unknown)
+                        fulfill(())
                 }
             }
         }
 
-        static func like(opponent: String) -> UserTask {
-            return UserTask { _, fulfill, reject, _ in
+        static func like(opponent: String) -> VoidTask {
+            return VoidTask { _, fulfill, reject, _ in
                 guard let uuid = WebAPI.uuid else {
                     reject(AppError.unauthorized)
                     return
@@ -133,17 +122,13 @@ extension WebAPI {
                             reject(error)
                         }
 
-                        if let json = response.result.value as? [String: String], let user = try? User.decodeValue(json) {
-                            fulfill(user)
-                        }
-
-                        reject(AppError.unknown)
+                        fulfill(())
                 }
             }
         }
 
-        static func dislike(opponent: String) -> UserTask {
-            return UserTask { _, fulfill, reject, _ in
+        static func dislike(opponent: String) -> VoidTask {
+            return VoidTask { _, fulfill, reject, _ in
                 guard let uuid = WebAPI.uuid else {
                     reject(AppError.unauthorized)
                     return
@@ -162,11 +147,7 @@ extension WebAPI {
                             reject(error)
                         }
 
-                        if let json = response.result.value as? [String: String], let user = try? User.decodeValue(json) {
-                            fulfill(user)
-                        }
-
-                        reject(AppError.unknown)
+                        fulfill(())
                 }
             }
         }
