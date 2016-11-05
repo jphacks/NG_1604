@@ -32,7 +32,7 @@ extension User: Decodable {
             name: e <| "name",
             imageUrl: e <| "profile_img",
             department: e <| "department",
-            gender: e <| "date",
+            gender: e <| "gender",
             grade: e <| "medium",
             profile: e <| "profile",
             university: e <| "univ_name",

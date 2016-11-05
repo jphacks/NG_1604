@@ -17,6 +17,8 @@
 		5A4495D91DCDB54E00ADEB06 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495D81DCDB54E00ADEB06 /* WebAPI.swift */; };
 		5A4495DB1DCDBBCE00ADEB06 /* WebAPI.Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DA1DCDBBCE00ADEB06 /* WebAPI.Users.swift */; };
 		5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DC1DCDC3E400ADEB06 /* Classes.swift */; };
+		5A4495DF1DCE356B00ADEB06 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495DE1DCE356A00ADEB06 /* Grade.swift */; };
+		5A4495E11DCE35D600ADEB06 /* EnumEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */; };
 		5A49728B1DC66918006479DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49728A1DC66918006479DA /* AppDelegate.swift */; };
 		5A4972921DC66918006479DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972911DC66918006479DA /* Assets.xcassets */; };
 		5A4972951DC66918006479DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4972931DC66918006479DA /* LaunchScreen.storyboard */; };
@@ -74,6 +76,8 @@
 		5A4495D81DCDB54E00ADEB06 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 		5A4495DA1DCDBBCE00ADEB06 /* WebAPI.Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.Users.swift; sourceTree = "<group>"; };
 		5A4495DC1DCDC3E400ADEB06 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		5A4495DE1DCE356A00ADEB06 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumEnumerable.swift; sourceTree = "<group>"; };
 		5A4972871DC66918006479DA /* OASIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OASIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A49728A1DC66918006479DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4972911DC66918006479DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				D1CC47301DCC982600059E1C /* DayOfWeek.swift */,
+				5A4495DE1DCE356A00ADEB06 /* Grade.swift */,
 			);
 			name = ValueObjects;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				D1CC472E1DCC949600059E1C /* ClassSchedule.swift */,
+				5A4495E01DCE35D600ADEB06 /* EnumEnumerable.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				5A4495DD1DCDC3E400ADEB06 /* Classes.swift in Sources */,
 				5A0051381DCB193D00F1632F /* RegistrationController.swift in Sources */,
 				D1CC472F1DCC949600059E1C /* ClassSchedule.swift in Sources */,
+				5A4495E11DCE35D600ADEB06 /* EnumEnumerable.swift in Sources */,
 				D1CC47311DCC982600059E1C /* DayOfWeek.swift in Sources */,
 				5AF25CD61DC9B09300CA07F8 /* RegistrationUserViewController.swift in Sources */,
 				D12FFCE11DCB5490001B272F /* FBProfile.swift in Sources */,
@@ -694,6 +701,7 @@
 				5A4972B01DC66FE8006479DA /* AppError.swift in Sources */,
 				5AF25D241DCA2C0300CA07F8 /* String+.swift in Sources */,
 				5AF25CEA1DC9B2ED00CA07F8 /* MyPageEditViewController.swift in Sources */,
+				5A4495DF1DCE356B00ADEB06 /* Grade.swift in Sources */,
 				5AF25CD81DC9B0A400CA07F8 /* RegistrationTimeTableViewController.swift in Sources */,
 				5AF25CDE1DC9B0D800CA07F8 /* ChatRoomViewController.swift in Sources */,
 				5AF25CE21DC9B17000CA07F8 /* MatchingEntranceViewController.swift in Sources */,
