@@ -49,7 +49,7 @@ class RegistrationUserViewController: UIViewController, Storyboardable, ErrorHan
         user.department = formViewController.department
         user.grade = formViewController.grade.id
         user.profile = formViewController.profile
-        
+
         let next = RegistrationTimeTableViewController.makeFromStoryboard()
         next.user = user
         self.navigationController?.pushViewController(next, animated: true)
