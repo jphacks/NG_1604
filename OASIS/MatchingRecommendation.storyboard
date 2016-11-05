@@ -62,23 +62,15 @@
                                             <segue destination="2TP-z5-ueO" kind="embed" id="kR2-6b-yl0"/>
                                         </connections>
                                     </containerView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Cd-9u-Uxv">
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="S0D-o7-a1X"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="fZ6-vv-Dex" firstAttribute="leading" secondItem="Jqg-Ek-fGl" secondAttribute="trailing" constant="10" id="38D-f2-WI4"/>
-                                    <constraint firstItem="5Cd-9u-Uxv" firstAttribute="top" secondItem="Mgh-pz-N9q" secondAttribute="bottom" constant="10" id="3fG-2A-KMU"/>
-                                    <constraint firstAttribute="trailing" secondItem="5Cd-9u-Uxv" secondAttribute="trailing" id="6Kf-S6-Kde"/>
                                     <constraint firstItem="Mgh-pz-N9q" firstAttribute="top" secondItem="V4H-gO-uQ5" secondAttribute="bottom" constant="20" id="9qR-Ai-zkA"/>
                                     <constraint firstItem="Jqg-Ek-fGl" firstAttribute="leading" secondItem="oJu-WD-XpH" secondAttribute="leading" constant="20" id="Che-5A-uT3"/>
                                     <constraint firstItem="xdP-Y1-mj3" firstAttribute="top" secondItem="fZ6-vv-Dex" secondAttribute="bottom" constant="10" id="Jqx-5C-2ky"/>
-                                    <constraint firstAttribute="bottom" secondItem="5Cd-9u-Uxv" secondAttribute="bottom" constant="40" id="L0y-so-fzZ"/>
                                     <constraint firstItem="Jqg-Ek-fGl" firstAttribute="top" secondItem="oJu-WD-XpH" secondAttribute="top" constant="20" id="MMu-gs-86d"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mgh-pz-N9q" secondAttribute="bottom" constant="20" id="Twf-BN-20l"/>
                                     <constraint firstAttribute="trailing" secondItem="xdP-Y1-mj3" secondAttribute="trailing" constant="20" id="UzM-bW-ceJ"/>
                                     <constraint firstItem="dBE-im-E2E" firstAttribute="leading" secondItem="oJu-WD-XpH" secondAttribute="leading" constant="30" id="blr-3e-ws6"/>
                                     <constraint firstItem="fZ6-vv-Dex" firstAttribute="top" secondItem="Jqg-Ek-fGl" secondAttribute="top" constant="10" id="dWd-oH-Rnb"/>
@@ -87,7 +79,6 @@
                                     <constraint firstAttribute="trailing" secondItem="fZ6-vv-Dex" secondAttribute="trailing" constant="20" id="knK-9b-N61"/>
                                     <constraint firstItem="Mgh-pz-N9q" firstAttribute="width" secondItem="oJu-WD-XpH" secondAttribute="width" multiplier="0.5" id="oT6-OQ-wtQ"/>
                                     <constraint firstAttribute="trailing" secondItem="dBE-im-E2E" secondAttribute="trailing" constant="30" id="opk-ab-vPy"/>
-                                    <constraint firstItem="5Cd-9u-Uxv" firstAttribute="leading" secondItem="oJu-WD-XpH" secondAttribute="leading" id="rUo-hj-csk"/>
                                     <constraint firstItem="V4H-gO-uQ5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dBE-im-E2E" secondAttribute="bottom" constant="20" id="u9P-Vj-M8r"/>
                                     <constraint firstItem="V4H-gO-uQ5" firstAttribute="leading" secondItem="oJu-WD-XpH" secondAttribute="leading" constant="30" id="y7N-yn-itd"/>
                                     <constraint firstItem="dBE-im-E2E" firstAttribute="top" secondItem="Jqg-Ek-fGl" secondAttribute="bottom" constant="15" id="yvP-8b-vKR"/>
