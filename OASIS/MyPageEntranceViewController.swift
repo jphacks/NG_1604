@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Firebase
 
 class MyPageEntranceViewController: UIViewController, Storyboardable, ErrorHandlable {
 
@@ -20,23 +21,25 @@ class MyPageEntranceViewController: UIViewController, Storyboardable, ErrorHandl
 
     // MARK: - Property
     static let storyboardName = "MyPageEntrance"
+    let ref = FIRDatabase.database().reference()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        WebAPI.Users.me()
-            .success { user, _ in
-                self.thumbView.kf.setImage(with: user.image)
-                self.nameLabel.text = user.name
-                self.profileLabel.text = user.profile
-
-                let grade = Grade.cases[user.grade-1]
-                self.univLabel.text = "\(user.university) \(user.department) \(grade.rawValue)"
-            }
-            .failure { errorInfo in
-                guard let error = errorInfo.error else { return }
-                self.handle(error: error)
-            }
+        if let uuid = WebAPI.uuid {
+            self.ref.child("/users/\(uuid)").observeSingleEvent(of: .value, with: { snapshot in
+                if let data = snapshot.value as? [String: Any] {
+                    // swiftlint:disable force_cast
+                    self.nameLabel.text = data["name"] as? String
+                    let univ = data["univ_name"] as! String
+                    let department = data["department"] as! String
+                    self.univLabel.text = "\(univ) \(department)"
+                    self.profileLabel.text = data["profile"] as? String
+                    let profile_img = data["profile_img"] as? String
+                    self.thumbView.kf.setImage(with: URL(string: profile_img!))
+                }
+            })
+        }
     }
 
     // MARK: - Action
