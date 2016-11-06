@@ -125,7 +125,7 @@
                     <tabBarItem key="tabBarItem" title="マイページ" id="rIg-Ke-QfF"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="r21-HD-YfX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="r21-HD-YfX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
