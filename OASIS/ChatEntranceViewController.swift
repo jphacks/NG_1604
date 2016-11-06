@@ -29,11 +29,15 @@ class ChatEntranceViewController: UIViewController, Storyboardable, ErrorHandlab
         let ref = FIRDatabase.database().reference().child("users").child(uuid).child("matches")
 
         ref.queryLimited(toLast: 100).observe(FIRDataEventType.childAdded, with: { snapshot in
-            guard let id = snapshot.value(forKey: "room_id") as? String else { return }
+            guard let dic = snapshot.value as? [String : AnyObject],
+                let id = dic["room_id"] as? String else {
+                return
+            }
 
             Firebase.showRoom(id: id)
                 .success { room in
                     self.rooms.append(room)
+                    self.tableView.reloadData()
                 }
                 .failure { errorInfo in
                     guard let error = errorInfo.error else { return }

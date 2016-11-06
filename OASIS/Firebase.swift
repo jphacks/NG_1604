@@ -54,8 +54,9 @@ struct Firebase {
         return RoomTask { _, fulfill, reject, _ in
             let ref = FIRDatabase.database().reference().child("chatrooms").child(id)
             ref.observeSingleEvent(of: .value, with: { snapshot in
-                guard let title = snapshot.value(forKey: "title") as? String,
-                    let lastMessage = snapshot.value(forKey: "lastMessage") as? String else {
+                guard let dic = snapshot.value as? [String : AnyObject],
+                    let title = dic["title"] as? String,
+                    let lastMessage = dic["lastMessage"] as? String else {
                         return
                 }
 
