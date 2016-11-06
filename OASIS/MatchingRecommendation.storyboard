@@ -20,6 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-line-w" translatesAutoresizingMaskIntoConstraints="NO" id="yHI-F0-SqM"/>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-7v-rJP">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a8q-o7-VTr" customClass="CarouselFlowLayout" customModule="OASIS" customModuleProvider="target">
@@ -231,9 +232,13 @@
                             <constraint firstAttribute="trailing" secondItem="hIa-7v-rJP" secondAttribute="trailing" id="Bzr-oF-xb9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cbc-zL-bKi" secondAttribute="trailing" constant="10" id="Fjw-2n-xaD"/>
                             <constraint firstItem="hIa-7v-rJP" firstAttribute="top" secondItem="Cbc-zL-bKi" secondAttribute="bottom" constant="10" id="Fn0-BU-Wlc"/>
+                            <constraint firstAttribute="trailing" secondItem="yHI-F0-SqM" secondAttribute="trailing" id="UjI-By-tP7"/>
                             <constraint firstItem="hIa-7v-rJP" firstAttribute="leading" secondItem="DJz-gK-dxm" secondAttribute="leading" id="bU8-Lb-5oz"/>
+                            <constraint firstItem="suk-I7-tLW" firstAttribute="top" secondItem="yHI-F0-SqM" secondAttribute="bottom" id="hcK-QZ-6C9"/>
+                            <constraint firstItem="yHI-F0-SqM" firstAttribute="leading" secondItem="DJz-gK-dxm" secondAttribute="leading" id="kBm-Cj-Efy"/>
                             <constraint firstItem="suk-I7-tLW" firstAttribute="top" secondItem="hIa-7v-rJP" secondAttribute="bottom" constant="10" id="kfA-Ib-u6d"/>
                             <constraint firstItem="Cbc-zL-bKi" firstAttribute="top" secondItem="alB-Sn-YOn" secondAttribute="bottom" constant="10" id="tle-1o-TBU"/>
+                            <constraint firstItem="yHI-F0-SqM" firstAttribute="top" secondItem="alB-Sn-YOn" secondAttribute="bottom" id="uVz-Qu-o3Z"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -247,6 +252,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg-line-w" width="377" height="669"/>
         <image name="icon-o" width="20" height="20"/>
         <image name="icon-x" width="20" height="20"/>
         <image name="progress" width="246" height="16"/>
