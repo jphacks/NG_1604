@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7aF-hS-Izt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Page Entrance View Controller-->
+        <!--プロフィール-->
         <scene sceneID="2IP-Fg-thd">
             <objects>
-                <viewController id="27P-h5-3aA" customClass="MyPageEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="プロフィール" id="27P-h5-3aA" customClass="MyPageEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="twb-cY-LFC"/>
                         <viewControllerLayoutGuide type="bottom" id="xdD-he-MQi"/>
@@ -16,9 +17,84 @@
                     <view key="view" contentMode="scaleToFill" id="cF4-wy-1cg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75v-Yl-IM3">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-df-Uj6">
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARj-SY-a3r" customClass="DesignableImageView" customModule="Spring">
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ARj-SY-a3r" secondAttribute="height" multiplier="1:1" id="PT1-FI-7a9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ヒデちゃんだよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z56-Pa-bBG">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名古屋大学 電気電子工学科 3年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrn-Hr-3OX">
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。初めまして。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tp-fS-DYR">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="M5T-2t-5x7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRM-It-gJv" customClass="ScheduleView" customModule="OASIS" customModuleProvider="target">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RRM-It-gJv" secondAttribute="height" multiplier="1:1" id="6w5-QJ-X6K"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="z56-Pa-bBG" firstAttribute="centerX" secondItem="YLL-df-Uj6" secondAttribute="centerX" id="0Rk-9R-db2"/>
+                                            <constraint firstItem="RRM-It-gJv" firstAttribute="top" secondItem="6Tp-fS-DYR" secondAttribute="bottom" constant="40" id="26Y-aP-fQA"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Tp-fS-DYR" secondAttribute="trailing" constant="20" id="34l-dn-ZqU"/>
+                                            <constraint firstItem="z56-Pa-bBG" firstAttribute="top" secondItem="ARj-SY-a3r" secondAttribute="bottom" constant="20" id="4Lg-3d-uFc"/>
+                                            <constraint firstAttribute="bottom" secondItem="RRM-It-gJv" secondAttribute="bottom" constant="40" id="9UU-hm-e3f"/>
+                                            <constraint firstItem="6Tp-fS-DYR" firstAttribute="top" secondItem="Xrn-Hr-3OX" secondAttribute="bottom" constant="20" id="Coh-HG-OiY"/>
+                                            <constraint firstAttribute="trailing" secondItem="ARj-SY-a3r" secondAttribute="trailing" constant="140" id="FRl-iT-7A8"/>
+                                            <constraint firstItem="Xrn-Hr-3OX" firstAttribute="centerX" secondItem="YLL-df-Uj6" secondAttribute="centerX" id="LQq-Hx-jc1"/>
+                                            <constraint firstItem="Xrn-Hr-3OX" firstAttribute="top" secondItem="z56-Pa-bBG" secondAttribute="bottom" constant="10" id="Miz-Ih-f75"/>
+                                            <constraint firstItem="RRM-It-gJv" firstAttribute="leading" secondItem="YLL-df-Uj6" secondAttribute="leading" constant="80" id="Xqi-GV-ok2"/>
+                                            <constraint firstItem="ARj-SY-a3r" firstAttribute="leading" secondItem="YLL-df-Uj6" secondAttribute="leading" constant="140" id="eVK-ez-QFV"/>
+                                            <constraint firstItem="6Tp-fS-DYR" firstAttribute="leading" secondItem="YLL-df-Uj6" secondAttribute="leading" constant="20" id="iIv-Xx-mYg"/>
+                                            <constraint firstItem="ARj-SY-a3r" firstAttribute="top" secondItem="YLL-df-Uj6" secondAttribute="top" constant="20" id="qt2-bi-tTI"/>
+                                            <constraint firstAttribute="trailing" secondItem="RRM-It-gJv" secondAttribute="trailing" constant="80" id="rKW-cA-y6S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YLL-df-Uj6" firstAttribute="leading" secondItem="75v-Yl-IM3" secondAttribute="leading" id="7VP-s6-N2y"/>
+                                    <constraint firstAttribute="trailing" secondItem="YLL-df-Uj6" secondAttribute="trailing" id="8iA-6c-RhG"/>
+                                    <constraint firstItem="YLL-df-Uj6" firstAttribute="width" secondItem="75v-Yl-IM3" secondAttribute="width" id="DjV-IE-jlL"/>
+                                    <constraint firstAttribute="bottom" secondItem="YLL-df-Uj6" secondAttribute="bottom" id="Gpc-hw-9kP"/>
+                                    <constraint firstItem="YLL-df-Uj6" firstAttribute="top" secondItem="75v-Yl-IM3" secondAttribute="top" constant="-64" id="dI4-Xv-K4w"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xdD-he-MQi" firstAttribute="top" secondItem="75v-Yl-IM3" secondAttribute="bottom" id="G8x-lt-QRI"/>
+                            <constraint firstItem="75v-Yl-IM3" firstAttribute="leading" secondItem="cF4-wy-1cg" secondAttribute="leading" id="GwK-Sp-Ob8"/>
+                            <constraint firstAttribute="trailing" secondItem="75v-Yl-IM3" secondAttribute="trailing" id="cj3-mu-dph"/>
+                            <constraint firstItem="75v-Yl-IM3" firstAttribute="top" secondItem="twb-cY-LFC" secondAttribute="bottom" id="rfp-pc-05w"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Hxm-hM-qDS">
+                    <navigationItem key="navigationItem" title="プロフィール" id="Hxm-hM-qDS">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="kZJ-kS-KjF">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GXj-3E-sBz">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -30,6 +106,13 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameLabel" destination="z56-Pa-bBG" id="WDy-M7-sSn"/>
+                        <outlet property="profileLabel" destination="6Tp-fS-DYR" id="7Fc-s8-bK3"/>
+                        <outlet property="scheduleView" destination="RRM-It-gJv" id="CMT-Sh-6ou"/>
+                        <outlet property="thumbView" destination="ARj-SY-a3r" id="ivX-x8-8sF"/>
+                        <outlet property="univLabel" destination="Xrn-Hr-3OX" id="gLE-mV-zI8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reh-KQ-O8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
