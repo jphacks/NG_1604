@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Page Entrance View Controller-->
+        <!--プロフィール-->
         <scene sceneID="2IP-Fg-thd">
             <objects>
-                <viewController id="27P-h5-3aA" customClass="MyPageEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="プロフィール" id="27P-h5-3aA" customClass="MyPageEntranceViewController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="twb-cY-LFC"/>
                         <viewControllerLayoutGuide type="bottom" id="xdD-he-MQi"/>
@@ -23,6 +23,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-df-Uj6">
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARj-SY-a3r" customClass="DesignableImageView" customModule="Spring">
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ARj-SY-a3r" secondAttribute="height" multiplier="1:1" id="PT1-FI-7a9"/>
                                                 </constraints>
@@ -93,7 +94,7 @@
                             <constraint firstItem="75v-Yl-IM3" firstAttribute="top" secondItem="twb-cY-LFC" secondAttribute="bottom" id="rfp-pc-05w"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Hxm-hM-qDS">
+                    <navigationItem key="navigationItem" title="プロフィール" id="Hxm-hM-qDS">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="kZJ-kS-KjF">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GXj-3E-sBz">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
