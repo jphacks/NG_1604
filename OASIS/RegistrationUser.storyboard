@@ -74,7 +74,6 @@
                             <constraint firstItem="ugV-ZQ-m8j" firstAttribute="top" secondItem="brW-uM-XBO" secondAttribute="bottom" constant="20" id="zGq-yJ-Hen"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ユーザー情報" id="J9f-9d-IMe"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
