@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import SwiftTask
+import SVProgressHUD
 
 class RegistrationTimeTableViewController: UIViewController, Storyboardable, ErrorHandlable {
 
@@ -29,6 +30,8 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable, Err
 
     // MARK: - Action
     @IBAction private func submitBtnDidTap(_ sender: UIButton) {
+        SVProgressHUD.show()
+
         user.classes = Classes(
             mon: scheduler.toCSV(on: .mon),
             tue: scheduler.toCSV(on: .tue),
@@ -39,9 +42,11 @@ class RegistrationTimeTableViewController: UIViewController, Storyboardable, Err
 
         WebAPI.Users.create(user: user)
             .success { _ in
+                SVProgressHUD.dismiss()
                 SceneRouter.shared.route(scene: .main)
             }
             .failure { errorInfo in
+                SVProgressHUD.dismiss()
                 guard let error = errorInfo.error else { return }
                 self.handle(error: error)
             }

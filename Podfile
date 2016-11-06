@@ -26,6 +26,7 @@ target 'OASIS' do
     pod 'XLPagerTabStrip', '6.0'
     pod 'JSQMessagesViewController'
     pod 'Eureka', '~> 2.0.0-beta.1'
+    pod 'SVProgressHUD'
 end
 
 post_install do |installer|
