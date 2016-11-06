@@ -15,6 +15,7 @@ struct Firebase {
 
     typealias UserTask = Task<Void, FIRUser, Error>
     typealias TokenTask = Task<Void, AccessToken, Error>
+    typealias RoomTask = Task<Void, Room, Error>
 
     static func signIn(token: String) -> UserTask {
         return UserTask { _, fulfill, reject, _ in
@@ -45,6 +46,23 @@ struct Firebase {
                 }
 
                 reject(AppError.unknown)
+            }
+        }
+    }
+
+    static func showRoom(id: String) -> RoomTask {
+        return RoomTask { _, fulfill, reject, _ in
+            let ref = FIRDatabase.database().reference().child("chatrooms").child(id)
+            ref.observeSingleEvent(of: .value, with: { snapshot in
+                guard let title = snapshot.value(forKey: "title") as? String,
+                    let lastMessage = snapshot.value(forKey: "lastMessage") as? String else {
+                        return
+                }
+
+                let room = Room(id: id, title: title, lastMessage: lastMessage)
+                fulfill(room)
+            }) { error in
+                reject(error)
             }
         }
     }
