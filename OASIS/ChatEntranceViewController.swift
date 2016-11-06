@@ -7,36 +7,58 @@
 //
 
 import UIKit
+import Firebase
 
-class ChatEntranceViewController: UIViewController, Storyboardable {
+class ChatEntranceViewController: UIViewController, Storyboardable, ErrorHandlable {
 
     // MARK: - Outlet
     @IBOutlet private var tableView: UITableView!
 
     // MARK: - Property
     static let storyboardName = "ChatEntrance"
+    fileprivate var rooms: [Room] = []
 
     // MARK: - Lifecycle
-
-    // MARK: - Action
-
-    // MARK: - Public
+    override func viewDidLoad() {
+        getRooms()
+    }
 
     // MARK: - Private
+    func getRooms() {
+        guard let uuid = WebAPI.uuid else { return }
+        let ref = FIRDatabase.database().reference().child("users").child(uuid).child("matches")
+
+        ref.queryLimited(toLast: 100).observe(FIRDataEventType.childAdded, with: { snapshot in
+            guard let dic = snapshot.value as? [String : AnyObject],
+                let id = dic["room_id"] as? String else {
+                return
+            }
+
+            Firebase.showRoom(id: id)
+                .success { room in
+                    self.rooms.append(room)
+                    self.tableView.reloadData()
+                }
+                .failure { errorInfo in
+                    guard let error = errorInfo.error else { return }
+                    self.handle(error: error)
+                }
+        })
+    }
 }
 
 // MARK: - UITableViewDataSource
 extension ChatEntranceViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return rooms.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RoomCell", for: indexPath as IndexPath)
 
         if let roomCell = cell as? ChatEntranceRoomCell {
-//            roomCell.room = Mock.rooms[indexPath.row]
+            roomCell.room = rooms[indexPath.row]
         }
 
         return cell
@@ -49,6 +71,7 @@ extension ChatEntranceViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let next = ChatRoomViewController.makeFromStoryboard()
         next.hidesBottomBarWhenPushed = true
+        next.room = rooms[indexPath.row]
         navigationController?.pushViewController(next, animated: true)
     }
 }

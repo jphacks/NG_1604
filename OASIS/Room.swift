@@ -10,6 +10,7 @@ import Foundation
 
 struct Room {
 
-    let user: User
-    let messages: [Message]
+    let id: String
+    let title: String
+    let lastMessage: String
 }
