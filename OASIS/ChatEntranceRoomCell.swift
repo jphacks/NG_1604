@@ -19,9 +19,9 @@ final class ChatEntranceRoomCell: UITableViewCell {
     // MARK: - Property
     var room: Room? {
         didSet {
-            thumbView.kf.setImage(with: room?.user.image)
-            nameLabel.text = room?.user.name
-            messageLabel.text = room?.messages.last?.comment
+            thumbView.kf.setImage(with: URL(string: "http://www.othlo.tech/images/members/hide.png"))
+            nameLabel.text = room?.title
+            messageLabel.text = room?.lastMessage
         }
     }
 }
