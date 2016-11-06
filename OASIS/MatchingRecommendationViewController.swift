@@ -9,6 +9,7 @@
 import UIKit
 import XLPagerTabStrip
 import SwiftTask
+import Firebase
 
 class MatchingRecommendationViewController: UIViewController, Storyboardable {
 
@@ -18,6 +19,7 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
     // MARK: - Property
     static let storyboardName = "MatchingRecommendation"
     var recommends: [User] = []
+    let ref = FIRDatabase.database().reference()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -28,6 +30,11 @@ class MatchingRecommendationViewController: UIViewController, Storyboardable {
             .success { _, recommends -> Void in
                 self.recommends = recommends.users
                 self.collectionView.reloadData()
+                if let uuid = WebAPI.uuid {
+                    self.ref.child("/users/\(uuid)/matches").observe(.childAdded, with: { snapshot in
+                        dump(snapshot.value)
+                    })
+                }
             }.failure { error, _ in
                 print(error)
             }
@@ -80,6 +87,7 @@ extension MatchingRecommendationViewController: UICollectionViewDataSource {
     }
 }
 
+// MARK: - MatchingRecommendationDelegate
 extension MatchingRecommendationViewController: MatchingRecommendationDelegate {
     func deleteCell() {
         let point = CGPoint(x: collectionView.frame.midX, y: collectionView.frame.midY)
