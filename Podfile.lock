@@ -75,6 +75,7 @@ PODS:
   - JSQSystemSoundPlayer (2.0.1)
   - Kingfisher (3.1.4)
   - Spring (1.0.3)
+  - SVProgressHUD (2.0.3)
   - SwiftTask (5.0.0)
   - XLPagerTabStrip (6.0.0)
 
@@ -91,6 +92,7 @@ DEPENDENCIES:
   - JSQMessagesViewController
   - Kingfisher (~> 3.0)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - SVProgressHUD
   - SwiftTask (from `https://github.com/ReactKit/SwiftTask.git`, branch `swift/3.0`)
   - XLPagerTabStrip (= 6.0)
 
@@ -134,9 +136,10 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: 335026ea78b0225ef387caeb919993f4717e8ffc
+PODFILE CHECKSUM: ae950ac1885277f5c09834cf444627ed21a55e13
 
 COCOAPODS: 1.1.1

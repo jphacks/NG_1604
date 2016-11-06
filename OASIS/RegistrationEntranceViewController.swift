@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class RegistrationEntranceViewController: UIViewController, Storyboardable, ErrorHandlable {
 
@@ -20,17 +21,20 @@ class RegistrationEntranceViewController: UIViewController, Storyboardable, Erro
                 return Firebase.signIn(token: token)
             }
             .success { user -> Firebase.TokenTask in
+                SVProgressHUD.show()
                 return Firebase.token(user: user)
             }
             .success { token -> Facebook.ProfileTask in
                 return Facebook.userProfile(token: token)
             }
             .success { profile in
+                SVProgressHUD.dismiss()
                 let next = RegistrationUserViewController.makeFromStoryboard()
                 next.fbProfile = profile
                 self.navigationController?.pushViewController(next, animated: true)
             }
             .failure { errorInfo in
+                SVProgressHUD.dismiss()
                 guard let error = errorInfo.error else { return }
                 self.handle(error: error)
             }
