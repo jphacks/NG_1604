@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa5-ng-Sug">
-                                <state key="normal" title="Facebookでログイン"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa5-ng-Sug">
+                                <state key="normal" image="FacebookButton"/>
                                 <connections>
                                     <action selector="loginBtnDidTap:" destination="NkP-z8-XNf" eventType="touchUpInside" id="l2N-7I-zq1"/>
                                 </connections>
@@ -27,7 +27,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xa5-ng-Sug" firstAttribute="centerY" secondItem="VpY-ep-WnF" secondAttribute="centerY" id="22G-yt-3L8"/>
-                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="centerX" secondItem="VpY-ep-WnF" secondAttribute="centerX" id="2Hc-m0-nbV"/>
+                            <constraint firstAttribute="trailing" secondItem="Xa5-ng-Sug" secondAttribute="trailing" constant="30" id="dVT-PY-jxj"/>
+                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="leading" secondItem="VpY-ep-WnF" secondAttribute="leading" constant="30" id="nX2-90-Ev7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D9g-63-Zmj"/>
@@ -41,7 +42,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CIO-AN-Pem" customClass="RegistrationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cH-35-PvN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7cH-35-PvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,4 +60,7 @@
             <point key="canvasLocation" x="700" y="29.23538230884558"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FacebookButton" width="300" height="47"/>
+    </resources>
 </document>

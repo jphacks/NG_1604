@@ -19,9 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
 
         SceneRouter.shared.window = window
+        UINavigationBar.appearance().tintColor = .white
 
         if let _ = FIRAuth.auth()?.currentUser {
-            SceneRouter.shared.route(scene: .main, animated: false)
+            SceneRouter.shared.route(scene: .registration, animated: false)
         } else {
             SceneRouter.shared.route(scene: .registration, animated: false)
         }
