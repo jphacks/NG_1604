@@ -76,14 +76,14 @@
             </objects>
             <point key="canvasLocation" x="1895.2" y="89.505247376311857"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--チャット-->
         <scene sceneID="3Rg-lK-0ad">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vD5-Ur-fxy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" selectedImage="tab-chat" id="nlk-T7-tzV"/>
+                    <tabBarItem key="tabBarItem" title="チャット" image="tab-chat" selectedImage="tab-chat" id="nlk-T7-tzV"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NJx-92-jMP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJx-92-jMP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>

@@ -82,7 +82,7 @@
                                     <constraint firstAttribute="trailing" secondItem="YLL-df-Uj6" secondAttribute="trailing" id="8iA-6c-RhG"/>
                                     <constraint firstItem="YLL-df-Uj6" firstAttribute="width" secondItem="75v-Yl-IM3" secondAttribute="width" id="DjV-IE-jlL"/>
                                     <constraint firstAttribute="bottom" secondItem="YLL-df-Uj6" secondAttribute="bottom" id="Gpc-hw-9kP"/>
-                                    <constraint firstItem="YLL-df-Uj6" firstAttribute="top" secondItem="75v-Yl-IM3" secondAttribute="top" constant="-64" id="dI4-Xv-K4w"/>
+                                    <constraint firstItem="YLL-df-Uj6" firstAttribute="top" secondItem="75v-Yl-IM3" secondAttribute="top" id="dI4-Xv-K4w"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -122,7 +122,7 @@
         <scene sceneID="P6u-ly-jj8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aF-hS-Izt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="マイページ" id="rIg-Ke-QfF"/>
+                    <tabBarItem key="tabBarItem" title="マイページ" image="tab-Prof" selectedImage="tab-Prof" id="rIg-Ke-QfF"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="r21-HD-YfX">
@@ -144,4 +144,7 @@
             <point key="canvasLocation" x="381.60000000000002" y="-237.03148425787109"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab-Prof" width="22" height="22"/>
+    </resources>
 </document>
