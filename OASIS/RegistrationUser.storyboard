@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Y8-3Y-ZWl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Y8-3Y-ZWl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugV-ZQ-m8j" customClass="DesignableButton" customModule="Spring">
-                                <color key="backgroundColor" red="0.39215686919999998" green="0.74901962280000001" blue="0.15686275059999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9Ao-ih-Ggc"/>
                                 </constraints>
@@ -94,7 +94,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Etv-Jw-Oh7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xql-FP-6Ax">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="353.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

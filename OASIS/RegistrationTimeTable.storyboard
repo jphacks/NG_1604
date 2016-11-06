@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3PZ-Rt-W53">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3PZ-Rt-W53">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qj-SC-cKz" customClass="DesignableButton" customModule="Spring">
-                                <color key="backgroundColor" red="0.39215686919999998" green="0.74901962280000001" blue="0.15686275059999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="lCo-Iw-48P"/>
                                 </constraints>
@@ -177,8 +177,16 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab-logo" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-yL-Lyg"/>
+                                            </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="AvO-yL-Lyg" secondAttribute="bottom" id="ISI-zR-0F4"/>
+                                            <constraint firstItem="AvO-yL-Lyg" firstAttribute="top" secondItem="3Bb-BG-Xp5" secondAttribute="top" id="Q6t-Q4-4eG"/>
+                                            <constraint firstItem="AvO-yL-Lyg" firstAttribute="leading" secondItem="3Bb-BG-Xp5" secondAttribute="leading" id="RPm-tb-pCu"/>
+                                            <constraint firstAttribute="trailing" secondItem="AvO-yL-Lyg" secondAttribute="trailing" id="qRJ-cU-ExQ"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -216,4 +224,7 @@
             <point key="canvasLocation" x="13.6" y="3.1484257871064472"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab-logo" width="34" height="37"/>
+    </resources>
 </document>
