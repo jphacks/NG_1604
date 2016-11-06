@@ -68,7 +68,7 @@ extension WebAPI {
                         do {
                             if let data = response.result.value {
                                 let user = try User.decodeValue(data, rootKeyPath: "user")
-                                let recommends = try Recommends.decodeValue(data)
+                                let recommends = try Recommends.decodeValue(data, rootKeyPath: "recommends")
                                 fulfill(user, recommends)
                             }
                         } catch {
@@ -78,6 +78,13 @@ extension WebAPI {
                         reject(AppError.unknown)
                 }
             }
+        }
+
+        static func me() -> UserTask {
+            guard let uuid = WebAPI.uuid else {
+                return UserTask(error: AppError.unauthorized)
+            }
+            return show(uuid: uuid)
         }
 
         static func remove() -> VoidTask {

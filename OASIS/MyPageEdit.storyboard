@@ -17,8 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-8f-bR9">
-                                <state key="normal" title="ログアウト"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-8f-bR9" customClass="DesignableButton" customModule="Spring">
+                                <color key="backgroundColor" red="0.9098039269" green="0.4784313738" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Qcx-sA-HKc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="退会する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signOutBtnDidTap:" destination="9We-YC-UAg" eventType="touchUpInside" id="HqC-72-vGP"/>
                                 </connections>
@@ -26,8 +38,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fkq-8f-bR9" firstAttribute="centerY" secondItem="cGD-qq-N3B" secondAttribute="centerY" id="e2N-gQ-nbV"/>
-                            <constraint firstItem="fkq-8f-bR9" firstAttribute="centerX" secondItem="cGD-qq-N3B" secondAttribute="centerX" id="pvk-wc-Szr"/>
+                            <constraint firstItem="fkq-8f-bR9" firstAttribute="leading" secondItem="cGD-qq-N3B" secondAttribute="leading" constant="20" id="WNz-AX-Yrt"/>
+                            <constraint firstItem="fkq-8f-bR9" firstAttribute="centerY" secondItem="cGD-qq-N3B" secondAttribute="centerY" id="pgO-oY-FaD"/>
+                            <constraint firstAttribute="trailing" secondItem="fkq-8f-bR9" secondAttribute="trailing" constant="20" id="s8D-ef-4z6"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
