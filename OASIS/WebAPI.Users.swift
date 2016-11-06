@@ -68,7 +68,7 @@ extension WebAPI {
                         do {
                             if let data = response.result.value {
                                 let user = try User.decodeValue(data, rootKeyPath: "user")
-                                let recommends = try Recommends.decodeValue(data, rootKeyPath: "recommends")
+                                let recommends = try Recommends.decodeValue(data)
                                 fulfill(user, recommends)
                             }
                         } catch {

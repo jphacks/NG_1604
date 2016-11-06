@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CIO-AN-Pem">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,34 +16,57 @@
                         <viewControllerLayoutGuide type="bottom" id="Hsq-kh-P8l"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VpY-ep-WnF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa5-ng-Sug">
-                                <state key="normal" title="Facebookでログイン"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-line-g" translatesAutoresizingMaskIntoConstraints="NO" id="GP5-Qo-gbm"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa5-ng-Sug">
+                                <state key="normal" image="FacebookButton"/>
                                 <connections>
                                     <action selector="loginBtnDidTap:" destination="NkP-z8-XNf" eventType="touchUpInside" id="l2N-7I-zq1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎週の空きコマを有効活用する" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="603-9w-tk3">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.3832611908783784" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cHB-zp-27D">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cHB-zp-27D" secondAttribute="height" multiplier="1:1" id="yYn-T6-pvR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="centerY" secondItem="VpY-ep-WnF" secondAttribute="centerY" id="22G-yt-3L8"/>
-                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="centerX" secondItem="VpY-ep-WnF" secondAttribute="centerX" id="2Hc-m0-nbV"/>
+                            <constraint firstItem="603-9w-tk3" firstAttribute="leading" secondItem="VpY-ep-WnF" secondAttribute="leadingMargin" constant="20" id="CuG-1U-Pwx"/>
+                            <constraint firstItem="cHB-zp-27D" firstAttribute="centerX" secondItem="VpY-ep-WnF" secondAttribute="centerX" id="GCW-YW-hMR"/>
+                            <constraint firstItem="Hsq-kh-P8l" firstAttribute="top" secondItem="GP5-Qo-gbm" secondAttribute="bottom" id="LhM-cK-B6G"/>
+                            <constraint firstItem="cHB-zp-27D" firstAttribute="centerY" secondItem="VpY-ep-WnF" secondAttribute="centerY" id="VIK-ri-WBh"/>
+                            <constraint firstAttribute="trailing" secondItem="Xa5-ng-Sug" secondAttribute="trailing" constant="30" id="dVT-PY-jxj"/>
+                            <constraint firstAttribute="trailing" secondItem="GP5-Qo-gbm" secondAttribute="trailing" id="mRI-cW-uHN"/>
+                            <constraint firstItem="GP5-Qo-gbm" firstAttribute="leading" secondItem="VpY-ep-WnF" secondAttribute="leading" id="mkP-ML-yp5"/>
+                            <constraint firstItem="GP5-Qo-gbm" firstAttribute="top" secondItem="VpY-ep-WnF" secondAttribute="top" constant="-70" id="n7D-h5-6zR"/>
+                            <constraint firstItem="Xa5-ng-Sug" firstAttribute="leading" secondItem="VpY-ep-WnF" secondAttribute="leading" constant="30" id="nX2-90-Ev7"/>
+                            <constraint firstItem="Hsq-kh-P8l" firstAttribute="top" secondItem="Xa5-ng-Sug" secondAttribute="bottom" constant="40" id="nei-hd-GIK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="603-9w-tk3" secondAttribute="trailing" constant="20" id="sgV-Nx-8Mq"/>
+                            <constraint firstItem="603-9w-tk3" firstAttribute="top" secondItem="d2J-kh-NIf" secondAttribute="bottom" constant="40" id="uum-qW-po0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D9g-63-Zmj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsn-mD-vQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="29"/>
+            <point key="canvasLocation" x="1548" y="28.335832083958024"/>
         </scene>
         <!--Registration Controller-->
         <scene sceneID="xeO-6k-XC5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CIO-AN-Pem" customClass="RegistrationController" customModule="OASIS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cH-35-PvN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="7cH-35-PvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1647058824" green="0.74901960779999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,4 +84,9 @@
             <point key="canvasLocation" x="700" y="29.23538230884558"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FacebookButton" width="300" height="47"/>
+        <image name="bg-line-g" width="377" height="669"/>
+        <image name="logo" width="125" height="134"/>
+    </resources>
 </document>

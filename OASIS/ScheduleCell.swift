@@ -13,9 +13,11 @@ class ScheduleCell: UICollectionViewCell {
     var isFree: Bool = false {
         didSet {
             if isFree {
-                self.backgroundColor = .green
+                image.isHidden = false
+                self.backgroundColor = self.backgroundColor?.withAlphaComponent(0.0)
             } else {
                 image.isHidden = true
+                self.backgroundColor = self.backgroundColor?.withAlphaComponent(1.0)
             }
         }
     }
