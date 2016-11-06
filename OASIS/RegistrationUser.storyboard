@@ -93,7 +93,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Etv-Jw-Oh7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xql-FP-6Ax">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="353.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
